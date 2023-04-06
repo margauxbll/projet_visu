@@ -1,0 +1,740 @@
+﻿Commune;Code département;Département;EPCI;Code région;Région;Compte;Date de la donnée;Code EPCI;Régime d'exploitation;Puissance de raccordement;Filière;Coordonnées géographiques;Code Insee Commune
+Glomel;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2018-12;242200715;Project;10400.0;Éolien;48.2058975829, -3.38820300244;22061
+Gosné;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2018-12;243500774;;;Éolien;48.2503523895, -1.45860853595;35121
+Goulien;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2018-12;242900629;Realised;6400.0;Éolien;48.0579729785, -4.59260441586;29063
+Grand-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;2;2018-12;200070662;Realised;12400.0;Éolien;47.7344338208, -1.72820099024;35124
+Gueltas;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;9000.0;Éolien;48.0920646623, -2.80987346419;56072
+Guerlédan;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;Realised;9200.0;Éolien;48.1957524474, -2.9837108711;22158
+Guern;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;8000.0;Éolien;48.034812094, -3.10210819961;56076
+Guéhenno;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2018-12;200067221;Project;12000.0;Éolien;47.8922430084, -2.65141544204;56071
+Guéhenno;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2018-12;200067221;Realised;3600.0;Éolien;47.8922430084, -2.65141544204;56071
+Irodouër;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2018-12;200038990;;;Éolien;48.246152189, -1.95021443067;35135
+Kergloff;29;Finistère;CC Poher communauté;53;Bretagne;1;2018-12;242900744;Project;6900.0;Éolien;48.2804454858, -3.64568859404;29089
+Kergrist;56;Morbihan;CC Pontivy Communauté;53;Bretagne;3;2018-12;245614433;Realised;19698.0;Éolien;48.1472818466, -2.92787554336;56093
+La Gacilly;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2018-12;200066785;Realised;11980.0;Éolien;47.7728317091, -2.15651114837;56061
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;2;2018-12;200069391;Realised;9200.0;Éolien;48.4684404751, -2.49534815954;22093
+Lannéanou;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2018-12;242900835;Realised;4000.0;Éolien;48.4980971712, -3.66516986251;29114
+Larré;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2018-12;245614383;Realised;9200.0;Éolien;47.7158136416, -2.49456221297;56108
+Le Petit-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2018-12;200070662;Realised;10000.0;Éolien;47.9280508952, -1.61613769556;35218
+Le Rheu;35;Ille-et-Vilaine;Rennes Métropole;53;Bretagne;1;2018-12;243500139;;;Éolien;48.097397419, -1.78149989185;35240
+Les Fougerêts;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2018-12;243500741;Realised;12000.0;Éolien;47.7480373026, -2.19710765653;56060
+Louargat;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;;;Éolien;48.5612002546, -3.34101341684;22135
+Mauron;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;10000.0;Éolien;48.0820059121, -2.30432452661;56127
+Maxent;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2018-12;243500618;Realised;6000.0;Éolien;47.9788328525, -2.01519596065;35169
+Mohon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2018-12;200066777;Realised;20000.0;Éolien;48.0633640521, -2.49561629627;56134
+Montreuil-des-Landes;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;1;2018-12;200039022;Realised;12000.0;Éolien;48.2507630076, -1.22879248978;35192
+Moréac;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2018-12;200067221;Realised;16000.0;Éolien;47.9328057263, -2.80381737947;56140
+Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2018-12;200027027;Realised;10020.0;Éolien;47.5547990071, -2.47313130571;56143
+Noyal-Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2018-12;200027027;Project;12600.0;Éolien;47.5996326601, -2.45965724155;56149
+Noyal-sur-Vilaine;35;Ille-et-Vilaine;CC Pays de Châteaugiron Communauté;53;Bretagne;1;2018-12;243500659;Realised;800.0;Éolien;48.0914044616, -1.50548866524;35207
+Plaintel;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2018-12;200069409;;;Éolien;48.4105972441, -2.81039949193;22171
+Pleugriffet;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;10000.0;Éolien;47.9938347053, -2.69149691604;56160
+Plogastel-Saint-Germain;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2018-12;242900710;Realised;9200.0;Éolien;47.9772934585, -4.26371081296;29167
+Plonéis;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2018-12;200068120;;;Éolien;48.0113210792, -4.20934732708;29173
+Ploudalmézeau;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2018-12;242900074;Realised;9100.0;Éolien;48.5380194426, -4.66954529014;29178
+Plougras;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2018-12;200065928;Realised;6000.0;Éolien;48.4964328915, -3.56487485198;22217
+Plouguernével;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2018-12;242200715;Realised;4000.0;Éolien;48.2340717388, -3.24711732443;22220
+Plouider;29;Finistère;CC Communauté Lesneven Côte des Légendes;53;Bretagne;1;2018-12;242900793;;;Éolien;48.602186011, -4.29367754752;29198
+Plouisy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2018-12;200067981;Realised;6800.0;Éolien;48.5834889346, -3.19153287341;22223
+Ploulec'h;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2018-12;200065928;;;Éolien;48.7189901633, -3.50164887821;22224
+Plounévez-Quintin;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2018-12;242200715;Realised;2000.0;Éolien;48.2853424694, -3.24078209284;22229
+Plouyé;29;Finistère;CC Monts d'Arrée Communauté;53;Bretagne;1;2018-12;200067197;Realised;9200.0;Éolien;48.3207546118, -3.73395205776;29211
+Plélan-le-Grand;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2018-12;243500618;Realised;12000.0;Éolien;47.9968736139, -2.07990195207;35223
+Plésidy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Project;11000.0;Éolien;48.4414674679, -3.12592291873;22189
+Retiers;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2018-12;243500634;Realised;11500.0;Éolien;47.9060282888, -1.34373706233;35239
+Roudouallec;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2018-12;245614417;Realised;5600.0;Éolien;48.1198265822, -3.69385005734;56199
+Ruffiac;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2018-12;200066785;Realised;8000.0;Éolien;47.8135299611, -2.28477717582;56200
+Saint-Allouestre;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2018-12;200067221;Realised;9693.0;Éolien;47.9081978294, -2.73628511193;56204
+Saint-Barnabé;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2018-12;200067460;Realised;22000.0;Éolien;48.1383637671, -2.70188479455;22275
+Saint-Coulitz;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2018-12;200067247;Realised;8000.0;Éolien;48.1819241474, -4.06727219736;29243
+Saint-Gildas;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2018-12;200069409;Realised;9200.0;Éolien;48.4221536178, -3.00656525522;22291
+Saint-Servant;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;12000.0;Éolien;47.89876779, -2.5120013112;56236
+Saint-Thégonnec Loc-Eguiner;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2018-12;242900835;Realised;4000.0;Éolien;48.5113171528, -3.93813377559;29266
+Scaër;29;Finistère;CA Quimperlé Communauté;53;Bretagne;3;2018-12;242900694;Realised;29950.0;Éolien;48.0279903072, -3.73073835764;29274
+Silfiac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;3200.0;Éolien;48.1449436665, -3.17252446086;56245
+Séglien;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;9000.0;Éolien;48.102365362, -3.15150581727;56242
+Tinténiac;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2018-12;243500733;Project;8800.0;Éolien;48.3231993668, -1.83043308458;35337
+Trébry;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2018-12;200069391;Realised;9000.0;Éolien;48.3456919515, -2.55853331378;22345
+Trémeheuc;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2018-12;243500733;Realised;12000.0;Éolien;48.4389203583, -1.69745222978;35342
+Yvignac-la-Tour;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2018-12;200068989;Realised;8000.0;Éolien;48.3488527307, -2.17094067762;22391
+Allaire;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2019-12;243500741;Realised;8200.0;Éolien;47.6392193445, -2.17681507496;56001
+Bourbriac;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;Realised;10000.0;Éolien;48.465978498, -3.19983137965;22013
+Broons;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2019-12;200068989;;;Éolien;48.3108134882, -2.24133807266;22020
+Campénéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;12000.0;Éolien;47.962439437, -2.27757699452;56032
+Cast;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;3;2019-12;200067247;Realised;20000.0;Éolien;48.1490980732, -4.11928421519;29025
+Clohars-Carnoët;29;Finistère;CA Quimperlé Communauté;53;Bretagne;1;2019-12;242900694;;;Éolien;47.7943407144, -3.56681364982;29031
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2019-12;243500634;;;Éolien;47.8725233348, -1.41640449384;35082
+Crédin;56;Morbihan;CC Pontivy Communauté;53;Bretagne;2;2019-12;245614433;Realised;20000.0;Éolien;48.0385062482, -2.76505746928;56047
+Dirinon;29;Finistère;CC du Pays de Landerneau-Daoulas;53;Bretagne;1;2019-12;242900801;Realised;1700.0;Éolien;48.4011232723, -4.26930832464;29045
+Ergué-Gabéric;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2019-12;200068120;;;Éolien;48.0120306692, -4.0074505723;29051
+Goulien;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2019-12;242900629;Realised;6400.0;Éolien;48.0579729785, -4.59260441586;29063
+Gueltas;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;9000.0;Éolien;48.0920646623, -2.80987346419;56072
+Guerlédan;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;Realised;9200.0;Éolien;48.1957524474, -2.9837108711;22158
+Guiler-sur-Goyen;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2019-12;242900710;Realised;6000.0;Éolien;48.0170524015, -4.36131542798;29070
+Gurunhuel;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;;;Éolien;48.5082694097, -3.28883122732;22072
+Guégon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;10000.0;Éolien;47.9255876007, -2.58638209695;56070
+Kergrist-Moëlou;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;3;2019-12;242200715;Realised;26000.0;Éolien;48.29472326, -3.32538204171;22087
+La Bouëxière;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2019-12;243500774;;;Éolien;48.1743733249, -1.43646357128;35031
+La Chapelle-Neuve;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;Realised;4800.0;Éolien;48.4656069567, -3.4406776147;22037
+Lanfains;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2019-12;200069409;Realised;7500.0;Éolien;48.3653621373, -2.91178425275;22099
+Lanmeur;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2019-12;242900835;;;Éolien;48.6422856772, -3.72150726113;29113
+Magoar;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;Realised;5600.0;Éolien;48.4014791797, -3.17683150535;22139
+Martigné-Ferchaud;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2019-12;243500634;;;Éolien;47.8281952315, -1.32808258577;35167
+Bignan;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2017-12;200067221;Realised;2400.0;Éolien;47.8771804702, -2.75915073091;56017
+Bourbriac;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;Realised;10000.0;Éolien;48.465978498, -3.19983137965;22013
+Clohars-Carnoët;29;Finistère;CA Quimperlé Communauté;53;Bretagne;1;2017-12;242900694;;;Éolien;47.7943407144, -3.56681364982;29031
+Collorec;29;Finistère;CC de Haute-Cornouaille;53;Bretagne;1;2017-12;242900561;Realised;8000.0;Éolien;48.2916222474, -3.77150132255;29036
+Crédin;56;Morbihan;CC Pontivy Communauté;53;Bretagne;2;2017-12;245614433;Realised;20000.0;Éolien;48.0385062482, -2.76505746928;56047
+Dinéault;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2017-12;200067247;Realised;1200.0;Éolien;48.2166455285, -4.16674767247;29044
+Ergué-Gabéric;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2017-12;200068120;;;Éolien;48.0120306692, -4.0074505723;29051
+Goulien;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2017-12;242900629;Project;6400.0;Éolien;48.0579729785, -4.59260441586;29063
+Guerlédan;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;Realised;9200.0;Éolien;48.1957524474, -2.9837108711;22158
+Guiler-sur-Goyen;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2017-12;242900710;Project;2400.0;Éolien;48.0170524015, -4.36131542798;29070
+Guéhenno;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2017-12;200067221;Realised;3600.0;Éolien;47.8922430084, -2.65141544204;56071
+Iffendic;35;Ille-et-Vilaine;CC Montfort Communauté;53;Bretagne;2;2017-12;243500550;Realised;2510.0;Éolien;48.1137342706, -2.02411746064;35133
+Irodouër;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2017-12;200038990;;;Éolien;48.246152189, -1.95021443067;35135
+Kergrist;56;Morbihan;CC Pontivy Communauté;53;Bretagne;3;2017-12;245614433;Realised;19698.0;Éolien;48.1472818466, -2.92787554336;56093
+La Bouëxière;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2017-12;243500774;;;Éolien;48.1743733249, -1.43646357128;35031
+La Chapelle-Neuve;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;Project;4800.0;Éolien;48.4656069567, -3.4406776147;22037
+La Gacilly;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;2;2017-12;200066785;Realised;21980.0;Éolien;47.7728317091, -2.15651114837;56061
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2017-12;200069391;Project;4400.0;Éolien;48.4684404751, -2.49534815954;22093
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;2;2017-12;200069391;Realised;9200.0;Éolien;48.4684404751, -2.49534815954;22093
+Landunvez;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2017-12;242900074;Realised;4000.0;Éolien;48.5343990673, -4.72936031932;29109
+Landévennec;29;Finistère;CC Presqu'île de Crozon-Aulne maritime;53;Bretagne;1;2017-12;200066868;;;Éolien;48.2809218863, -4.31254922353;29104
+Lanfains;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2017-12;200069409;Realised;7500.0;Éolien;48.3653621373, -2.91178425275;22099
+Lohuec;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;Realised;9350.0;Éolien;48.4622299477, -3.52706033812;22132
+Marcillé-Raoul;35;Ille-et-Vilaine;CC Couesnon Marches de Bretagne;53;Bretagne;1;2017-12;200070688;Project;12000.0;Éolien;48.3743980511, -1.6139420088;35164
+Melgven;29;Finistère;CA Concarneau Cornouaille Agglomération;53;Bretagne;1;2017-12;242900769;Realised;6000.0;Éolien;47.9129471121, -3.84206992486;29146
+Moréac;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2017-12;200067221;Realised;16000.0;Éolien;47.9328057263, -2.80381737947;56140
+Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2017-12;200027027;Realised;10020.0;Éolien;47.5547990071, -2.47313130571;56143
+Plogastel-Saint-Germain;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2017-12;242900710;Realised;9200.0;Éolien;47.9772934585, -4.26371081296;29167
+Plomodiern;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2017-12;200067247;Realised;12500.0;Éolien;48.1808861007, -4.21781568947;29172
+Plouguin;29;Finistère;CC du Pays des Abers;53;Bretagne;2;2017-12;242900553;Realised;18000.0;Éolien;48.52926645, -4.59194113774;29196
+Plouider;29;Finistère;CC Communauté Lesneven Côte des Légendes;53;Bretagne;1;2017-12;242900793;;;Éolien;48.602186011, -4.29367754752;29198
+Plouisy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2017-12;200067981;Realised;6800.0;Éolien;48.5834889346, -3.19153287341;22223
+Plourin;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2017-12;242900074;Realised;3410.0;Éolien;48.503013638, -4.68383669582;29208
+Plumieux;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;Realised;8000.0;Éolien;48.1061077392, -2.59155562582;22241
+Plédéliac;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2017-12;200069391;Project;7500.0;Éolien;48.46875643, -2.37175488421;22175
+Plémy;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2017-12;200069391;Project;9300.0;Éolien;48.3378874008, -2.67639170288;22184
+Saint-Coulitz;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2017-12;200067247;Realised;8000.0;Éolien;48.1819241474, -4.06727219736;29243
+Saint-Laurent-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2017-12;200066785;Realised;8000.0;Éolien;47.7918218379, -2.31430772802;56224
+Saint-Martin-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2017-12;200066785;Realised;9000.0;Éolien;47.7625644099, -2.26391469379;56229
+Saint-Servant;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;12000.0;Éolien;47.89876779, -2.5120013112;56236
+Saint-Thégonnec Loc-Eguiner;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2017-12;242900835;Realised;4000.0;Éolien;48.5113171528, -3.93813377559;29266
+Sibiril;29;Finistère;CC Haut-Léon Communauté;53;Bretagne;1;2017-12;200067072;;;Éolien;48.6638575511, -4.07209865106;29276
+Trébry;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2017-12;200069391;Realised;9000.0;Éolien;48.3456919515, -2.55853331378;22345
+Ambon;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2018-12;200027027;Realised;10020.0;Éolien;47.5570972136, -2.54057380669;56002
+Boqueho;22;Côtes-d'Armor;CC Leff Armor Communauté;53;Bretagne;1;2018-12;200069086;Realised;8400.0;Éolien;48.4679009136, -2.98514567915;22011
+Buléon;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2018-12;200067221;Project;13200.0;Éolien;47.9204907078, -2.675100146;56027
+Clohars-Carnoët;29;Finistère;CA Quimperlé Communauté;53;Bretagne;1;2018-12;242900694;;;Éolien;47.7943407144, -3.56681364982;29031
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2018-12;243500634;Project;12000.0;Éolien;47.8725233348, -1.41640449384;35082
+Crédin;56;Morbihan;CC Pontivy Communauté;53;Bretagne;2;2018-12;245614433;Realised;20000.0;Éolien;48.0385062482, -2.76505746928;56047
+Forges de Lanouée;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;8000.0;Éolien;47.9872211991, -2.57567607546;56102
+Maxent;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2019-12;243500618;Realised;6000.0;Éolien;47.9788328525, -2.01519596065;35169
+Maël-Pestivien;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;Realised;5600.0;Éolien;48.4041439455, -3.29047753101;22138
+Melgven;29;Finistère;CA Concarneau Cornouaille Agglomération;53;Bretagne;1;2019-12;242900769;Realised;6000.0;Éolien;47.9129471121, -3.84206992486;29146
+Merdrignac;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2019-12;200067460;;;Éolien;48.1936252026, -2.39598361343;22147
+Moréac;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2019-12;200067221;Realised;16000.0;Éolien;47.9328057263, -2.80381737947;56140
+Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2019-12;200027027;Realised;10020.0;Éolien;47.5547990071, -2.47313130571;56143
+Ménéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2019-12;200066777;Realised;17600.0;Éolien;48.1310055293, -2.45348998168;56129
+Noyal-sous-Bazouges;35;Ille-et-Vilaine;CC Couesnon Marches de Bretagne;53;Bretagne;1;2019-12;200070688;;;Éolien;48.4173130249, -1.62400476475;35205
+Noyal-sur-Vilaine;35;Ille-et-Vilaine;CC Pays de Châteaugiron Communauté;53;Bretagne;1;2019-12;243500659;Realised;800.0;Éolien;48.0914044616, -1.50548866524;35207
+Parcé;35;Ille-et-Vilaine;CA Fougères Agglomération;53;Bretagne;1;2019-12;200072452;;;Éolien;48.2710203075, -1.19491182796;35214
+Plaintel;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2019-12;200069409;;;Éolien;48.4105972441, -2.81039949193;22171
+Plestan;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;2;2019-12;200069391;Realised;13800.0;Éolien;48.4145560996, -2.44084892144;22193
+Plogastel-Saint-Germain;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2019-12;242900710;Realised;9200.0;Éolien;47.9772934585, -4.26371081296;29167
+Plomodiern;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2019-12;200067247;Realised;12500.0;Éolien;48.1808861007, -4.21781568947;29172
+Plonéis;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2019-12;200068120;;;Éolien;48.0113210792, -4.20934732708;29173
+Plonéour-Lanvern;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2019-12;242900710;Realised;2300.0;Éolien;47.9084114652, -4.26536047982;29174
+Plouhinec;56;Morbihan;CC de Blavet Bellevue Océan;53;Bretagne;1;2019-12;245600440;;;Éolien;47.6929109171, -3.23358959435;56169
+Plouider;29;Finistère;CC Communauté Lesneven Côte des Légendes;53;Bretagne;1;2019-12;242900793;;;Éolien;48.602186011, -4.29367754752;29198
+Ploumoguer;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2019-12;242900074;;;Éolien;48.3995302533, -4.71529077573;29201
+Plounévez-Quintin;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2019-12;242200715;Realised;2000.0;Éolien;48.2853424694, -3.24078209284;22229
+Plouvien;29;Finistère;CC du Pays des Abers;53;Bretagne;1;2019-12;242900553;Realised;10400.0;Éolien;48.5390737689, -4.46505517448;29209
+Pluzunet;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2019-12;200065928;Realised;6000.0;Éolien;48.6363773229, -3.3712110927;22245
+Pléchâtel;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2019-12;200070662;Realised;4800.0;Éolien;47.8751941838, -1.73375846531;35221
+Plélan-le-Grand;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2019-12;243500618;Realised;12000.0;Éolien;47.9968736139, -2.07990195207;35223
+Plésidy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;;;Éolien;48.4414674679, -3.12592291873;22189
+Pouldergat;29;Finistère;CC Douarnenez Communauté;53;Bretagne;1;2019-12;242900645;Realised;6900.0;Éolien;48.0406832408, -4.32643354494;29224
+Québriac;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2019-12;243500733;;;Éolien;48.3560951211, -1.81258742693;35233
+Radenac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;;;Éolien;47.9491864881, -2.7130262254;56189
+Retiers;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2019-12;243500634;Realised;11500.0;Éolien;47.9060282888, -1.34373706233;35239
+Ruffiac;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2019-12;200066785;Realised;8000.0;Éolien;47.8135299611, -2.28477717582;56200
+Saint-Bihy;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2019-12;200069409;Realised;3200.0;Éolien;48.3758879251, -2.96669144631;22276
+Saint-Caradec;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;Realised;6150.0;Éolien;48.1922379278, -2.86751466131;22279
+Saint-Coulitz;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2019-12;200067247;Realised;8000.0;Éolien;48.1819241474, -4.06727219736;29243
+Saint-Laurent-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2019-12;200066785;Realised;8000.0;Éolien;47.7918218379, -2.31430772802;56224
+Saint-Servant;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;12000.0;Éolien;47.89876779, -2.5120013112;56236
+Saint-Uniac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2019-12;200038990;;;Éolien;48.1669783756, -2.03378556474;35320
+Scaër;29;Finistère;CA Quimperlé Communauté;53;Bretagne;3;2019-12;242900694;Realised;29950.0;Éolien;48.0279903072, -3.73073835764;29274
+Séglien;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;9000.0;Éolien;48.102365362, -3.15150581727;56242
+Trédias;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2019-12;200069391;;;Éolien;48.3653903588, -2.22290375179;22348
+Trégrom;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2019-12;200065928;;;Éolien;48.5946464284, -3.40266097261;22359
+Yvignac-la-Tour;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2019-12;200068989;Realised;8000.0;Éolien;48.3488527307, -2.17094067762;22391
+Allaire;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2020-12;243500741;Realised;8200.0;Éolien;47.6392193445, -2.17681507496;56001
+Bignan;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2020-12;200067221;Realised;2400.0;Éolien;47.8771804702, -2.75915073091;56017
+Bréhan;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;8200.0;Éolien;48.0699465844, -2.68732663005;56024
+Campénéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;12000.0;Éolien;47.962439437, -2.27757699452;56032
+Chasné-sur-Illet;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2020-12;243500774;;;Éolien;48.2351678517, -1.57162603055;35067
+Guerlédan;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;Realised;9200.0;Éolien;48.1957524474, -2.9837108711;22158
+Iffendic;35;Ille-et-Vilaine;CC Montfort Communauté;53;Bretagne;2;2020-12;243500550;Realised;2510.0;Éolien;48.1137342706, -2.02411746064;35133
+La Gacilly;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2020-12;200066785;Realised;11980.0;Éolien;47.7728317091, -2.15651114837;56061
+Landunvez;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2020-12;242900074;Realised;4000.0;Éolien;48.5343990673, -4.72936031932;29109
+Langoëlan;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2020-12;245614417;;;Éolien;48.1207904206, -3.23318501887;56099
+Lannéanou;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2020-12;242900835;Realised;4000.0;Éolien;48.4980971712, -3.66516986251;29114
+Larré;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2020-12;245614383;Realised;9200.0;Éolien;47.7158136416, -2.49456221297;56108
+Lohuec;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;9350.0;Éolien;48.4622299477, -3.52706033812;22132
+Loscouët-sur-Meu;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;;;Éolien;48.1756621507, -2.25102250347;22133
+Magoar;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;5600.0;Éolien;48.4014791797, -3.17683150535;22139
+Maël-Pestivien;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;5600.0;Éolien;48.4041439455, -3.29047753101;22138
+Mohon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2020-12;200066777;Realised;20000.0;Éolien;48.0633640521, -2.49561629627;56134
+Moréac;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2020-12;200067221;Realised;16000.0;Éolien;47.9328057263, -2.80381737947;56140
+Médréac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2020-12;200038990;;;Éolien;48.2612561283, -2.06133339808;35171
+Plestan;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;3;2020-12;200069391;Realised;21000.0;Éolien;48.4145560996, -2.44084892144;22193
+Plouguernével;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2020-12;242200715;Realised;4000.0;Éolien;48.2340717388, -3.24711732443;22220
+Plouguin;29;Finistère;CC du Pays des Abers;53;Bretagne;2;2020-12;242900553;Realised;18000.0;Éolien;48.52926645, -4.59194113774;29196
+Plouhinec;56;Morbihan;CC de Blavet Bellevue Océan;53;Bretagne;1;2020-12;245600440;;;Éolien;47.6929109171, -3.23358959435;56169
+Plounévez-Quintin;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2020-12;242200715;Realised;2000.0;Éolien;48.2853424694, -3.24078209284;22229
+Plumieux;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;Realised;8000.0;Éolien;48.1061077392, -2.59155562582;22241
+Pléchâtel;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2020-12;200070662;Realised;4800.0;Éolien;47.8751941838, -1.73375846531;35221
+Plémet;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2020-12;200067460;Realised;20000.0;Éolien;48.1860837585, -2.5859903316;22183
+Plésidy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;11000.0;Éolien;48.4414674679, -3.12592291873;22189
+Pouldergat;29;Finistère;CC Douarnenez Communauté;53;Bretagne;1;2020-12;242900645;Realised;6900.0;Éolien;48.0406832408, -4.32643354494;29224
+Radenac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;8200.0;Éolien;47.9491864881, -2.7130262254;56189
+Retiers;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2020-12;243500634;Realised;11500.0;Éolien;47.9060282888, -1.34373706233;35239
+Roudouallec;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2020-12;245614417;Realised;5600.0;Éolien;48.1198265822, -3.69385005734;56199
+Saint-Bihy;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2020-12;200069409;Realised;3200.0;Éolien;48.3758879251, -2.96669144631;22276
+Saint-Caradec;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;Realised;6150.0;Éolien;48.1922379278, -2.86751466131;22279
+Saint-Donan;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2020-12;200069409;;;Éolien;48.4657753573, -2.8865935093;22287
+Saint-Méloir-des-Ondes;35;Ille-et-Vilaine;CA du Pays de Saint Malo Agglomération;53;Bretagne;1;2020-12;243500782;;;Éolien;48.6387125438, -1.90517612803;35299
+Saint-Étienne-du-Gué-de-l'Isle;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;Realised;8000.0;Éolien;48.0856987745, -2.64402858884;22288
+Silfiac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;3200.0;Éolien;48.1449436665, -3.17252446086;56245
+Trégrom;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2020-12;200065928;;;Éolien;48.5946464284, -3.40266097261;22359
+Trémeheuc;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2020-12;243500733;Realised;12000.0;Éolien;48.4389203583, -1.69745222978;35342
+Balazé;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;2;2021-07;200039022;Realised;8900.0;Éolien;48.1777363541, -1.18302870433;35015
+Boqueho;22;Côtes-d'Armor;CC Leff Armor Communauté;53;Bretagne;1;2021-07;200069086;Realised;8400.0;Éolien;48.4679009136, -2.98514567915;22011
+Bréhan;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;8200.0;Éolien;48.0699465844, -2.68732663005;56024
+Chasné-sur-Illet;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2021-07;243500774;;;Éolien;48.2351678517, -1.57162603055;35067
+Collorec;29;Finistère;CC de Haute-Cornouaille;53;Bretagne;1;2021-07;242900561;Realised;8000.0;Éolien;48.2916222474, -3.77150132255;29036
+Crédin;56;Morbihan;CC Pontivy Communauté;53;Bretagne;2;2021-07;245614433;Realised;20000.0;Éolien;48.0385062482, -2.76505746928;56047
+Forges de Lanouée;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;8000.0;Éolien;47.9872211991, -2.57567607546;56102
+Gurunhuel;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;6000.0;Éolien;48.5082694097, -3.28883122732;22072
+Iffendic;35;Ille-et-Vilaine;CC Montfort Communauté;53;Bretagne;2;2021-07;243500550;Realised;2510.0;Éolien;48.1137342706, -2.02411746064;35133
+Kergrist;56;Morbihan;CC Pontivy Communauté;53;Bretagne;3;2021-07;245614433;Realised;19698.0;Éolien;48.1472818466, -2.92787554336;56093
+Kergrist-Moëlou;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;3;2021-07;242200715;Realised;26000.0;Éolien;48.29472326, -3.32538204171;22087
+La Chapelle-Neuve;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;4800.0;Éolien;48.4656069567, -3.4406776147;22037
+Landunvez;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2021-07;242900074;Realised;4000.0;Éolien;48.5343990673, -4.72936031932;29109
+Lanrivoaré;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2021-07;242900074;Realised;5150.0;Éolien;48.4660390019, -4.63526600246;29119
+Le Rheu;35;Ille-et-Vilaine;Rennes Métropole;53;Bretagne;1;2021-07;243500139;;;Éolien;48.097397419, -1.78149989185;35240
+Les Fougerêts;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2021-07;243500741;Realised;12000.0;Éolien;47.7480373026, -2.19710765653;56060
+Loscouët-sur-Meu;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;;;Éolien;48.1756621507, -2.25102250347;22133
+Louargat;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;;;Éolien;48.5612002546, -3.34101341684;22135
+Mahalon;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2021-07;242900629;Realised;6000.0;Éolien;48.0273634035, -4.41897227168;29143
+Mauron;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;10000.0;Éolien;48.0820059121, -2.30432452661;56127
+Maxent;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2021-07;243500618;Realised;6000.0;Éolien;47.9788328525, -2.01519596065;35169
+Melgven;29;Finistère;CA Concarneau Cornouaille Agglomération;53;Bretagne;1;2021-07;242900769;Realised;6000.0;Éolien;47.9129471121, -3.84206992486;29146
+Mohon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2021-07;200066777;Realised;20000.0;Éolien;48.0633640521, -2.49561629627;56134
+Montreuil-des-Landes;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;1;2021-07;200039022;Realised;12000.0;Éolien;48.2507630076, -1.22879248978;35192
+Moréac;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2021-07;200067221;Realised;16000.0;Éolien;47.9328057263, -2.80381737947;56140
+Médréac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2021-07;200038990;;;Éolien;48.2612561283, -2.06133339808;35171
+Noyal-sous-Bazouges;35;Ille-et-Vilaine;CC Couesnon Marches de Bretagne;53;Bretagne;1;2021-07;200070688;Realised;12000.0;Éolien;48.4173130249, -1.62400476475;35205
+Noyal-sur-Vilaine;35;Ille-et-Vilaine;CC Pays de Châteaugiron Communauté;53;Bretagne;1;2021-07;243500659;Realised;800.0;Éolien;48.0914044616, -1.50548866524;35207
+Plestan;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;3;2021-07;200069391;Realised;21000.0;Éolien;48.4145560996, -2.44084892144;22193
+Plouarzel;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2021-07;242900074;Realised;6700.0;Éolien;48.4388139541, -4.72098791588;29177
+Plouguernével;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2021-07;242200715;Realised;4000.0;Éolien;48.2340717388, -3.24711732443;22220
+Plouhinec;56;Morbihan;CC de Blavet Bellevue Océan;53;Bretagne;1;2021-07;245600440;;;Éolien;47.6929109171, -3.23358959435;56169
+Plouider;29;Finistère;CC Communauté Lesneven Côte des Légendes;53;Bretagne;1;2021-07;242900793;;;Éolien;48.602186011, -4.29367754752;29198
+Ploumoguer;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2021-07;242900074;Realised;5250.0;Éolien;48.3995302533, -4.71529077573;29201
+Plouyé;29;Finistère;CC Monts d'Arrée Communauté;53;Bretagne;1;2021-07;200067197;Realised;9200.0;Éolien;48.3207546118, -3.73395205776;29211
+Pouldergat;29;Finistère;CC Douarnenez Communauté;53;Bretagne;1;2021-07;242900645;Realised;6900.0;Éolien;48.0406832408, -4.32643354494;29224
+Radenac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;8200.0;Éolien;47.9491864881, -2.7130262254;56189
+Saint-Laurent-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2021-07;200066785;Realised;8000.0;Éolien;47.7918218379, -2.31430772802;56224
+Saint-Martin-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2021-07;200066785;Realised;9000.0;Éolien;47.7625644099, -2.26391469379;56229
+Saint-Étienne-du-Gué-de-l'Isle;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;Realised;8000.0;Éolien;48.0856987745, -2.64402858884;22288
+Sibiril;29;Finistère;CC Haut-Léon Communauté;53;Bretagne;1;2021-07;200067072;;;Éolien;48.6638575511, -4.07209865106;29276
+Trémeheuc;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2021-07;243500733;Realised;12000.0;Éolien;48.4389203583, -1.69745222978;35342
+Yvignac-la-Tour;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2021-07;200068989;Realised;8000.0;Éolien;48.3488527307, -2.17094067762;22391
+Allaire;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2017-12;243500741;Realised;8200.0;Éolien;47.6392193445, -2.17681507496;56001
+Beuzec-Cap-Sizun;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2017-12;242900629;Realised;1500.0;Éolien;48.0717542642, -4.50670939299;29008
+Campénéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;12000.0;Éolien;47.962439437, -2.27757699452;56032
+Cast;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;3;2017-12;200067247;Realised;20000.0;Éolien;48.1490980732, -4.11928421519;29025
+Caurel;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;Realised;4245.0;Éolien;48.2174929186, -3.03912120085;22033
+Chartres-de-Bretagne;35;Ille-et-Vilaine;Rennes Métropole;53;Bretagne;1;2017-12;243500139;;;Éolien;48.0451561683, -1.70650297343;35066
+Chasné-sur-Illet;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2017-12;243500774;;;Éolien;48.2351678517, -1.57162603055;35067
+Gosné;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2017-12;243500774;;;Éolien;48.2503523895, -1.45860853595;35121
+Grand-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;2;2017-12;200070662;Realised;12400.0;Éolien;47.7344338208, -1.72820099024;35124
+Guimaëc;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2017-12;242900835;;;Éolien;48.6787759026, -3.7057088823;29073
+Guégon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;10000.0;Éolien;47.9255876007, -2.58638209695;56070
+Langoëlan;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2017-12;245614417;Realised;1800.0;Éolien;48.1207904206, -3.23318501887;56099
+Le Mené;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2017-12;200067460;Realised;9950.0;Éolien;48.2937312654, -2.52246803693;22046
+Le Petit-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2017-12;200070662;Realised;10000.0;Éolien;47.9280508952, -1.61613769556;35218
+Le Rheu;35;Ille-et-Vilaine;Rennes Métropole;53;Bretagne;1;2017-12;243500139;;;Éolien;48.097397419, -1.78149989185;35240
+Les Fougerêts;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2017-12;243500741;Realised;12000.0;Éolien;47.7480373026, -2.19710765653;56060
+Magoar;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;Realised;5600.0;Éolien;48.4014791797, -3.17683150535;22139
+Maël-Pestivien;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;Realised;5600.0;Éolien;48.4041439455, -3.29047753101;22138
+Montreuil-le-Gast;35;Ille-et-Vilaine;CC du Val d'Ille-Aubigné;53;Bretagne;1;2017-12;243500667;;;Éolien;48.2442583442, -1.72080742537;35193
+Noyal-sur-Vilaine;35;Ille-et-Vilaine;CC Pays de Châteaugiron Communauté;53;Bretagne;1;2017-12;243500659;Realised;800.0;Éolien;48.0914044616, -1.50548866524;35207
+Plestan;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;2;2017-12;200069391;Realised;13800.0;Éolien;48.4145560996, -2.44084892144;22193
+Pleyber-Christ;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2017-12;242900835;Realised;8100.0;Éolien;48.5106294625, -3.87174749946;29163
+Plonéis;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2017-12;200068120;;;Éolien;48.0113210792, -4.20934732708;29173
+Ploulec'h;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2017-12;200065928;;;Éolien;48.7189901633, -3.50164887821;22224
+Ploumoguer;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2017-12;242900074;Realised;5250.0;Éolien;48.3995302533, -4.71529077573;29201
+Plouvien;29;Finistère;CC du Pays des Abers;53;Bretagne;1;2017-12;242900553;Realised;10400.0;Éolien;48.5390737689, -4.46505517448;29209
+Plozévet;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2017-12;242900710;Realised;6000.0;Éolien;47.9832115947, -4.40960157261;29215
+Pluduno;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2017-12;200068989;;;Éolien;48.5232615716, -2.28079325793;22237
+Pléchâtel;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2017-12;200070662;Realised;4800.0;Éolien;47.8751941838, -1.73375846531;35221
+Plémet;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2017-12;200067460;Realised;20000.0;Éolien;48.1860837585, -2.5859903316;22183
+Pont-Melvez;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2017-12;200067981;Realised;19500.0;Éolien;48.4740063925, -3.2849339382;22249
+Pouldergat;29;Finistère;CC Douarnenez Communauté;53;Bretagne;1;2017-12;242900645;Project;6900.0;Éolien;48.0406832408, -4.32643354494;29224
+Radenac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;8200.0;Éolien;47.9491864881, -2.7130262254;56189
+Roudouallec;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2017-12;245614417;Realised;5600.0;Éolien;48.1198265822, -3.69385005734;56199
+Saint-Allouestre;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2017-12;200067221;Realised;9693.0;Éolien;47.9081978294, -2.73628511193;56204
+Saint-Barnabé;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2017-12;200067460;Realised;22000.0;Éolien;48.1383637671, -2.70188479455;22275
+Saint-Donan;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2017-12;200069409;;;Éolien;48.4657753573, -2.8865935093;22287
+Saint-Malo-des-Trois-Fontaines;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;10000.0;Éolien;48.0174200107, -2.46820100361;56227
+Saint-Méloir-des-Ondes;35;Ille-et-Vilaine;CA du Pays de Saint Malo Agglomération;53;Bretagne;1;2017-12;243500782;;;Éolien;48.6387125438, -1.90517612803;35299
+Saint-Uniac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2017-12;200038990;;;Éolien;48.1669783756, -2.03378556474;35320
+Saint-Étienne-du-Gué-de-l'Isle;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;Realised;8000.0;Éolien;48.0856987745, -2.64402858884;22288
+Scaër;29;Finistère;CA Quimperlé Communauté;53;Bretagne;3;2017-12;242900694;Realised;29950.0;Éolien;48.0279903072, -3.73073835764;29274
+Teillay;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2017-12;200070662;Project;8000.0;Éolien;47.8077925322, -1.5223130707;35332
+Trédias;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2017-12;200069391;Project;7875.0;Éolien;48.3653903588, -2.22290375179;22348
+Trémeheuc;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2017-12;243500733;Realised;12000.0;Éolien;48.4389203583, -1.69745222978;35342
+Val d'Anast;35;Ille-et-Vilaine;CC Vallons de Haute-Bretagne Communauté;53;Bretagne;1;2017-12;200043990;Realised;8000.0;Éolien;47.8971012974, -1.99867854689;35168
+Balazé;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;2;2018-12;200039022;Realised;8900.0;Éolien;48.1777363541, -1.18302870433;35015
+Beuzec-Cap-Sizun;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2018-12;242900629;Realised;1500.0;Éolien;48.0717542642, -4.50670939299;29008
+Broons;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;2;2018-12;200068989;Project;14100.0;Éolien;48.3108134882, -2.24133807266;22020
+Bréhan;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;8200.0;Éolien;48.0699465844, -2.68732663005;56024
+Campénéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;12000.0;Éolien;47.962439437, -2.27757699452;56032
+Cast;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;3;2018-12;200067247;Realised;20000.0;Éolien;48.1490980732, -4.11928421519;29025
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;2;2018-12;243500634;Realised;18000.0;Éolien;47.8725233348, -1.41640449384;35082
+Dinéault;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2018-12;200067247;Realised;1200.0;Éolien;48.2166455285, -4.16674767247;29044
+Dirinon;29;Finistère;CC du Pays de Landerneau-Daoulas;53;Bretagne;1;2018-12;242900801;Realised;1700.0;Éolien;48.4011232723, -4.26930832464;29045
+Guiler-sur-Goyen;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2018-12;242900710;Realised;6000.0;Éolien;48.0170524015, -4.36131542798;29070
+La Bouëxière;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2018-12;243500774;;;Éolien;48.1743733249, -1.43646357128;35031
+La Chapelle-Neuve;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Realised;4800.0;Éolien;48.4656069567, -3.4406776147;22037
+Landévennec;29;Finistère;CC Presqu'île de Crozon-Aulne maritime;53;Bretagne;1;2018-12;200066868;;;Éolien;48.2809218863, -4.31254922353;29104
+Lanfains;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2018-12;200069409;Realised;7500.0;Éolien;48.3653621373, -2.91178425275;22099
+Langoëlan;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2018-12;245614417;Realised;1800.0;Éolien;48.1207904206, -3.23318501887;56099
+Lanrivoaré;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2018-12;242900074;Realised;5150.0;Éolien;48.4660390019, -4.63526600246;29119
+Le Mené;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2018-12;200067460;Realised;9950.0;Éolien;48.2937312654, -2.52246803693;22046
+Loscouët-sur-Meu;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;;;Éolien;48.1756621507, -2.25102250347;22133
+Magoar;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Realised;5600.0;Éolien;48.4014791797, -3.17683150535;22139
+Marcillé-Raoul;35;Ille-et-Vilaine;CC Couesnon Marches de Bretagne;53;Bretagne;1;2018-12;200070688;Project;12000.0;Éolien;48.3743980511, -1.6139420088;35164
+Maël-Pestivien;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Realised;5600.0;Éolien;48.4041439455, -3.29047753101;22138
+Melgven;29;Finistère;CA Concarneau Cornouaille Agglomération;53;Bretagne;1;2018-12;242900769;Realised;6000.0;Éolien;47.9129471121, -3.84206992486;29146
+Plestan;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;2;2018-12;200069391;Realised;13800.0;Éolien;48.4145560996, -2.44084892144;22193
+Plouarzel;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2018-12;242900074;Realised;6700.0;Éolien;48.4388139541, -4.72098791588;29177
+Plouguin;29;Finistère;CC du Pays des Abers;53;Bretagne;2;2018-12;242900553;Realised;18000.0;Éolien;48.52926645, -4.59194113774;29196
+Pléchâtel;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2018-12;200070662;Realised;4800.0;Éolien;47.8751941838, -1.73375846531;35221
+Plédéliac;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2018-12;200069391;Project;7200.0;Éolien;48.46875643, -2.37175488421;22175
+Pont-Melvez;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2018-12;200067981;Realised;19500.0;Éolien;48.4740063925, -3.2849339382;22249
+Saint-Alban;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2018-12;200069391;Realised;10000.0;Éolien;48.5551884911, -2.50893906207;22273
+Saint-Caradec;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;Realised;6150.0;Éolien;48.1922379278, -2.86751466131;22279
+Saint-Congard;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2018-12;200066785;Realised;8200.0;Éolien;47.7680806028, -2.32893095384;56211
+Saint-Donan;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2018-12;200069409;;;Éolien;48.4657753573, -2.8865935093;22287
+Saint-Malo-des-Trois-Fontaines;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;10000.0;Éolien;48.0174200107, -2.46820100361;56227
+Saint-Martin-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2018-12;200066785;Realised;9000.0;Éolien;47.7625644099, -2.26391469379;56229
+Sainte-Marie;35;Ille-et-Vilaine;CA Redon Agglomération;53;Bretagne;1;2018-12;243500741;Realised;1250.0;Éolien;47.6935116851, -2.01321068932;35294
+Sibiril;29;Finistère;CC Haut-Léon Communauté;53;Bretagne;1;2018-12;200067072;;;Éolien;48.6638575511, -4.07209865106;29276
+Teillay;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2018-12;200070662;Realised;8000.0;Éolien;47.8077925322, -1.5223130707;35332
+Val d'Anast;35;Ille-et-Vilaine;CC Vallons de Haute-Bretagne Communauté;53;Bretagne;1;2018-12;200043990;Realised;8000.0;Éolien;47.8971012974, -1.99867854689;35168
+Ambon;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2019-12;200027027;Realised;10020.0;Éolien;47.5570972136, -2.54057380669;56002
+Balazé;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;2;2019-12;200039022;Realised;8900.0;Éolien;48.1777363541, -1.18302870433;35015
+Beuzec-Cap-Sizun;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2019-12;242900629;Realised;1500.0;Éolien;48.0717542642, -4.50670939299;29008
+Bignan;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2019-12;200067221;Realised;2400.0;Éolien;47.8771804702, -2.75915073091;56017
+Buléon;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2019-12;200067221;;;Éolien;47.9204907078, -2.675100146;56027
+Chasné-sur-Illet;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2019-12;243500774;;;Éolien;48.2351678517, -1.57162603055;35067
+Collorec;29;Finistère;CC de Haute-Cornouaille;53;Bretagne;1;2019-12;242900561;Realised;8000.0;Éolien;48.2916222474, -3.77150132255;29036
+Dinéault;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2019-12;200067247;Realised;1200.0;Éolien;48.2166455285, -4.16674767247;29044
+Iffendic;35;Ille-et-Vilaine;CC Montfort Communauté;53;Bretagne;2;2019-12;243500550;Realised;2510.0;Éolien;48.1137342706, -2.02411746064;35133
+Irodouër;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2019-12;200038990;;;Éolien;48.246152189, -1.95021443067;35135
+La Noë-Blanche;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2019-12;200070662;;;Éolien;47.795066917, -1.7451274838;35202
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;3;2019-12;200069391;Realised;13900.0;Éolien;48.4684404751, -2.49534815954;22093
+Landunvez;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2019-12;242900074;Realised;4000.0;Éolien;48.5343990673, -4.72936031932;29109
+Langoëlan;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2019-12;245614417;Realised;1800.0;Éolien;48.1207904206, -3.23318501887;56099
+Lannéanou;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2019-12;242900835;Realised;4000.0;Éolien;48.4980971712, -3.66516986251;29114
+Lanrivain;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2019-12;242200715;Realised;8500.0;Éolien;48.3590715356, -3.21502057949;22115
+Lanrivoaré;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2019-12;242900074;Realised;5150.0;Éolien;48.4660390019, -4.63526600246;29119
+Larré;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2019-12;245614383;Realised;9200.0;Éolien;47.7158136416, -2.49456221297;56108
+Lauzach;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2019-12;245614383;Realised;10000.0;Éolien;47.6111902718, -2.55589461102;56109
+Le Haut-Corlay;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;Realised;9000.0;Éolien;48.3406704165, -3.03202477497;22074
+Le Mené;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2019-12;200067460;Realised;9950.0;Éolien;48.2937312654, -2.52246803693;22046
+Les Fougerêts;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2019-12;243500741;Realised;12000.0;Éolien;47.7480373026, -2.19710765653;56060
+Mahalon;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2019-12;242900629;Realised;6000.0;Éolien;48.0273634035, -4.41897227168;29143
+Mauron;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;10000.0;Éolien;48.0820059121, -2.30432452661;56127
+Mohon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2019-12;200066777;Realised;20000.0;Éolien;48.0633640521, -2.49561629627;56134
+Montauban-de-Bretagne;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;2;2019-12;200038990;;;Éolien;48.2028996948, -2.06476180878;35184
+Montreuil-le-Gast;35;Ille-et-Vilaine;CC du Val d'Ille-Aubigné;53;Bretagne;1;2019-12;243500667;;;Éolien;48.2442583442, -1.72080742537;35193
+Moustéru;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2019-12;200067981;Realised;16000.0;Éolien;48.5285458399, -3.23462058455;22156
+Plouarzel;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2019-12;242900074;Realised;6700.0;Éolien;48.4388139541, -4.72098791588;29177
+Plouguernével;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2019-12;242200715;Realised;4000.0;Éolien;48.2340717388, -3.24711732443;22220
+Plouigneau;29;Finistère;CA Morlaix Communauté;53;Bretagne;2;2019-12;242900835;Realised;10016.0;Éolien;48.5736126699, -3.7040741716;29199
+Plouisy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2019-12;200067981;Realised;6800.0;Éolien;48.5834889346, -3.19153287341;22223
+Ploumoguer;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2019-12;242900074;Realised;5250.0;Éolien;48.3995302533, -4.71529077573;29201
+Plourin;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2019-12;242900074;Realised;3410.0;Éolien;48.503013638, -4.68383669582;29208
+Plémy;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2019-12;200069391;Realised;9300.0;Éolien;48.3378874008, -2.67639170288;22184
+Radenac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;8200.0;Éolien;47.9491864881, -2.7130262254;56189
+Roudouallec;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2019-12;245614417;Realised;5600.0;Éolien;48.1198265822, -3.69385005734;56199
+Saint-Allouestre;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2019-12;200067221;Realised;9693.0;Éolien;47.9081978294, -2.73628511193;56204
+Saint-Barnabé;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2019-12;200067460;Realised;22000.0;Éolien;48.1383637671, -2.70188479455;22275
+Saint-Congard;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2019-12;200066785;Realised;8200.0;Éolien;47.7680806028, -2.32893095384;56211
+Saint-Gildas;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2019-12;200069409;Realised;9200.0;Éolien;48.4221536178, -3.00656525522;22291
+Saint-Malo-des-Trois-Fontaines;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;10000.0;Éolien;48.0174200107, -2.46820100361;56227
+Saint-Servais;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;Realised;5600.0;Éolien;48.3866899196, -3.37424456505;22328
+Saint-Étienne-du-Gué-de-l'Isle;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;Realised;8000.0;Éolien;48.0856987745, -2.64402858884;22288
+Sainte-Marie;35;Ille-et-Vilaine;CA Redon Agglomération;53;Bretagne;1;2019-12;243500741;Realised;1250.0;Éolien;47.6935116851, -2.01321068932;35294
+Teillay;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2019-12;200070662;Realised;8000.0;Éolien;47.8077925322, -1.5223130707;35332
+Balazé;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;2;2020-12;200039022;Realised;8900.0;Éolien;48.1777363541, -1.18302870433;35015
+Beuzec-Cap-Sizun;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2020-12;242900629;Realised;1500.0;Éolien;48.0717542642, -4.50670939299;29008
+Boqueho;22;Côtes-d'Armor;CC Leff Armor Communauté;53;Bretagne;1;2020-12;200069086;Realised;8400.0;Éolien;48.4679009136, -2.98514567915;22011
+Caurel;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;Realised;4245.0;Éolien;48.2174929186, -3.03912120085;22033
+Clohars-Carnoët;29;Finistère;CA Quimperlé Communauté;53;Bretagne;1;2020-12;242900694;;;Éolien;47.7943407144, -3.56681364982;29031
+Collorec;29;Finistère;CC de Haute-Cornouaille;53;Bretagne;1;2020-12;242900561;Realised;8000.0;Éolien;48.2916222474, -3.77150132255;29036
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;2;2020-12;243500634;Realised;18000.0;Éolien;47.8725233348, -1.41640449384;35082
+Dinéault;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2020-12;200067247;Realised;1200.0;Éolien;48.2166455285, -4.16674767247;29044
+Ergué-Gabéric;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2020-12;200068120;;;Éolien;48.0120306692, -4.0074505723;29051
+Gosné;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2020-12;243500774;;;Éolien;48.2503523895, -1.45860853595;35121
+Goulien;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2020-12;242900629;Realised;6400.0;Éolien;48.0579729785, -4.59260441586;29063
+Grand-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;2;2020-12;200070662;Realised;12400.0;Éolien;47.7344338208, -1.72820099024;35124
+Gueltas;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;9000.0;Éolien;48.0920646623, -2.80987346419;56072
+Guiler-sur-Goyen;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2020-12;242900710;Realised;6000.0;Éolien;48.0170524015, -4.36131542798;29070
+Guégon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;10000.0;Éolien;47.9255876007, -2.58638209695;56070
+Kergrist-Moëlou;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;3;2020-12;242200715;Realised;26000.0;Éolien;48.29472326, -3.32538204171;22087
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;3;2020-12;200069391;Realised;13900.0;Éolien;48.4684404751, -2.49534815954;22093
+Landévennec;29;Finistère;CC Presqu'île de Crozon-Aulne maritime;53;Bretagne;1;2020-12;200066868;;;Éolien;48.2809218863, -4.31254922353;29104
+Lanrivain;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2020-12;242200715;Realised;8500.0;Éolien;48.3590715356, -3.21502057949;22115
+Lanrivoaré;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2020-12;242900074;Realised;5150.0;Éolien;48.4660390019, -4.63526600246;29119
+Le Haut-Corlay;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2020-12;200067460;Realised;9000.0;Éolien;48.3406704165, -3.03202477497;22074
+Le Mené;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2020-12;200067460;Realised;9950.0;Éolien;48.2937312654, -2.52246803693;22046
+Le Petit-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2020-12;200070662;Realised;10000.0;Éolien;47.9280508952, -1.61613769556;35218
+Maxent;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2020-12;243500618;Realised;6000.0;Éolien;47.9788328525, -2.01519596065;35169
+Montreuil-des-Landes;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;1;2020-12;200039022;Realised;12000.0;Éolien;48.2507630076, -1.22879248978;35192
+Moustéru;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2020-12;200067981;Realised;16000.0;Éolien;48.5285458399, -3.23462058455;22156
+Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2020-12;200027027;Realised;10020.0;Éolien;47.5547990071, -2.47313130571;56143
+Ménéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2020-12;200066777;Realised;17600.0;Éolien;48.1310055293, -2.45348998168;56129
+Noyal-sur-Vilaine;35;Ille-et-Vilaine;CC Pays de Châteaugiron Communauté;53;Bretagne;1;2020-12;243500659;Realised;800.0;Éolien;48.0914044616, -1.50548866524;35207
+Parcé;35;Ille-et-Vilaine;CA Fougères Agglomération;53;Bretagne;1;2020-12;200072452;;;Éolien;48.2710203075, -1.19491182796;35214
+Plaintel;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2020-12;200069409;;;Éolien;48.4105972441, -2.81039949193;22171
+Plogastel-Saint-Germain;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2020-12;242900710;Realised;9200.0;Éolien;47.9772934585, -4.26371081296;29167
+Plomodiern;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2020-12;200067247;Realised;12500.0;Éolien;48.1808861007, -4.21781568947;29172
+Plouigneau;29;Finistère;CA Morlaix Communauté;53;Bretagne;2;2020-12;242900835;Realised;10016.0;Éolien;48.5736126699, -3.7040741716;29199
+Plouisy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2020-12;200067981;Realised;6800.0;Éolien;48.5834889346, -3.19153287341;22223
+Ploulec'h;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2020-12;200065928;;;Éolien;48.7189901633, -3.50164887821;22224
+Plouvien;29;Finistère;CC du Pays des Abers;53;Bretagne;1;2020-12;242900553;Realised;10400.0;Éolien;48.5390737689, -4.46505517448;29209
+Plélan-le-Grand;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2020-12;243500618;Realised;12000.0;Éolien;47.9968736139, -2.07990195207;35223
+Saint-Alban;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2020-12;200069391;Realised;10000.0;Éolien;48.5551884911, -2.50893906207;22273
+Saint-Allouestre;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2020-12;200067221;Realised;9693.0;Éolien;47.9081978294, -2.73628511193;56204
+Saint-Barnabé;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2020-12;200067460;Realised;22000.0;Éolien;48.1383637671, -2.70188479455;22275
+Saint-Laurent-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2020-12;200066785;Realised;8000.0;Éolien;47.7918218379, -2.31430772802;56224
+Saint-Martin-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2020-12;200066785;Realised;9000.0;Éolien;47.7625644099, -2.26391469379;56229
+Saint-Servais;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;5600.0;Éolien;48.3866899196, -3.37424456505;22328
+Saint-Servant;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;12000.0;Éolien;47.89876779, -2.5120013112;56236
+Saint-Thégonnec Loc-Eguiner;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2020-12;242900835;Realised;4000.0;Éolien;48.5113171528, -3.93813377559;29266
+Sainte-Marie;35;Ille-et-Vilaine;CA Redon Agglomération;53;Bretagne;1;2020-12;243500741;Realised;1250.0;Éolien;47.6935116851, -2.01321068932;35294
+Teillay;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2020-12;200070662;Realised;8000.0;Éolien;47.8077925322, -1.5223130707;35332
+Yvignac-la-Tour;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2020-12;200068989;Realised;8000.0;Éolien;48.3488527307, -2.17094067762;22391
+Allaire;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2021-07;243500741;Realised;8200.0;Éolien;47.6392193445, -2.17681507496;56001
+Bourbriac;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;10000.0;Éolien;48.465978498, -3.19983137965;22013
+Buléon;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2021-07;200067221;Realised;13200.0;Éolien;47.9204907078, -2.675100146;56027
+Campénéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;12000.0;Éolien;47.962439437, -2.27757699452;56032
+Cast;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;3;2021-07;200067247;Realised;20000.0;Éolien;48.1490980732, -4.11928421519;29025
+Clohars-Carnoët;29;Finistère;CA Quimperlé Communauté;53;Bretagne;1;2021-07;242900694;;;Éolien;47.7943407144, -3.56681364982;29031
+Dinéault;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2021-07;200067247;Realised;1200.0;Éolien;48.2166455285, -4.16674767247;29044
+Grand-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;2;2021-07;200070662;Realised;12400.0;Éolien;47.7344338208, -1.72820099024;35124
+Guerlédan;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;Realised;9200.0;Éolien;48.1957524474, -2.9837108711;22158
+Guéhenno;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2021-07;200067221;Realised;15600.0;Éolien;47.8922430084, -2.65141544204;56071
+Irodouër;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2021-07;200038990;;;Éolien;48.246152189, -1.95021443067;35135
+La Gacilly;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2021-07;200066785;Realised;11980.0;Éolien;47.7728317091, -2.15651114837;56061
+Landévennec;29;Finistère;CC Presqu'île de Crozon-Aulne maritime;53;Bretagne;1;2021-07;200066868;;;Éolien;48.2809218863, -4.31254922353;29104
+Lanfains;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2021-07;200069409;Realised;7500.0;Éolien;48.3653621373, -2.91178425275;22099
+Lannéanou;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2021-07;242900835;Realised;4000.0;Éolien;48.4980971712, -3.66516986251;29114
+Lanrivain;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2021-07;242200715;Realised;8500.0;Éolien;48.3590715356, -3.21502057949;22115
+Larré;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2021-07;245614383;Realised;9200.0;Éolien;47.7158136416, -2.49456221297;56108
+Lauzach;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2021-07;245614383;Realised;10000.0;Éolien;47.6111902718, -2.55589461102;56109
+Le Mené;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2021-07;200067460;Realised;9950.0;Éolien;48.2937312654, -2.52246803693;22046
+Le Petit-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2021-07;200070662;Realised;10000.0;Éolien;47.9280508952, -1.61613769556;35218
+Lohuec;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;9350.0;Éolien;48.4622299477, -3.52706033812;22132
+Magoar;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;5600.0;Éolien;48.4014791797, -3.17683150535;22139
+Maël-Pestivien;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;5600.0;Éolien;48.4041439455, -3.29047753101;22138
+Montauban-de-Bretagne;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;2;2021-07;200038990;;;Éolien;48.2028996948, -2.06476180878;35184
+Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2021-07;200027027;Realised;10020.0;Éolien;47.5547990071, -2.47313130571;56143
+Ménéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2021-07;200066777;Realised;17600.0;Éolien;48.1310055293, -2.45348998168;56129
+Plonéis;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2021-07;200068120;;;Éolien;48.0113210792, -4.20934732708;29173
+Plonéour-Lanvern;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2021-07;242900710;Realised;2300.0;Éolien;47.9084114652, -4.26536047982;29174
+Ploudalmézeau;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2021-07;242900074;Realised;9100.0;Éolien;48.5380194426, -4.66954529014;29178
+Plouguin;29;Finistère;CC du Pays des Abers;53;Bretagne;2;2021-07;242900553;Realised;18000.0;Éolien;48.52926645, -4.59194113774;29196
+Plouigneau;29;Finistère;CA Morlaix Communauté;53;Bretagne;2;2021-07;242900835;Realised;10016.0;Éolien;48.5736126699, -3.7040741716;29199
+Plounévez-Quintin;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2021-07;242200715;Realised;2000.0;Éolien;48.2853424694, -3.24078209284;22229
+Plourin;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2021-07;242900074;Realised;3410.0;Éolien;48.503013638, -4.68383669582;29208
+Plouvien;29;Finistère;CC du Pays des Abers;53;Bretagne;1;2021-07;242900553;Realised;10400.0;Éolien;48.5390737689, -4.46505517448;29209
+Pluzunet;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2021-07;200065928;Realised;6000.0;Éolien;48.6363773229, -3.3712110927;22245
+Pléchâtel;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2021-07;200070662;Realised;4800.0;Éolien;47.8751941838, -1.73375846531;35221
+Plémet;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2021-07;200067460;Realised;20000.0;Éolien;48.1860837585, -2.5859903316;22183
+Plémy;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2021-07;200069391;Realised;9300.0;Éolien;48.3378874008, -2.67639170288;22184
+Pont-Melvez;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2021-07;200067981;Realised;19500.0;Éolien;48.4740063925, -3.2849339382;22249
+Saint-Alban;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2021-07;200069391;Realised;10000.0;Éolien;48.5551884911, -2.50893906207;22273
+Saint-Caradec;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;Realised;6150.0;Éolien;48.1922379278, -2.86751466131;22279
+Saint-Congard;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2021-07;200066785;Realised;8200.0;Éolien;47.7680806028, -2.32893095384;56211
+Saint-Gildas;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2021-07;200069409;Realised;9200.0;Éolien;48.4221536178, -3.00656525522;22291
+Saint-Servais;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2021-07;200067981;Realised;5600.0;Éolien;48.3866899196, -3.37424456505;22328
+Saint-Servant;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;12000.0;Éolien;47.89876779, -2.5120013112;56236
+Sainte-Marie;35;Ille-et-Vilaine;CA Redon Agglomération;53;Bretagne;1;2021-07;243500741;Realised;1250.0;Éolien;47.6935116851, -2.01321068932;35294
+Silfiac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;3200.0;Éolien;48.1449436665, -3.17252446086;56245
+Séglien;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;9000.0;Éolien;48.102365362, -3.15150581727;56242
+Teillay;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2021-07;200070662;Realised;8000.0;Éolien;47.8077925322, -1.5223130707;35332
+Trébry;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2021-07;200069391;Realised;9000.0;Éolien;48.3456919515, -2.55853331378;22345
+Val d'Anast;35;Ille-et-Vilaine;CC Vallons de Haute-Bretagne Communauté;53;Bretagne;1;2021-07;200043990;Realised;8000.0;Éolien;47.8971012974, -1.99867854689;35168
+Montauban-de-Bretagne;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;2;2018-12;200038990;;;Éolien;48.2028996948, -2.06476180878;35184
+Ménéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2018-12;200066777;Realised;17600.0;Éolien;48.1310055293, -2.45348998168;56129
+Montreuil-des-Landes;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;1;2019-12;200039022;Realised;12000.0;Éolien;48.2507630076, -1.22879248978;35192
+Médréac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2019-12;200038990;;;Éolien;48.2612561283, -2.06133339808;35171
+Noyal-Muzillac;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2019-12;200027027;;;Éolien;47.5996326601, -2.45965724155;56149
+Plestan;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;2;2019-12;200069391;;;Éolien;48.4145560996, -2.44084892144;22193
+Pleugriffet;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;10000.0;Éolien;47.9938347053, -2.69149691604;56160
+Pleyber-Christ;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2019-12;242900835;Realised;8100.0;Éolien;48.5106294625, -3.87174749946;29163
+Ploudalmézeau;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2019-12;242900074;Realised;9100.0;Éolien;48.5380194426, -4.66954529014;29178
+Plougras;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2019-12;200065928;Realised;6000.0;Éolien;48.4964328915, -3.56487485198;22217
+Plouguin;29;Finistère;CC du Pays des Abers;53;Bretagne;2;2019-12;242900553;Realised;18000.0;Éolien;48.52926645, -4.59194113774;29196
+Plouigneau;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2019-12;242900835;;;Éolien;48.5736126699, -3.7040741716;29199
+Ploulec'h;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2019-12;200065928;;;Éolien;48.7189901633, -3.50164887821;22224
+Ploumagoar;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2019-12;200067981;;;Éolien;48.5304587178, -3.109565675;22225
+Plouyé;29;Finistère;CC Monts d'Arrée Communauté;53;Bretagne;1;2019-12;200067197;Realised;9200.0;Éolien;48.3207546118, -3.73395205776;29211
+Ploërdut;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2019-12;245614417;;;Éolien;48.092400423, -3.28849567828;56163
+Plumieux;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;Realised;8000.0;Éolien;48.1061077392, -2.59155562582;22241
+Plémet;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2019-12;200067460;Realised;20000.0;Éolien;48.1860837585, -2.5859903316;22183
+Pont-Melvez;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2019-12;200067981;Realised;19500.0;Éolien;48.4740063925, -3.2849339382;22249
+Saint-Alban;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2019-12;200069391;Realised;10000.0;Éolien;48.5551884911, -2.50893906207;22273
+Saint-Donan;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2019-12;200069409;;;Éolien;48.4657753573, -2.8865935093;22287
+Saint-Martin-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2019-12;200066785;Realised;9000.0;Éolien;47.7625644099, -2.26391469379;56229
+Saint-Méloir-des-Ondes;35;Ille-et-Vilaine;CA du Pays de Saint Malo Agglomération;53;Bretagne;1;2019-12;243500782;;;Éolien;48.6387125438, -1.90517612803;35299
+Saint-Thégonnec Loc-Eguiner;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2019-12;242900835;Realised;4000.0;Éolien;48.5113171528, -3.93813377559;29266
+Sibiril;29;Finistère;CC Haut-Léon Communauté;53;Bretagne;1;2019-12;200067072;;;Éolien;48.6638575511, -4.07209865106;29276
+Silfiac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;3200.0;Éolien;48.1449436665, -3.17252446086;56245
+Tinténiac;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2019-12;243500733;;;Éolien;48.3231993668, -1.83043308458;35337
+Trébry;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2019-12;200069391;Realised;9000.0;Éolien;48.3456919515, -2.55853331378;22345
+Trémeheuc;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2019-12;243500733;Realised;12000.0;Éolien;48.4389203583, -1.69745222978;35342
+Val d'Anast;35;Ille-et-Vilaine;CC Vallons de Haute-Bretagne Communauté;53;Bretagne;1;2019-12;200043990;Realised;8000.0;Éolien;47.8971012974, -1.99867854689;35168
+Ambon;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2020-12;200027027;Realised;10020.0;Éolien;47.5570972136, -2.54057380669;56002
+Bourbriac;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;10000.0;Éolien;48.465978498, -3.19983137965;22013
+Cast;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;3;2020-12;200067247;Realised;20000.0;Éolien;48.1490980732, -4.11928421519;29025
+Cruguel;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;12000.0;Éolien;47.8775619552, -2.59076740576;56051
+Crédin;56;Morbihan;CC Pontivy Communauté;53;Bretagne;2;2020-12;245614433;Realised;20000.0;Éolien;48.0385062482, -2.76505746928;56047
+Dirinon;29;Finistère;CC du Pays de Landerneau-Daoulas;53;Bretagne;1;2020-12;242900801;Realised;1700.0;Éolien;48.4011232723, -4.26930832464;29045
+Forges de Lanouée;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;8000.0;Éolien;47.9872211991, -2.57567607546;56102
+Guern;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;8000.0;Éolien;48.034812094, -3.10210819961;56076
+Guimaëc;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2020-12;242900835;;;Éolien;48.6787759026, -3.7057088823;29073
+Guéhenno;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2020-12;200067221;Realised;15600.0;Éolien;47.8922430084, -2.65141544204;56071
+Irodouër;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2020-12;200038990;;;Éolien;48.246152189, -1.95021443067;35135
+Kergrist;56;Morbihan;CC Pontivy Communauté;53;Bretagne;3;2020-12;245614433;Realised;19698.0;Éolien;48.1472818466, -2.92787554336;56093
+La Bouëxière;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2020-12;243500774;;;Éolien;48.1743733249, -1.43646357128;35031
+La Chapelle-Neuve;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;Realised;4800.0;Éolien;48.4656069567, -3.4406776147;22037
+Lanfains;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2020-12;200069409;Realised;7500.0;Éolien;48.3653621373, -2.91178425275;22099
+Lauzach;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2020-12;245614383;Realised;10000.0;Éolien;47.6111902718, -2.55589461102;56109
+Le Rheu;35;Ille-et-Vilaine;Rennes Métropole;53;Bretagne;1;2020-12;243500139;;;Éolien;48.097397419, -1.78149989185;35240
+Les Fougerêts;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2020-12;243500741;Realised;12000.0;Éolien;47.7480373026, -2.19710765653;56060
+Louargat;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2020-12;200067981;;;Éolien;48.5612002546, -3.34101341684;22135
+Mahalon;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2020-12;242900629;Realised;6000.0;Éolien;48.0273634035, -4.41897227168;29143
+Mauron;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;10000.0;Éolien;48.0820059121, -2.30432452661;56127
+Melgven;29;Finistère;CA Concarneau Cornouaille Agglomération;53;Bretagne;1;2020-12;242900769;Realised;6000.0;Éolien;47.9129471121, -3.84206992486;29146
+Montauban-de-Bretagne;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;2;2020-12;200038990;;;Éolien;48.2028996948, -2.06476180878;35184
+Montreuil-le-Gast;35;Ille-et-Vilaine;CC du Val d'Ille-Aubigné;53;Bretagne;1;2020-12;243500667;;;Éolien;48.2442583442, -1.72080742537;35193
+Pleugriffet;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;10000.0;Éolien;47.9938347053, -2.69149691604;56160
+Pleyber-Christ;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2020-12;242900835;Realised;8100.0;Éolien;48.5106294625, -3.87174749946;29163
+Plonéis;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2020-12;200068120;;;Éolien;48.0113210792, -4.20934732708;29173
+Plonéour-Lanvern;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2020-12;242900710;Realised;2300.0;Éolien;47.9084114652, -4.26536047982;29174
+Plouarzel;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2020-12;242900074;Realised;6700.0;Éolien;48.4388139541, -4.72098791588;29177
+Ploudalmézeau;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2020-12;242900074;Realised;9100.0;Éolien;48.5380194426, -4.66954529014;29178
+Plougras;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2020-12;200065928;Realised;6000.0;Éolien;48.4964328915, -3.56487485198;22217
+Plouider;29;Finistère;CC Communauté Lesneven Côte des Légendes;53;Bretagne;1;2020-12;242900793;;;Éolien;48.602186011, -4.29367754752;29198
+Ploumoguer;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2020-12;242900074;Realised;5250.0;Éolien;48.3995302533, -4.71529077573;29201
+Plourin;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2020-12;242900074;Realised;3410.0;Éolien;48.503013638, -4.68383669582;29208
+Plouyé;29;Finistère;CC Monts d'Arrée Communauté;53;Bretagne;1;2020-12;200067197;Realised;9200.0;Éolien;48.3207546118, -3.73395205776;29211
+Pluzunet;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2020-12;200065928;Realised;6000.0;Éolien;48.6363773229, -3.3712110927;22245
+Plémy;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2020-12;200069391;Realised;9300.0;Éolien;48.3378874008, -2.67639170288;22184
+Pont-Melvez;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2020-12;200067981;Realised;19500.0;Éolien;48.4740063925, -3.2849339382;22249
+Ruffiac;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2020-12;200066785;Realised;8000.0;Éolien;47.8135299611, -2.28477717582;56200
+Saint-Congard;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2020-12;200066785;Realised;8200.0;Éolien;47.7680806028, -2.32893095384;56211
+Saint-Coulitz;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2020-12;200067247;Realised;8000.0;Éolien;48.1819241474, -4.06727219736;29243
+Saint-Gildas;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2020-12;200069409;Realised;9200.0;Éolien;48.4221536178, -3.00656525522;22291
+Saint-Malo-des-Trois-Fontaines;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2020-12;200066777;Realised;10000.0;Éolien;48.0174200107, -2.46820100361;56227
+Saint-Uniac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2020-12;200038990;;;Éolien;48.1669783756, -2.03378556474;35320
+Scaër;29;Finistère;CA Quimperlé Communauté;53;Bretagne;3;2020-12;242900694;Realised;29950.0;Éolien;48.0279903072, -3.73073835764;29274
+Sibiril;29;Finistère;CC Haut-Léon Communauté;53;Bretagne;1;2020-12;200067072;;;Éolien;48.6638575511, -4.07209865106;29276
+Séglien;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2020-12;245614433;Realised;9000.0;Éolien;48.102365362, -3.15150581727;56242
+Treffendel;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2020-12;243500618;Realised;8200.0;Éolien;48.0313953352, -2.00818373637;35340
+Trébry;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2020-12;200069391;Realised;9000.0;Éolien;48.3456919515, -2.55853331378;22345
+Val d'Anast;35;Ille-et-Vilaine;CC Vallons de Haute-Bretagne Communauté;53;Bretagne;1;2020-12;200043990;Realised;8000.0;Éolien;47.8971012974, -1.99867854689;35168
+Ambon;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2021-07;200027027;Realised;10020.0;Éolien;47.5570972136, -2.54057380669;56002
+Beuzec-Cap-Sizun;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2021-07;242900629;Realised;1500.0;Éolien;48.0717542642, -4.50670939299;29008
+Bignan;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2021-07;200067221;Realised;2400.0;Éolien;47.8771804702, -2.75915073091;56017
+Broons;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;2;2021-07;200068989;Realised;14100.0;Éolien;48.3108134882, -2.24133807266;22020
+Caurel;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;Realised;4245.0;Éolien;48.2174929186, -3.03912120085;22033
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;2;2021-07;243500634;Realised;18000.0;Éolien;47.8725233348, -1.41640449384;35082
+Cruguel;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;12000.0;Éolien;47.8775619552, -2.59076740576;56051
+Dirinon;29;Finistère;CC du Pays de Landerneau-Daoulas;53;Bretagne;1;2021-07;242900801;Realised;1700.0;Éolien;48.4011232723, -4.26930832464;29045
+Ergué-Gabéric;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2021-07;200068120;;;Éolien;48.0120306692, -4.0074505723;29051
+Gosné;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2021-07;243500774;;;Éolien;48.2503523895, -1.45860853595;35121
+Goulien;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2021-07;242900629;Realised;6400.0;Éolien;48.0579729785, -4.59260441586;29063
+Gueltas;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;9000.0;Éolien;48.0920646623, -2.80987346419;56072
+Guern;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;8000.0;Éolien;48.034812094, -3.10210819961;56076
+Guiler-sur-Goyen;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2021-07;242900710;Realised;6000.0;Éolien;48.0170524015, -4.36131542798;29070
+Guimaëc;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2021-07;242900835;;;Éolien;48.6787759026, -3.7057088823;29073
+Guégon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;10000.0;Éolien;47.9255876007, -2.58638209695;56070
+La Bouëxière;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2021-07;243500774;;;Éolien;48.1743733249, -1.43646357128;35031
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;3;2021-07;200069391;Realised;13900.0;Éolien;48.4684404751, -2.49534815954;22093
+Langoëlan;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2021-07;245614417;Realised;1800.0;Éolien;48.1207904206, -3.23318501887;56099
+Le Haut-Corlay;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;Realised;9000.0;Éolien;48.3406704165, -3.03202477497;22074
+Montreuil-le-Gast;35;Ille-et-Vilaine;CC du Val d'Ille-Aubigné;53;Bretagne;1;2021-07;243500667;;;Éolien;48.2442583442, -1.72080742537;35193
+Moustéru;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2021-07;200067981;Realised;16000.0;Éolien;48.5285458399, -3.23462058455;22156
+Parcé;35;Ille-et-Vilaine;CA Fougères Agglomération;53;Bretagne;1;2021-07;200072452;;;Éolien;48.2710203075, -1.19491182796;35214
+Plaintel;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2021-07;200069409;;;Éolien;48.4105972441, -2.81039949193;22171
+Pleugriffet;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2021-07;245614433;Realised;10000.0;Éolien;47.9938347053, -2.69149691604;56160
+Pleyber-Christ;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2021-07;242900835;Realised;8100.0;Éolien;48.5106294625, -3.87174749946;29163
+Plogastel-Saint-Germain;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2021-07;242900710;Realised;9200.0;Éolien;47.9772934585, -4.26371081296;29167
+Plomodiern;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2021-07;200067247;Realised;12500.0;Éolien;48.1808861007, -4.21781568947;29172
+Plougras;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2021-07;200065928;Realised;6000.0;Éolien;48.4964328915, -3.56487485198;22217
+Plouisy;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2021-07;200067981;Realised;6800.0;Éolien;48.5834889346, -3.19153287341;22223
+Ploulec'h;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2021-07;200065928;;;Éolien;48.7189901633, -3.50164887821;22224
+Plumieux;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2021-07;200067460;Realised;8000.0;Éolien;48.1061077392, -2.59155562582;22241
+Plélan-le-Grand;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2021-07;243500618;Realised;12000.0;Éolien;47.9968736139, -2.07990195207;35223
+Retiers;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2021-07;243500634;Realised;11500.0;Éolien;47.9060282888, -1.34373706233;35239
+Roudouallec;56;Morbihan;CC Roi Morvan Communauté;53;Bretagne;1;2021-07;245614417;Realised;5600.0;Éolien;48.1198265822, -3.69385005734;56199
+Ruffiac;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2021-07;200066785;Realised;8000.0;Éolien;47.8135299611, -2.28477717582;56200
+Saint-Allouestre;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2021-07;200067221;Realised;9693.0;Éolien;47.9081978294, -2.73628511193;56204
+Saint-Barnabé;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2021-07;200067460;Realised;22000.0;Éolien;48.1383637671, -2.70188479455;22275
+Saint-Bihy;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2021-07;200069409;Realised;3200.0;Éolien;48.3758879251, -2.96669144631;22276
+Saint-Coulitz;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2021-07;200067247;Realised;8000.0;Éolien;48.1819241474, -4.06727219736;29243
+Saint-Donan;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2021-07;200069409;;;Éolien;48.4657753573, -2.8865935093;22287
+Saint-Malo-des-Trois-Fontaines;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2021-07;200066777;Realised;10000.0;Éolien;48.0174200107, -2.46820100361;56227
+Saint-Méloir-des-Ondes;35;Ille-et-Vilaine;CA du Pays de Saint Malo Agglomération;53;Bretagne;1;2021-07;243500782;;;Éolien;48.6387125438, -1.90517612803;35299
+Saint-Thégonnec Loc-Eguiner;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2021-07;242900835;Realised;4000.0;Éolien;48.5113171528, -3.93813377559;29266
+Saint-Uniac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2021-07;200038990;;;Éolien;48.1669783756, -2.03378556474;35320
+Scaër;29;Finistère;CA Quimperlé Communauté;53;Bretagne;3;2021-07;242900694;Realised;29950.0;Éolien;48.0279903072, -3.73073835764;29274
+Treffendel;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2021-07;243500618;Realised;8200.0;Éolien;48.0313953352, -2.00818373637;35340
+Trégrom;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2021-07;200065928;;;Éolien;48.5946464284, -3.40266097261;22359
+Ambon;56;Morbihan;CC Arc Sud Bretagne;53;Bretagne;1;2017-12;200027027;Realised;10020.0;Éolien;47.5570972136, -2.54057380669;56002
+Balazé;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;2;2017-12;200039022;Realised;8900.0;Éolien;48.1777363541, -1.18302870433;35015
+Boqueho;22;Côtes-d'Armor;CC Leff Armor Communauté;53;Bretagne;1;2017-12;200069086;Realised;8400.0;Éolien;48.4679009136, -2.98514567915;22011
+Bréhan;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;8200.0;Éolien;48.0699465844, -2.68732663005;56024
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;2;2017-12;243500634;Project;18000.0;Éolien;47.8725233348, -1.41640449384;35082
+Cruguel;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;12000.0;Éolien;47.8775619552, -2.59076740576;56051
+Dirinon;29;Finistère;CC du Pays de Landerneau-Daoulas;53;Bretagne;1;2017-12;242900801;Realised;1700.0;Éolien;48.4011232723, -4.26930832464;29045
+Forges de Lanouée;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;8000.0;Éolien;47.9872211991, -2.57567607546;56102
+Goulien;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2017-12;242900629;Realised;6000.0;Éolien;48.0579729785, -4.59260441586;29063
+Gueltas;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;9000.0;Éolien;48.0920646623, -2.80987346419;56072
+Guern;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;8000.0;Éolien;48.034812094, -3.10210819961;56076
+Kergrist-Moëlou;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;3;2017-12;242200715;Realised;26000.0;Éolien;48.29472326, -3.32538204171;22087
+Lannéanou;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2017-12;242900835;Realised;4000.0;Éolien;48.4980971712, -3.66516986251;29114
+Lanrivain;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2017-12;242200715;Realised;8500.0;Éolien;48.3590715356, -3.21502057949;22115
+Lanrivoaré;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2017-12;242900074;Realised;5150.0;Éolien;48.4660390019, -4.63526600246;29119
+Larré;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2017-12;245614383;Realised;9200.0;Éolien;47.7158136416, -2.49456221297;56108
+Le Haut-Corlay;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;Realised;9000.0;Éolien;48.3406704165, -3.03202477497;22074
+Loscouët-sur-Meu;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;;;Éolien;48.1756621507, -2.25102250347;22133
+Louargat;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;;;Éolien;48.5612002546, -3.34101341684;22135
+Mahalon;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2017-12;242900629;Realised;6000.0;Éolien;48.0273634035, -4.41897227168;29143
+Mauron;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2017-12;200066777;Realised;10000.0;Éolien;48.0820059121, -2.30432452661;56127
+Maxent;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2017-12;243500618;Realised;6000.0;Éolien;47.9788328525, -2.01519596065;35169
+Mohon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2017-12;200066777;Realised;20000.0;Éolien;48.0633640521, -2.49561629627;56134
+Montauban-de-Bretagne;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;2;2017-12;200038990;;;Éolien;48.2028996948, -2.06476180878;35184
+Montreuil-des-Landes;35;Ille-et-Vilaine;CA Vitré Communauté;53;Bretagne;1;2017-12;200039022;Realised;12000.0;Éolien;48.2507630076, -1.22879248978;35192
+Moustéru;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2017-12;200067981;Realised;16000.0;Éolien;48.5285458399, -3.23462058455;22156
+Médréac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2017-12;200038990;;;Éolien;48.2612561283, -2.06133339808;35171
+Ménéac;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;2;2017-12;200066777;Realised;17600.0;Éolien;48.1310055293, -2.45348998168;56129
+Parcé;35;Ille-et-Vilaine;CA Fougères Agglomération;53;Bretagne;1;2017-12;200072452;;;Éolien;48.2710203075, -1.19491182796;35214
+Plaintel;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2017-12;200069409;;;Éolien;48.4105972441, -2.81039949193;22171
+Pleugriffet;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;10000.0;Éolien;47.9938347053, -2.69149691604;56160
+Plonéour-Lanvern;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2017-12;242900710;Realised;2300.0;Éolien;47.9084114652, -4.26536047982;29174
+Plouarzel;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2017-12;242900074;Realised;6700.0;Éolien;48.4388139541, -4.72098791588;29177
+Ploudalmézeau;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2017-12;242900074;Realised;9100.0;Éolien;48.5380194426, -4.66954529014;29178
+Plougras;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2017-12;200065928;Realised;6000.0;Éolien;48.4964328915, -3.56487485198;22217
+Plouguernével;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2017-12;242200715;Realised;4000.0;Éolien;48.2340717388, -3.24711732443;22220
+Plouhinec;56;Morbihan;CC de Blavet Bellevue Océan;53;Bretagne;1;2017-12;245600440;;;Éolien;47.6929109171, -3.23358959435;56169
+Plouigneau;29;Finistère;CA Morlaix Communauté;53;Bretagne;2;2017-12;242900835;Realised;10016.0;Éolien;48.5736126699, -3.7040741716;29199
+Plounévez-Quintin;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2017-12;242200715;Realised;2000.0;Éolien;48.2853424694, -3.24078209284;22229
+Plouyé;29;Finistère;CC Monts d'Arrée Communauté;53;Bretagne;1;2017-12;200067197;Project;9200.0;Éolien;48.3207546118, -3.73395205776;29211
+Pluzunet;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2017-12;200065928;Realised;6000.0;Éolien;48.6363773229, -3.3712110927;22245
+Plélan-le-Grand;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2017-12;243500618;Realised;12000.0;Éolien;47.9968736139, -2.07990195207;35223
+Retiers;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;1;2017-12;243500634;Realised;11500.0;Éolien;47.9060282888, -1.34373706233;35239
+Ruffiac;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2017-12;200066785;Realised;8000.0;Éolien;47.8135299611, -2.28477717582;56200
+Saint-Alban;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2017-12;200069391;Realised;10000.0;Éolien;48.5551884911, -2.50893906207;22273
+Saint-Bihy;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2017-12;200069409;Realised;3200.0;Éolien;48.3758879251, -2.96669144631;22276
+Saint-Caradec;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2017-12;200067460;Realised;6150.0;Éolien;48.1922379278, -2.86751466131;22279
+Saint-Congard;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2017-12;200066785;Realised;8200.0;Éolien;47.7680806028, -2.32893095384;56211
+Saint-Gildas;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2017-12;200069409;Realised;9200.0;Éolien;48.4221536178, -3.00656525522;22291
+Saint-Servais;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2017-12;200067981;Realised;5600.0;Éolien;48.3866899196, -3.37424456505;22328
+Sainte-Marie;35;Ille-et-Vilaine;CA Redon Agglomération;53;Bretagne;1;2017-12;243500741;Realised;1250.0;Éolien;47.6935116851, -2.01321068932;35294
+Silfiac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;3200.0;Éolien;48.1449436665, -3.17252446086;56245
+Séglien;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2017-12;245614433;Realised;9000.0;Éolien;48.102365362, -3.15150581727;56242
+Tinténiac;35;Ille-et-Vilaine;CC Bretagne Romantique;53;Bretagne;1;2017-12;243500733;Project;8800.0;Éolien;48.3231993668, -1.83043308458;35337
+Treffendel;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2017-12;243500618;Realised;8200.0;Éolien;48.0313953352, -2.00818373637;35340
+Trégrom;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2017-12;200065928;;;Éolien;48.5946464284, -3.40266097261;22359
+Yvignac-la-Tour;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2017-12;200068989;Realised;8000.0;Éolien;48.3488527307, -2.17094067762;22391
+Allaire;56;Morbihan;CA Redon Agglomération;53;Bretagne;1;2018-12;243500741;Realised;8200.0;Éolien;47.6392193445, -2.17681507496;56001
+Bignan;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;1;2018-12;200067221;Realised;2400.0;Éolien;47.8771804702, -2.75915073091;56017
+Bourbriac;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Realised;10000.0;Éolien;48.465978498, -3.19983137965;22013
+Caurel;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;Realised;4245.0;Éolien;48.2174929186, -3.03912120085;22033
+Cruguel;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;12000.0;Éolien;47.8775619552, -2.59076740576;56051
+Guimaëc;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2018-12;242900835;;;Éolien;48.6787759026, -3.7057088823;29073
+Guégon;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2018-12;200066777;Realised;10000.0;Éolien;47.9255876007, -2.58638209695;56070
+Iffendic;35;Ille-et-Vilaine;CC Montfort Communauté;53;Bretagne;2;2018-12;243500550;Realised;2510.0;Éolien;48.1137342706, -2.02411746064;35133
+Kergrist-Moëlou;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;3;2018-12;242200715;Realised;26000.0;Éolien;48.29472326, -3.32538204171;22087
+Lamballe-Armor;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2018-12;200069391;Project;4700.0;Éolien;48.4684404751, -2.49534815954;22093
+Landunvez;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2018-12;242900074;Realised;4000.0;Éolien;48.5343990673, -4.72936031932;29109
+Lanmeur;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2018-12;242900835;Project;6600.0;Éolien;48.6422856772, -3.72150726113;29113
+Lanrivain;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2018-12;242200715;Realised;8500.0;Éolien;48.3590715356, -3.21502057949;22115
+Lauzach;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2018-12;245614383;Realised;10000.0;Éolien;47.6111902718, -2.55589461102;56109
+Le Haut-Corlay;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;Realised;9000.0;Éolien;48.3406704165, -3.03202477497;22074
+Lohuec;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Realised;9350.0;Éolien;48.4622299477, -3.52706033812;22132
+Mahalon;29;Finistère;CC Cap Sizun - Pointe du Raz;53;Bretagne;1;2018-12;242900629;Realised;6000.0;Éolien;48.0273634035, -4.41897227168;29143
+Montreuil-le-Gast;35;Ille-et-Vilaine;CC du Val d'Ille-Aubigné;53;Bretagne;1;2018-12;243500667;;;Éolien;48.2442583442, -1.72080742537;35193
+Moustéru;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;2;2018-12;200067981;Realised;16000.0;Éolien;48.5285458399, -3.23462058455;22156
+Médréac;35;Ille-et-Vilaine;CC de Saint-Méen Montauban;53;Bretagne;1;2018-12;200038990;;;Éolien;48.2612561283, -2.06133339808;35171
+Parcé;35;Ille-et-Vilaine;CA Fougères Agglomération;53;Bretagne;1;2018-12;200072452;;;Éolien;48.2710203075, -1.19491182796;35214
+Pleyber-Christ;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2018-12;242900835;Realised;8100.0;Éolien;48.5106294625, -3.87174749946;29163
+Plomodiern;29;Finistère;CC Pleyben-Châteaulin-Porzay;53;Bretagne;1;2018-12;200067247;Realised;12500.0;Éolien;48.1808861007, -4.21781568947;29172
+Plonéour-Lanvern;29;Finistère;CC du Haut Pays Bigouden;53;Bretagne;1;2018-12;242900710;Realised;2300.0;Éolien;47.9084114652, -4.26536047982;29174
+Plouhinec;56;Morbihan;CC de Blavet Bellevue Océan;53;Bretagne;1;2018-12;245600440;;;Éolien;47.6929109171, -3.23358959435;56169
+Plouigneau;29;Finistère;CA Morlaix Communauté;53;Bretagne;2;2018-12;242900835;Realised;10016.0;Éolien;48.5736126699, -3.7040741716;29199
+Ploumoguer;29;Finistère;CC du Pays d'Iroise;53;Bretagne;1;2018-12;242900074;Realised;5250.0;Éolien;48.3995302533, -4.71529077573;29201
+Plourin;29;Finistère;CC du Pays d'Iroise;53;Bretagne;2;2018-12;242900074;Realised;3410.0;Éolien;48.503013638, -4.68383669582;29208
+Plouvien;29;Finistère;CC du Pays des Abers;53;Bretagne;1;2018-12;242900553;Realised;10400.0;Éolien;48.5390737689, -4.46505517448;29209
+Pluduno;22;Côtes-d'Armor;CA Dinan Agglomération;53;Bretagne;1;2018-12;200068989;;;Éolien;48.5232615716, -2.28079325793;22237
+Plumieux;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;Realised;8000.0;Éolien;48.1061077392, -2.59155562582;22241
+Pluzunet;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2018-12;200065928;Realised;6000.0;Éolien;48.6363773229, -3.3712110927;22245
+Plémet;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;2;2018-12;200067460;Realised;20000.0;Éolien;48.1860837585, -2.5859903316;22183
+Radenac;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2018-12;245614433;Realised;8200.0;Éolien;47.9491864881, -2.7130262254;56189
+Saint-Bihy;22;Côtes-d'Armor;CA Saint-Brieuc Armor Agglomération;53;Bretagne;1;2018-12;200069409;Realised;3200.0;Éolien;48.3758879251, -2.96669144631;22276
+Saint-Laurent-sur-Oust;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2018-12;200066785;Realised;8000.0;Éolien;47.7918218379, -2.31430772802;56224
+Saint-Méloir-des-Ondes;35;Ille-et-Vilaine;CA du Pays de Saint Malo Agglomération;53;Bretagne;1;2018-12;243500782;;;Éolien;48.6387125438, -1.90517612803;35299
+Saint-Servais;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2018-12;200067981;Realised;5600.0;Éolien;48.3866899196, -3.37424456505;22328
+Saint-Étienne-du-Gué-de-l'Isle;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2018-12;200067460;Realised;8000.0;Éolien;48.0856987745, -2.64402858884;22288
+Treffendel;35;Ille-et-Vilaine;CC de Brocéliande;53;Bretagne;1;2018-12;243500618;Realised;8200.0;Éolien;48.0313953352, -2.00818373637;35340
+Trédias;22;Côtes-d'Armor;CA de Lamballe Terre et Mer;53;Bretagne;1;2018-12;200069391;Project;7875.0;Éolien;48.3653903588, -2.22290375179;22348
+Trégrom;22;Côtes-d'Armor;CA Lannion-Trégor Communauté;53;Bretagne;1;2018-12;200065928;;;Éolien;48.5946464284, -3.40266097261;22359
+Boqueho;22;Côtes-d'Armor;CC Leff Armor Communauté;53;Bretagne;1;2019-12;200069086;Realised;8400.0;Éolien;48.4679009136, -2.98514567915;22011
+Bourbriac;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;3;2019-12;200067981;;;Éolien;48.465978498, -3.19983137965;22013
+Bréhan;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;8200.0;Éolien;48.0699465844, -2.68732663005;56024
+Caurel;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;Realised;4245.0;Éolien;48.2174929186, -3.03912120085;22033
+Coësmes;35;Ille-et-Vilaine;CC Roche aux Fées Communauté;53;Bretagne;2;2019-12;243500634;Realised;18000.0;Éolien;47.8725233348, -1.41640449384;35082
+Cruguel;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;12000.0;Éolien;47.8775619552, -2.59076740576;56051
+Forges de Lanouée;56;Morbihan;CC Ploërmel Communauté;53;Bretagne;1;2019-12;200066777;Realised;8000.0;Éolien;47.9872211991, -2.57567607546;56102
+Glomel;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2019-12;242200715;;;Éolien;48.2058975829, -3.38820300244;22061
+Gosné;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2019-12;243500774;;;Éolien;48.2503523895, -1.45860853595;35121
+Grand-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;2;2019-12;200070662;Realised;12400.0;Éolien;47.7344338208, -1.72820099024;35124
+Guern;56;Morbihan;CC Pontivy Communauté;53;Bretagne;1;2019-12;245614433;Realised;8000.0;Éolien;48.034812094, -3.10210819961;56076
+Guimaëc;29;Finistère;CA Morlaix Communauté;53;Bretagne;1;2019-12;242900835;;;Éolien;48.6787759026, -3.7057088823;29073
+Guéhenno;56;Morbihan;CC Centre Morbihan Communauté;53;Bretagne;2;2019-12;200067221;Realised;15600.0;Éolien;47.8922430084, -2.65141544204;56071
+Kergrist;56;Morbihan;CC Pontivy Communauté;53;Bretagne;3;2019-12;245614433;Realised;19698.0;Éolien;48.1472818466, -2.92787554336;56093
+Kergrist-Moëlou;22;Côtes-d'Armor;CC du Kreiz-Breizh (CCKB);53;Bretagne;1;2019-12;242200715;;;Éolien;48.29472326, -3.32538204171;22087
+La Gacilly;56;Morbihan;CC de l'Oust à Brocéliande;53;Bretagne;1;2019-12;200066785;Realised;11980.0;Éolien;47.7728317091, -2.15651114837;56061
+Landévennec;29;Finistère;CC Presqu'île de Crozon-Aulne maritime;53;Bretagne;1;2019-12;200066868;;;Éolien;48.2809218863, -4.31254922353;29104
+Le Petit-Fougeray;35;Ille-et-Vilaine;CC Bretagne porte de Loire Communauté;53;Bretagne;1;2019-12;200070662;Realised;10000.0;Éolien;47.9280508952, -1.61613769556;35218
+Le Rheu;35;Ille-et-Vilaine;Rennes Métropole;53;Bretagne;1;2019-12;243500139;;;Éolien;48.097397419, -1.78149989185;35240
+Lohuec;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;Realised;9350.0;Éolien;48.4622299477, -3.52706033812;22132
+Loscouët-sur-Meu;22;Côtes-d'Armor;CC Loudéac Communauté - Bretagne Centre;53;Bretagne;1;2019-12;200067460;;;Éolien;48.1756621507, -2.25102250347;22133
+Louargat;22;Côtes-d'Armor;CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat;53;Bretagne;1;2019-12;200067981;;;Éolien;48.5612002546, -3.34101341684;22135
+Malansac;56;Morbihan;CC Questembert Communauté;53;Bretagne;1;2019-12;245614383;;;Éolien;47.6861486744, -2.2997401984;56123
+Marcillé-Raoul;35;Ille-et-Vilaine;CC Couesnon Marches de Bretagne;53;Bretagne;1;2019-12;200070688;;;Éolien;48.3743980511, -1.6139420088;35164
+Chasné-sur-Illet;35;Ille-et-Vilaine;CC Liffré-Cormier Communauté;53;Bretagne;1;2018-12;243500774;;;Éolien;48.2351678517, -1.57162603055;35067
+Collorec;29;Finistère;CC de Haute-Cornouaille;53;Bretagne;1;2018-12;242900561;Realised;8000.0;Éolien;48.2916222474, -3.77150132255;29036
+Ergué-Gabéric;29;Finistère;CA Quimper Bretagne Occidentale;53;Bretagne;1;2018-12;200068120;;;Éolien;48.0120306692, -4.0074505723;29051
