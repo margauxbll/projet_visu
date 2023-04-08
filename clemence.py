@@ -3,6 +3,7 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
 from bokeh.models import HoverTool,Tabs, TabPanel
+import numpy as np
 
 eolien = pd.read_csv("data/installations-de-production-de-la-filiere-eolien-par-commune.csv", sep = ';')
 # print(eolien)
@@ -33,22 +34,48 @@ consommation = pd.read_csv("data/consommation-annuelle-delectricite-et-gaz-par-c
     #    'Coordonnées géographiques', 'Code Insee Commune'],
     #   dtype='object')
 
+#Converts decimal longitude/latitude to Web Mercator format
+def coor_wgs84_to_web_mercator(lon, lat):
+    k = 6378137
+    x = lon * (k * np.pi/180.0)
+    y = np.log(np.tan((90 + lat) * np.pi/360.0)) * k
+    return (x,y)
+
+
 coord_gps = eolien['Coordonnées géographiques'].str.split(",")
 lat = []
 long = []
 for lst in coord_gps:
-    lat.append(lst[0])
-    long.append(lst[1])
+    X,Y = coor_wgs84_to_web_mercator(lst[1],lst[0])
+    lat.append(X)
+    long.append(Y)
 
 eolien["latitude"] = lat
 eolien["longitude"] = long  
 
 source = ColumnDataSource(eolien)
 
-p1 = figure(x_axis_type="mercator", y_axis_type="mercator", 
-    active_scroll="wheel_zoom", title="Les différentes installations par commune")
+# print(eolien["Coordonnées géographiques"])
 
-p1.add_tile("CartoDB Positron")
-p1.asterisk('longitude','latitude',source=source,color="orange")
 
-show(p1)
+# #Création de la figure avec axes géographiques
+
+p = figure(x_axis_type="mercator", y_axis_type="mercator", active_scroll="wheel_zoom",title="Les différentes installations par commune")
+#Ajout d'un arrière plan de carte
+p.add_tile("CartoDB Positron")
+p.asterisk(X,Y,color="orange",size = 5)
+show(p)
+
+
+# #On crée la carte avec fond de carte
+# p = figure(x_axis_type="mercator", y_axis_type="mercator", active_scroll="wheel_zoom", title="Capitales des pays du monde")
+# p.add_tile("OSM")
+
+# #On crée des triangles pour toute les coordonnées x,y
+# p.triangle(x="coordx",y="coordy",source =source,size =5)
+
+# #On ajoute l'outil de survol qui va afficher le nom de pays et la capitale
+# hover_tool = HoverTool(tooltips=[( 'Pays', '@pays'),('Capitale', '@capitale')])
+# p.add_tools(hover_tool)
+
+# show(p)
