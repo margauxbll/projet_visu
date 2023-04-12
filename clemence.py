@@ -46,12 +46,13 @@ coord_gps = eolien['Coordonnées géographiques'].str.split(",")
 lat = []
 long = []
 for lst in coord_gps:
-    X,Y = coor_wgs84_to_web_mercator(lst[1],lst[0])
+    Y,X = coor_wgs84_to_web_mercator(float(lst[1]),float(lst[0]))
     lat.append(X)
     long.append(Y)
 
 eolien["latitude"] = lat
 eolien["longitude"] = long  
+
 
 source = ColumnDataSource(eolien)
 
@@ -63,7 +64,7 @@ source = ColumnDataSource(eolien)
 p = figure(x_axis_type="mercator", y_axis_type="mercator", active_scroll="wheel_zoom",title="Les différentes installations par commune")
 #Ajout d'un arrière plan de carte
 p.add_tile("CartoDB Positron")
-p.asterisk(X,Y,color="orange",size = 5)
+p.asterisk("longitude","latitude",source = source, color="orange",size = 5)
 show(p)
 
 
