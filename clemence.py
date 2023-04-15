@@ -3,7 +3,7 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
 from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column
-from bokeh.palettes import Turbo256
+from bokeh.palettes import Set3
 import numpy as np
 
 eolien = pd.read_csv("data/installations-de-production-de-la-filiere-eolien-par-commune.csv", sep = ';')
@@ -200,11 +200,28 @@ conso_gaz_2021 = consommation[(consommation["Année"]==2021)&(consommation["Fili
 conso_gaz_2021 = conso_gaz_2021['Consommation (MWh)']
 
 # Graphique sur la consommation de gaz et d'électricité, par département en fonction des années  --> 4 courbes sur le même graphique (CLEM)
+conso_gaz_finistere = consommation[(consommation["Libellé Département"]=="Finistère")]
+conso_gaz_finistere = conso_gaz_finistere.loc[:,['Consommation (MWh)','Année']]
+conso_gaz_cote_armor = consommation[(consommation["Libellé Département"]=="Côtes-d'Armor")]
+conso_gaz_cote_armor = conso_gaz_cote_armor.loc[:,['Consommation (MWh)','Année']]
+conso_gaz_ille_et_vilaine = consommation[(consommation["Libellé Département"]=="Ille-et-Vilaine")]
+conso_gaz_ille_et_vilaine = conso_gaz_ille_et_vilaine.loc[:,['Consommation (MWh)','Année']]
+conso_gaz_morbihan = consommation[(consommation["Libellé Département"]=="Morbihan")]
+conso_gaz_morbihan = conso_gaz_morbihan.loc[:,['Consommation (MWh)','Année']]
+# print(conso_gaz_morbihan)
 
+# Calcul de la conso moyenne par année pour chaque département
+moyennes = consommation.groupby(['Année',"Libellé Département"])['Consommation (MWh)'].mean()
+moyennes_df = moyennes.reset_index(name='consommation')
+print(moyennes_df)
+
+data1 = ColumnDataSource(moyennes_df)
 p2 = figure()
 p2.title.text = 'Cliquer pour masquer une année'
-for name, color in zip([e for e in range(2011,2022)], Turbo256[11]):
-    p2.line("x",name, source = )
+for name, color in zip(["Côtes-d'Armor","Finistère","Ille-et-Vilaine","Morbihan"],Set3[4]):
+    p2.line("Année","consommation", source =data1,line_width = 2, color = color, alpha = 0.8, legend_label=name)
+
+p2.legend.click_policy="mute"
 
 ############################### Mise en page ###################################################################
 titre = Div(text="""<h1>La Bretagne </h1>
@@ -218,5 +235,6 @@ layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,d
 
 #Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
-tabs = Tabs(tabs = [tab1])
-# show(tabs)
+tab2 = TabPanel(child = p2, title = "Consommation")
+tabs = Tabs(tabs = [tab1,tab2])
+show(tabs)
