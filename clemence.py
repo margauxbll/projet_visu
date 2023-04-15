@@ -11,7 +11,7 @@ eolien = pd.read_csv("data/installations-de-production-de-la-filiere-eolien-par-
 
 
 hydraulique = pd.read_csv("data/installations-de-production-de-la-filiere-hydraulique-par-commune.csv", sep = ';')
-print(hydraulique.columns)
+# print(hydraulique.columns)
 
 solaire = pd.read_csv("data/installations-de-production-de-la-filiere-solaire-par-commune.csv", sep = ';')
 # print(solaire)
@@ -104,23 +104,22 @@ p.add_tools(hover_tool)
 
 
 ################################## Ajout d'un data table ################################
-#Comptage du nombre d'installation par commune 
-nb_hydrau = hydraulique.groupby('Commune')['Code EPCI'].nunique() #Compter les athlètes par année, en regroupant les identifiants
-df_nb_hydrau = pd.DataFrame(nb_hydrau)
-print(df_nb_hydrau.columns)
+#Comptage du nombre d'installation hydraulique par commune 
+nb_hydrau = hydraulique.groupby('Date')['EPCI'].nunique() #Compter 
+# print(nb_hydrau)
 commune = hydraulique.loc[:,['Date','Commune']] #Extraction de l'association année / ville 
 commune.drop_duplicates(keep = 'first', inplace=True) #On ne conserve qu'une occurrence des liens année / ville
-# df_final_hydrau = pd.merge(nb_hydrau,commune,on="Date")
+df_final_hydrau = pd.merge(nb_hydrau,commune,on="Date")
 # print(df_final_hydrau.columns)
-# df_final_hydrau.columns = ["Date","Nb","City"] #Renommage des colonnes
-# print("Données finales : nombre d'hommes à la perche par édition : \n", df_final_hydrau)
+df_final_hydrau.columns = ["Date","Nb","Commune"] #Renommage des colonnes
+# print("Données finales : nombre d'installation hydraulique par commune et année : \n", df_final_hydrau)
 
-# columns = [
-#           TableColumn(field="Commune", title="Commune"),
-#         TableColumn(field="Date", title="Année"),
-#         TableColumn(field="Nb", title="Nombre d'hommes")  
-#     ]
-# data_table = DataTable(source=hydraulique, columns=columns, width=400, height=280)
+columns = [
+          TableColumn(field="Commune", title="Commune"),
+        TableColumn(field="Date", title="Année"),
+        TableColumn(field="Nb", title="Nombre d'installation hydraulique")  
+    ]
+data_table_hydrau = DataTable(source=hydraulique, columns=columns, width=400, height=280)
 
 
 
@@ -132,6 +131,6 @@ img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brie
 """)
 img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>
 """)
-layout = Column(titre,Row(p,(Column(comment,img,img2))))
+layout = Column(titre,Row(p,data_table_hydrau, (Column(comment,img,img2))))
 
-# show(layout)
+show(layout)
