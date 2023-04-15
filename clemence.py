@@ -27,8 +27,7 @@ consommation = pd.read_csv("data/consommation-annuelle-delectricite-et-gaz-par-c
 
 # Onglet 1 : Présentation
 
-
-# Onglet 2 : Les différentes installations par commune
+# Onglet 2 : Les différentes installations d'énergies renouvelables par commune
 # print(eolien.columns)
 # Index(['Commune', 'Code département', 'Département', 'EPCI', 'Code région',
     #    'Région', 'Compte', 'Date', 'Code EPCI',
@@ -93,9 +92,9 @@ p = figure(x_axis_type="mercator", y_axis_type="mercator", active_scroll="wheel_
 p.add_tile("CartoDB Positron")
 
 # Ajout des points
-p.circle('longitude','latitude',color='green',size=10,alpha=0.4, source=source,selection_color="firebrick",selection_alpha=0.3,legend_label="Eolien")
+p.circle('longitude','latitude',color='green',size=7,alpha=0.4, source=source,selection_color="firebrick",selection_alpha=0.3,legend_label="Eolien")
 p.circle(x="longitude",y="latitude",source =source_hydrau,size =7, alpha = 0.4, color = "blue",selection_alpha=0.3,legend_label="Hydraulique")
-p.circle(x="longitude",y="latitude",source =source_solaire,size =4,color = "grey",alpha = 0.4,selection_alpha=0.3,legend_label="Solaire")
+p.circle(x="longitude",y="latitude",source =source_solaire,size =4,color = "orange",alpha = 0.2,selection_alpha=0.3,legend_label="Solaire")
 p.legend.click_policy="hide"
 
 # On ajoute l'outil de survol qui va afficher le nom de pays et la capitale
@@ -104,33 +103,68 @@ p.add_tools(hover_tool)
 
 
 ################################## Ajout d'un data table ################################
-#Comptage du nombre d'installation hydraulique par commune 
-nb_hydrau = hydraulique.groupby('Date')['EPCI'].nunique() #Compter 
-# print(nb_hydrau)
-commune = hydraulique.loc[:,['Date','Commune']] #Extraction de l'association année / ville 
-commune.drop_duplicates(keep = 'first', inplace=True) #On ne conserve qu'une occurrence des liens année / ville
-df_final_hydrau = pd.merge(nb_hydrau,commune,on="Date")
-# print(df_final_hydrau.columns)
-df_final_hydrau.columns = ["Date","Nb","Commune"] #Renommage des colonnes
-# print("Données finales : nombre d'installation hydraulique par commune et année : \n", df_final_hydrau)
+# ----------- TABLE HYDRAULIQUE
+# Comptage du nombre d'installation hydraulique par année 
+nb_hydrau = hydraulique.groupby('Date') #Compter 
+count_by_year = nb_hydrau.size()
+df_nb_hydrau = count_by_year.reset_index(name='nombre_elements') # transformation en data.frame
+# print(df_nb_hydrau.columns)
+df_nb_hydrau.columns = ["Date","Nb"] #Renommage des colonnes
+donnees_nb_hydrau= ColumnDataSource(df_nb_hydrau)
 
 columns = [
-          TableColumn(field="Commune", title="Commune"),
         TableColumn(field="Date", title="Année"),
-        TableColumn(field="Nb", title="Nombre d'installation hydraulique")  
+        TableColumn(field="Nb", title="Nb hydraulique")  
     ]
-data_table_hydrau = DataTable(source=hydraulique, columns=columns, width=400, height=280)
+data_table_hydrau = DataTable(source=donnees_nb_hydrau, columns=columns, width=400, height=200)
+
+
+
+# ----------- TABLE EOLIENNE
+# Comptage du nombre d'installation éolienne par année 
+nb_eolien = eolien.groupby('Date') #Compter 
+count_by_year = nb_eolien.size()
+df_nb_eolien= count_by_year.reset_index(name='nombre_elements') # transformation en data.frame
+# print(df_nb_eolien.columns)
+df_nb_eolien.columns = ["Date","Nb"] #Renommage des colonnes
+donnees_nb_eolien= ColumnDataSource(df_nb_eolien)
+
+columns = [
+        TableColumn(field="Date", title="Année"),
+        TableColumn(field="Nb", title="Nb éolienne")  
+    ]
+data_table_eolien = DataTable(source=donnees_nb_eolien, columns=columns, width=400, height=200)
+
+
+
+# ----------- TABLE SOLAIRE
+# Comptage du nombre d'installation solaire par année 
+nb_solaire= solaire.groupby('Date') #Compter 
+count_by_year = nb_solaire.size()
+df_nb_solaire= count_by_year.reset_index(name='nombre_elements') # transformation en data.frame
+# print(df_nb_solaire.columns)
+df_nb_solaire.columns = ["Date","Nb"] #Renommage des colonnes
+donnees_nb_solaire= ColumnDataSource(df_nb_solaire)
+
+columns = [
+        TableColumn(field="Date", title="Année"),
+        TableColumn(field="Nb", title="Nb solaire")  
+    ]
+data_table_solaire = DataTable(source=donnees_nb_solaire, columns=columns, width=400, height=200)
 
 
 
 ############################### Mise en page ###################################################################
 titre = Div(text="""<h1>La Bretagne </h1>
 """)
-comment = Paragraph(text="La Bretagne est une région possédant un très grand nombre d'installation hydraulique, solaire et éolien")
+comment = Paragraph(text="La Bretagne est une région possédant un très grand nombre d'installation d'énergie renouvelable comme les installations hydrauliques, solaires et éoliennes")
 img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brieuc.jpg" width="600"/>
 """)
 img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>
 """)
-layout = Column(titre,Row(p,data_table_hydrau, (Column(comment,img,img2))))
+layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0))),p))
 
-show(layout)
+#Préparation des onglets
+tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
+tabs = Tabs(tabs = [tab1])
+show(tabs)
