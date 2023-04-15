@@ -96,9 +96,11 @@ print(consommation)
 #################### Consommation annuelle gaz/électricité par commune ####################
 ##########################################################################################
 
+# !!!!!!!!! MARGAUX (c'est clem lol ) va voir les selections que j'ai fait dans mon fichier à partir de la ligne 169 si tu as besoin 
+
 # Colonnes intéressantes : opérateur, année, filière, libellé catégorie consommation, libellé grand secteur, consommation, département
 
-# Graphique sur la consommation de gaz et d'électricité, par département en fonction des années  
+# Graphique sur la consommation de gaz et d'électricité, par département en fonction des années  --> 4 courbes sur le même graphique (CLEM)
 
 # Évolution de la consommation entre gaz et électricité par rapport aux années (faire somme de chaque pour chaque année et graphiques 2 lignes)
 

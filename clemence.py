@@ -3,6 +3,7 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
 from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column
+from bokeh.palettes import Turbo256
 import numpy as np
 
 eolien = pd.read_csv("data/installations-de-production-de-la-filiere-eolien-par-commune.csv", sep = ';')
@@ -153,6 +154,57 @@ columns = [
 data_table_solaire = DataTable(source=donnees_nb_solaire, columns=columns, width=400, height=200)
 
 
+################################################################################################################
+############################################ Onglet 5 ##########################################################
+################################################################################################################ 
+
+# Titre : consommation annuelle gaz/électricité par commune
+# Premier graphique : consommation de gaz selon les années et par commune
+# Deuxième graphique : conso d'électricité selon années et par commune (courbe --> 1 par années)
+# Troisème graphique : vbar pour chaque opérateur sa conso moyenne ? --> sachant qu'il n'y en a que 2 --> datatbale ou graph?
+
+data_conso = ColumnDataSource(consommation)
+
+# Construction du diagramme
+conso_gaz_2011 = consommation[(consommation["Année"]==2011)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2011 = conso_gaz_2011['Consommation (MWh)']
+
+conso_gaz_2012 = consommation[(consommation["Année"]==2012)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2012 = conso_gaz_2012['Consommation (MWh)']
+
+conso_gaz_2013 = consommation[(consommation["Année"]==2013)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2013= conso_gaz_2013['Consommation (MWh)']
+
+conso_gaz_2014 = consommation[(consommation["Année"]==2014)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2014 = conso_gaz_2014['Consommation (MWh)']
+
+conso_gaz_2015 = consommation[(consommation["Année"]==2015)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2015 = conso_gaz_2015['Consommation (MWh)']
+
+conso_gaz_2016 = consommation[(consommation["Année"]==2016)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2016= conso_gaz_2016['Consommation (MWh)']
+
+conso_gaz_2017 = consommation[(consommation["Année"]==2017)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2017= conso_gaz_2017['Consommation (MWh)']
+
+conso_gaz_2018 = consommation[(consommation["Année"]==2018)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2018 = conso_gaz_2018['Consommation (MWh)']
+
+conso_gaz_2019 = consommation[(consommation["Année"]==2019)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2019 = conso_gaz_2019['Consommation (MWh)']
+
+conso_gaz_2020 = consommation[(consommation["Année"]==2020)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2020 = conso_gaz_2020['Consommation (MWh)']
+
+conso_gaz_2021 = consommation[(consommation["Année"]==2021)&(consommation["Filière"]=="Gaz")]
+conso_gaz_2021 = conso_gaz_2021['Consommation (MWh)']
+
+# Graphique sur la consommation de gaz et d'électricité, par département en fonction des années  --> 4 courbes sur le même graphique (CLEM)
+
+p2 = figure()
+p2.title.text = 'Cliquer pour masquer une année'
+for name, color in zip([e for e in range(2011,2022)], Turbo256[11]):
+    p2.line("x",name, source = )
 
 ############################### Mise en page ###################################################################
 titre = Div(text="""<h1>La Bretagne </h1>
@@ -167,4 +219,4 @@ layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,d
 #Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
 tabs = Tabs(tabs = [tab1])
-show(tabs)
+# show(tabs)
