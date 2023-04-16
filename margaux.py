@@ -1,8 +1,9 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
-from bokeh.models import HoverTool,Tabs, TabPanel
+from bokeh.models import HoverTool,Tabs, TabPanel, Legend
 from bokeh.palettes import Turbo256
 from bokeh.transform import linear_cmap, factor_cmap
+from bokeh.io import output_notebook
 import numpy as np
 from pprint import pprint
 import json
@@ -27,71 +28,6 @@ parcs_naturels = pd.read_csv("data/parcs-naturels-regionaux-actifs-et-en-projet-
 consommation = pd.read_csv("data/consommation-annuelle-delectricite-et-gaz-par-commune-et-par-code-naf.csv", sep = ';')
 print(consommation)
 
-####################################################################
-#################### Carte réserves naturelles ####################
-##################################################################
-
-# Création d'un fichier json normalisé 
-#Première structure : dico qui à chaque nom de commune associe un dictionnaire
-
-
-# dicoCom = {}
-
-# for reserve in reserves_naturelles:
-
-#     #Est-ce qu'on voit la commune pour la première fois ?
-#     nom = reserve["nom_commune"]
-    
-#         macom = {}
-#         macom["commune"] = nom
-#         macom["photo"]= prod.get("nb_sites_photovoltaique_enedis",0)
-#         macom["bio"]= prod.get("nb_sites_bio_energie_enedis",0)
-#         macom["hydrau"]= prod.get("nb_sites_hydraulique_enedis",0)
-#         macom["cogen"] = prod.get("nb_sites_cogeneration_enedis",0)
-
-#         #Récupération des coordonnées 2D
-#         coords = prod["centroid"]
-#         X, Y = coor_wgs84_to_web_mercator(coords["lon"], coords["lat"])
-#         macom["pointx"] = X
-#         macom["pointy"] = Y
-
-#         #Récupération des coordonnées de zone
-#         zone = prod["geom"]["geometry"]["coordinates"][0][0]
-#         coord = [coor_wgs84_to_web_mercator(c[0], c[1]) for c in zone]
-#         macom["zonex"]=[c[0] for c in coord]
-#         macom["zoney"]=[c[1] for c in coord]
-
-#         dicoCom[nom] = macom
-
-
-#     else :
-#         macom = dicoCom[nom]
-#         macom["photo"]=macom["photo"]+ prod.get("nb_sites_photovoltaique_enedis",0)
-#         macom["bio"] = macom["bio"]+prod.get("nb_sites_bio_energie_enedis", 0)
-#         macom["hydrau"] = macom["hydrau"]+prod.get("nb_sites_hydraulique_enedis", 0)
-#         macom["cogen"] = macom["cogen"]+prod.get("nb_sites_cogeneration_enedis", 0)
-
-# final = list(dicoCom.values())
-# print(final)
-
-# with open("TD5/production_normalise.json", "w",encoding='utf-8') as jsonFile:
-#     jsonFile.write(json.dumps(final, indent = 4))
-
-
-
-
-# Onglet 3 : les réserves naturelles
-
-
-#Création de la figure avec arrière plan
-# nom = reserves_naturelles["nom_long"].unique()
-# p = figure(x_axis_type="mercator", y_axis_type="mercator", active_scroll="wheel_zoom", title="Les réserves naturelles en Bretagne")
-# p.add_tile("CartoDb Positron")
-# p.patches(xs="longitude",ys="latitude",source =source,alpha = 0.5,color = factor_cmap('nom_long', palette=Turbo256,factors = nom))
-# show(p)
-
-# Voir si on fait des patchs ou si on met juste un point mais c'est nul 
-
 ############################################################################################
 #################### Consommation annuelle gaz/électricité par commune ####################
 ##########################################################################################
@@ -109,6 +45,7 @@ print(consommation)
 # Graphique consommation en fonction du libellé de catégorie de consommation (bâtons aussi)
 
 # Somme des opérateurs (Enedis le plus utilisé)
+
 
 # Construction du diagramme 
 
@@ -198,22 +135,6 @@ for res in reserves:
 # with open("data/reserves_normalise.json", "w",encoding='utf-8') as jsonFile:
 #     jsonFile.write(json.dumps(final, indent = 4))
 
-#Chargement des données
-reserves_norm = pd.read_json("data/reserves_normalise.json", encoding='utf-8')
-source = ColumnDataSource(reserves_norm)
-
-#Carte 1 : Création d'une carte de patches des communes
-p1 = figure(x_axis_type="mercator", y_axis_type="mercator", 
-    active_scroll="wheel_zoom", title="Réserves naturelles de Bretagne")
-
-p1.add_tile("CartoDB Positron")
-p1.patches('zonex', 'zoney', color='blue', alpha=0.5, source=source)
-
-#Outil de survol pour afficher le nom de la commune
-hover_tool = HoverTool(tooltips=[( 'Nom ',   '@nom')])
-p1.add_tools(hover_tool)
-# show(p1)
-
 ######## Carte sur les parcs naturels régionaux ########
 
 fp_nat = open("data/parcs-naturels-regionaux-actifs-et-en-projet-de-bretagne.json","r",encoding='utf-8')
@@ -253,20 +174,32 @@ for parc in parcs:
 #     jsonFile.write(json.dumps(final, indent = 4))
 
 #Chargement des données
+reserves_norm = pd.read_json("data/reserves_normalise.json", encoding='utf-8')
+source_res = ColumnDataSource(reserves_norm)
+
 parcs_norm = pd.read_json("data/parcs_normalise.json", encoding='utf-8')
-source = ColumnDataSource(parcs_norm)
+source_parcs = ColumnDataSource(parcs_norm)
 
 #Carte 1 : Création d'une carte de patches des communes
-p2 = figure(x_axis_type="mercator", y_axis_type="mercator", 
-    active_scroll="wheel_zoom", title="Parcs naturels de Bretagne")
+carte = figure(x_axis_type="mercator", y_axis_type="mercator", 
+    active_scroll="wheel_zoom", title="Zones de Bretagne")
 
-p2.add_tile("CartoDB Positron")
-p2.patches('zonex', 'zoney', color='green', alpha=0.5, source=source)
+carte.add_tile("CartoDB Positron")
+patch_res = carte.patches('zonex', 'zoney', color='blue', alpha=0.5, source=source_res)
+patch_parcs = carte.patches('zonex', 'zoney', color='green', alpha=0.5, source=source_parcs)
 
 #Outil de survol pour afficher le nom de la commune
 hover_tool = HoverTool(tooltips=[( 'Nom ',   '@nom')])
-p2.add_tools(hover_tool)
-# show(p2)
+carte.add_tools(hover_tool)
 
+#La légende
+legend = Legend(items=[("Parcs naturels régionaux", [patch_parcs]),
+    ("Réserves naturelles", [patch_res])], location = 'top')
+carte.add_layout(legend,'below')
+
+legend.click_policy="hide"
+legend.title = "Cliquez sur une légende pour la masquer"
+
+# show(carte)
 
 
