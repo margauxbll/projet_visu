@@ -163,74 +163,58 @@ data_table_solaire = DataTable(source=donnees_nb_solaire, columns=columns, width
 # Deuxième graphique : conso d'électricité selon années et par commune (courbe --> 1 par années)
 # Troisème graphique : vbar pour chaque opérateur sa conso moyenne ? --> sachant qu'il n'y en a que 2 --> datatbale ou graph?
 
-data_conso = ColumnDataSource(consommation)
-
 # Construction du diagramme
-conso_gaz_2011 = consommation[(consommation["Année"]==2011)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2011 = conso_gaz_2011['Consommation (MWh)']
 
-conso_gaz_2012 = consommation[(consommation["Année"]==2012)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2012 = conso_gaz_2012['Consommation (MWh)']
-
-conso_gaz_2013 = consommation[(consommation["Année"]==2013)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2013= conso_gaz_2013['Consommation (MWh)']
-
-conso_gaz_2014 = consommation[(consommation["Année"]==2014)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2014 = conso_gaz_2014['Consommation (MWh)']
-
-conso_gaz_2015 = consommation[(consommation["Année"]==2015)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2015 = conso_gaz_2015['Consommation (MWh)']
-
-conso_gaz_2016 = consommation[(consommation["Année"]==2016)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2016= conso_gaz_2016['Consommation (MWh)']
-
-conso_gaz_2017 = consommation[(consommation["Année"]==2017)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2017= conso_gaz_2017['Consommation (MWh)']
-
-conso_gaz_2018 = consommation[(consommation["Année"]==2018)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2018 = conso_gaz_2018['Consommation (MWh)']
-
-conso_gaz_2019 = consommation[(consommation["Année"]==2019)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2019 = conso_gaz_2019['Consommation (MWh)']
-
-conso_gaz_2020 = consommation[(consommation["Année"]==2020)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2020 = conso_gaz_2020['Consommation (MWh)']
-
-conso_gaz_2021 = consommation[(consommation["Année"]==2021)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2021 = conso_gaz_2021['Consommation (MWh)']
-
+#############################################################################################################################################
 # Graphique sur la consommation de gaz et d'électricité, par département en fonction des années  --> 4 courbes sur le même graphique (CLEM)
-conso_gaz_finistere = consommation[(consommation["Libellé Département"]=="Finistère")]
-conso_gaz_finistere = conso_gaz_finistere.loc[:,['Consommation (MWh)','Année']]
-conso_gaz_cote_armor = consommation[(consommation["Libellé Département"]=="Côtes-d'Armor")]
-conso_gaz_cote_armor = conso_gaz_cote_armor.loc[:,['Consommation (MWh)','Année']]
-conso_gaz_ille_et_vilaine = consommation[(consommation["Libellé Département"]=="Ille-et-Vilaine")]
-conso_gaz_ille_et_vilaine = conso_gaz_ille_et_vilaine.loc[:,['Consommation (MWh)','Année']]
-conso_gaz_morbihan = consommation[(consommation["Libellé Département"]=="Morbihan")]
-conso_gaz_morbihan = conso_gaz_morbihan.loc[:,['Consommation (MWh)','Année']]
-# print(conso_gaz_morbihan)
-
 # Calcul de la conso moyenne par année pour chaque département
-moyennes = consommation.groupby(['Année',"Libellé Département"])['Consommation (MWh)'].mean()
+moyennes = consommation.groupby(['Année','Filière',"Libellé Département"])['Consommation (MWh)'].mean()
 moyennes_df = moyennes.reset_index(name='consommation')
 # print(moyennes_df)
 
-df_cote_armor = moyennes_df[moyennes_df["Libellé Département"]=="Côtes-d'Armor"]
+df_cote_armor = moyennes_df[(moyennes_df["Libellé Département"]=="Côtes-d'Armor")&(moyennes_df["Filière"]=="Electricité")]
+# print(df_cote_armor)
 data_ca = ColumnDataSource(df_cote_armor)
-df_morbihan = moyennes_df[moyennes_df["Libellé Département"]=="Morbihan"]
+df_morbihan = moyennes_df[(moyennes_df["Libellé Département"]=="Morbihan")&(moyennes_df["Filière"]=="Electricité")]
 data_m = ColumnDataSource(df_morbihan)
-df_Finistere = moyennes_df[moyennes_df["Libellé Département"]=="Finistère"]
+df_Finistere = moyennes_df[(moyennes_df["Libellé Département"]=="Finistère")&(moyennes_df["Filière"]=="Electricité")]
 data_f = ColumnDataSource(df_Finistere)
-df_ille_et_vilaine = moyennes_df[moyennes_df["Libellé Département"]=="Ille-et-Vilaine"]
+df_ille_et_vilaine = moyennes_df[(moyennes_df["Libellé Département"]=="Ille-et-Vilaine")&(moyennes_df["Filière"]=="Electricité")]
 data_i = ColumnDataSource(df_ille_et_vilaine)
 
 p2 = figure()
-p2.title.text = 'Evolution de la consommation de gaz par département entre 2011 et 2021'
+p2.title.text = "Evolution de la consommation d'électricité par département entre 2011 et 2021"
 p2.line("Année","consommation",source=data_ca, line_width = 2, color = "#78A1DE", alpha = 0.8,legend_label = "Côtes-d'Armor")
 p2.line("Année","consommation",source=data_m, line_width = 2, color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
 p2.line("Année","consommation",source=data_f, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
 p2.line("Année","consommation",source=data_i, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 p2.legend.click_policy="mute"
+
+
+###### Consommation de gaz par département
+
+df_cote_armor_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Côtes-d'Armor")&(moyennes_df["Filière"]=="Gaz")]
+data_ca_gaz = ColumnDataSource(df_cote_armor_gaz)
+# print(df_cote_armor_gaz)
+df_morbihan_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Morbihan")&(moyennes_df["Filière"]=="Gaz")]
+data_m_gaz = ColumnDataSource(df_morbihan_gaz)
+df_Finistere_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Finistère")&(moyennes_df["Filière"]=="Gaz")]
+data_f_gaz = ColumnDataSource(df_Finistere_gaz)
+df_ille_et_vilaine_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Ille-et-Vilaine")&(moyennes_df["Filière"]=="Gaz")]
+data_i_gaz = ColumnDataSource(df_ille_et_vilaine_gaz)
+
+p3= figure()
+p3.title.text = "Evolution de la consommation de gaz par département entre 2011 et 2021"
+p3.line("Année","consommation",source=data_ca_gaz, line_width = 2, color = "#78A1DE", alpha = 0.8,legend_label = "Côtes-d'Armor")
+p3.line("Année","consommation",source=data_m_gaz, line_width = 2, color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
+p3.line("Année","consommation",source=data_f_gaz, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
+p3.line("Année","consommation",source=data_i_gaz, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
+p3.legend.click_policy="mute"
+
+#Création des widgets
+# picker1 = ColorPicker(title="Couleur de ligne",color=points.glyph.line_color)
+# picker1.js_link('color', points.glyph, 'line_color')
+
 
 ############################### Mise en page ###################################################################
 titre = Div(text="""<h1>La Bretagne </h1>
@@ -241,10 +225,15 @@ img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brie
 img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>
 """)
 layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0))),p))
+layout2 = Column(Row(p2,p3))
+
 
 #Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
-tab2 = TabPanel(child = p2, title = "Consommation")
+tab2 = TabPanel(child = layout2, title = "Consommation de gaz et d'électricité")
 tabs = Tabs(tabs = [tab1,tab2])
-show(tabs)
+# show(tabs)
 
+
+
+# Test 
