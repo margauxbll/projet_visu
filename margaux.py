@@ -44,6 +44,8 @@ print(consommation)
 
 # Graphique consommation en fonction du libellé de catégorie de consommation (bâtons aussi)
 
+
+
 # Somme des opérateurs (Enedis le plus utilisé)
 
 
