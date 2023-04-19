@@ -213,20 +213,29 @@ conso_gaz_morbihan = conso_gaz_morbihan.loc[:,['Consommation (MWh)','Année']]
 # Calcul de la conso moyenne par année pour chaque département
 moyennes = consommation.groupby(['Année',"Libellé Département"])['Consommation (MWh)'].mean()
 moyennes_df = moyennes.reset_index(name='consommation')
-print(moyennes_df)
+# print(moyennes_df)
 
-data1 = ColumnDataSource(moyennes_df)
+df_cote_armor = moyennes_df[moyennes_df["Libellé Département"]=="Côtes-d'Armor"]
+data_ca = ColumnDataSource(df_cote_armor)
+df_morbihan = moyennes_df[moyennes_df["Libellé Département"]=="Morbihan"]
+data_m = ColumnDataSource(df_morbihan)
+df_Finistere = moyennes_df[moyennes_df["Libellé Département"]=="Finistère"]
+data_f = ColumnDataSource(df_Finistere)
+df_ille_et_vilaine = moyennes_df[moyennes_df["Libellé Département"]=="Ille-et-Vilaine"]
+data_i = ColumnDataSource(df_ille_et_vilaine)
+
 p2 = figure()
-p2.title.text = 'Cliquer pour masquer une année'
-for name, color in zip(["Côtes-d'Armor","Finistère","Ille-et-Vilaine","Morbihan"],Set3[4]):
-    p2.line("Année","consommation", source =data1,line_width = 2, color = color, alpha = 0.8, legend_label=name)
-
+p2.title.text = 'Evolution de la consommation de gaz par département entre 2011 et 2021'
+p2.line("Année","consommation",source=data_ca, line_width = 2, color = "#78A1DE", alpha = 0.8,legend_label = "Côtes-d'Armor")
+p2.line("Année","consommation",source=data_m, line_width = 2, color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
+p2.line("Année","consommation",source=data_f, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
+p2.line("Année","consommation",source=data_i, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 p2.legend.click_policy="mute"
 
 ############################### Mise en page ###################################################################
 titre = Div(text="""<h1>La Bretagne </h1>
 """)
-comment = Paragraph(text="La Bretagne est une région possédant un très grand nombre d'installation d'énergie renouvelable comme les installations hydrauliques, solaires et éoliennes")
+comment = Paragraph(text="""<p>La Bretagne est une région possédant un très grand nombre d'installation d'énergie renouvelable \n comme les installations hydrauliques, solaires et éoliennes>""")
 img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brieuc.jpg" width="600"/>
 """)
 img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>
@@ -238,3 +247,4 @@ tab1 = TabPanel(child=layout, title="Les différentes installations de productio
 tab2 = TabPanel(child = p2, title = "Consommation")
 tabs = Tabs(tabs = [tab1,tab2])
 show(tabs)
+
