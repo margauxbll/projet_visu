@@ -40,13 +40,32 @@ print(consommation)
 
 # Évolution de la consommation entre gaz et électricité par rapport aux années (faire moy de chaque pour chaque année et graphiques 2 lignes)
 
+group_gaz_elec = consommation.groupby(by=['Année','Filière'])['Consommation (MWh)'].mean().reset_index()
+
+source_electricite = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filière'] == 'Electricité'])
+source_gaz = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filière'] == 'Gaz'])
+
+conso_gaz_elec = figure(title="Consommation de gaz et d'électricité en fonction des années", y_axis_label= 'Consommation', x_axis_label='Années')
+
+conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_gaz, legend_label="Gaz",color='red')
+conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_electricite, legend_label="Électricité",color='yellow')
+
+conso_gaz_elec.legend.location = "top_left"
+
+conso_gaz_elec.legend.click_policy="mute"
+
+show(conso_gaz_elec)
+
 # Graphique consommation en fonction du secteur (bâtons)
+
+
 
 # Graphique consommation en fonction du libellé de catégorie de consommation (bâtons aussi)
 
 
 
 # Somme des opérateurs (Enedis le plus utilisé)
+
 
 
 # Construction du diagramme 
