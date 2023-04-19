@@ -1,6 +1,6 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
-from bokeh.models import HoverTool,Tabs, TabPanel, Legend
+from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column, Legend
 from bokeh.palettes import Turbo256
 from bokeh.transform import linear_cmap, factor_cmap
 from bokeh.io import output_notebook
@@ -54,54 +54,39 @@ conso_gaz_elec.legend.location = "top_left"
 
 conso_gaz_elec.legend.click_policy="mute"
 
-show(conso_gaz_elec)
+# show(conso_gaz_elec)
 
 # Graphique consommation en fonction du secteur (bâtons)
 
 
 
-# Graphique consommation en fonction du libellé de catégorie de consommation (bâtons aussi)
-
-
-
 # Somme des opérateurs (Enedis le plus utilisé)
 
+conso_op = consommation.groupby('Opérateur') #Compter 
+count_by_conso = conso_op.size()
+df_nb_conso = count_by_conso.reset_index(name='nombre_elements') # transformation en data.frame
+df_nb_conso.columns = ["Opérateur","Nb"] #Renommage des colonnes
+donnees_nb_conso = ColumnDataSource(df_nb_conso)
+print(df_nb_conso)
+p = figure(x_range = df_nb_conso['Opérateur'].unique(), title="Nombre d'opérateurs")
 
+# Ajouter les barres
+p.vbar(x='Opérateur', top='Nb', width=0.9, source=donnees_nb_conso)
 
-# Construction du diagramme 
+# Ajouter des étiquettes pour les axes
+p.xaxis.axis_label = "Opérateur"
+p.yaxis.axis_label = "Nombre de lignes"
 
-conso_gaz_2011 = consommation[(consommation["Année"]==2011)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2011 = conso_gaz_2011['Consommation (MWh)']
+# Afficher le graphique dans le notebook
+# show(p)
 
-conso_gaz_2012 = consommation[(consommation["Année"]==2012)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2012 = conso_gaz_2012['Consommation (MWh)']
+columns = [
+        TableColumn(field="Opérateur", title="Opérateur"),
+        TableColumn(field="Nb", title="Nombre")  
+    ]
+data_table_nb_conso = DataTable(source=donnees_nb_conso, columns=columns, width=400, height=200)
 
-conso_gaz_2013 = consommation[(consommation["Année"]==2013)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2013= conso_gaz_2013['Consommation (MWh)']
-
-conso_gaz_2014 = consommation[(consommation["Année"]==2014)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2014 = conso_gaz_2014['Consommation (MWh)']
-
-conso_gaz_2015 = consommation[(consommation["Année"]==2015)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2015 = conso_gaz_2015['Consommation (MWh)']
-
-conso_gaz_2016 = consommation[(consommation["Année"]==2016)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2016= conso_gaz_2016['Consommation (MWh)']
-
-conso_gaz_2017 = consommation[(consommation["Année"]==2017)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2017= conso_gaz_2017['Consommation (MWh)']
-
-conso_gaz_2018 = consommation[(consommation["Année"]==2018)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2018 = conso_gaz_2018['Consommation (MWh)']
-
-conso_gaz_2019 = consommation[(consommation["Année"]==2019)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2019 = conso_gaz_2019['Consommation (MWh)']
-
-conso_gaz_2020 = consommation[(consommation["Année"]==2020)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2020 = conso_gaz_2020['Consommation (MWh)']
-
-conso_gaz_2021 = consommation[(consommation["Année"]==2021)&(consommation["Filière"]=="Gaz")]
-conso_gaz_2021 = conso_gaz_2021['Consommation (MWh)']
+# show(data_table_nb_conso)
 
 ######################################
 ############### CARTE ###############
