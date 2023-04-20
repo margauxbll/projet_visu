@@ -1,12 +1,14 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
 from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column, Legend
-from bokeh.palettes import Turbo256
+from bokeh.palettes import Turbo256, Category20c
 from bokeh.transform import linear_cmap, factor_cmap
 from bokeh.io import output_notebook
 import numpy as np
 from pprint import pprint
 import json
+from math import pi
+from bokeh.transform import cumsum
 # from shapely.geometry import MultiPolygon
 # import geopandas as gpd
 
@@ -58,7 +60,29 @@ conso_gaz_elec.legend.click_policy="mute"
 
 # Graphique consommation en fonction du secteur (bâtons)
 
+conso_secteur = consommation.groupby('Libellé Grand Secteur') #Compter 
+count_by_secteur = conso_secteur.size()
+df_nb_secteur = count_by_secteur.reset_index(name='nombre_elements') # transformation en data.frame
+df_nb_secteur.columns = ["Secteur","Nb"] #Renommage des colonnes
+donnees_nb_secteur = ColumnDataSource(df_nb_secteur)
+print(df_nb_secteur)
 
+# data = pd.Series(df_nb_secteur).reset_index(name='Nb')
+df_nb_secteur['angle'] = df_nb_secteur['Nb']/df_nb_secteur['Nb'].sum() * 2*pi
+df_nb_secteur['color'] = Category20c[len(df_nb_secteur)]
+
+pie = figure(height=350, title="Pie Chart de la répartition des différents secteurs", toolbar_location=None,
+           tools="hover", tooltips="@Secteur: @Nb", x_range=(-0.5, 1.0))
+
+pie.wedge(x=0, y=1, radius=0.4,
+        start_angle=cumsum('angle', include_zero=True), end_angle=cumsum('angle'),
+        line_color="white", fill_color='color', legend_field='Secteur', source=df_nb_secteur)
+
+pie.axis.axis_label = None
+pie.axis.visible = False
+pie.grid.grid_line_color = None
+
+show(pie)
 
 # Somme des opérateurs (Enedis le plus utilisé)
 
@@ -67,7 +91,7 @@ count_by_conso = conso_op.size()
 df_nb_conso = count_by_conso.reset_index(name='nombre_elements') # transformation en data.frame
 df_nb_conso.columns = ["Opérateur","Nb"] #Renommage des colonnes
 donnees_nb_conso = ColumnDataSource(df_nb_conso)
-print(df_nb_conso)
+# print(df_nb_conso)
 p = figure(x_range = df_nb_conso['Opérateur'].unique(), title="Nombre d'opérateurs")
 
 # Ajouter les barres

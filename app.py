@@ -399,7 +399,7 @@ img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" widt
 
 
 layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0))),p))
-layout2 = Column(titre2, Row(p2,p3), Row(carte,conso_gaz_elec),Row(p4))
+layout2 = Column(titre2, Row(p2,p3), Row(carte,conso_gaz_elec),Row(p4, data_table_nb_conso))
 
 
 #Préparation des onglets
