@@ -1,6 +1,6 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
-from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column, Legend
+from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column, Legend, ColorPicker
 from bokeh.palettes import Turbo256, Category20c
 from bokeh.transform import linear_cmap, factor_cmap
 from bokeh.io import output_notebook
@@ -9,6 +9,7 @@ from pprint import pprint
 import json
 from math import pi
 from bokeh.transform import cumsum
+from bokeh.layouts import row, column
 # from shapely.geometry import MultiPolygon
 # import geopandas as gpd
 
@@ -95,14 +96,18 @@ donnees_nb_conso = ColumnDataSource(df_nb_conso)
 p = figure(x_range = df_nb_conso['Opérateur'].unique(), title="Nombre d'opérateurs")
 
 # Ajouter les barres
-p.vbar(x='Opérateur', top='Nb', width=0.9, source=donnees_nb_conso)
+barre = p.vbar(x='Opérateur', top='Nb', width=0.9, source=donnees_nb_conso)
 
 # Ajouter des étiquettes pour les axes
 p.xaxis.axis_label = "Opérateur"
 p.yaxis.axis_label = "Nombre de lignes"
 
+picker1 = ColorPicker(title="Couleur de barre",color=barre.glyph.line_color)
+picker1.js_link('color', barre.glyph, 'line_color')
+
 # Afficher le graphique dans le notebook
-# show(p)
+layout = row(p, column(picker1))
+show(layout)
 
 columns = [
         TableColumn(field="Opérateur", title="Opérateur"),
