@@ -8,6 +8,9 @@ import json
 from pprint import pprint
 from bokeh.transform import linear_cmap, factor_cmap
 from bokeh.io import output_notebook
+from bokeh.palettes import Set3, Category20c
+from math import pi
+from bokeh.transform import cumsum
 
 eolien = pd.read_csv("data/installations-de-production-de-la-filiere-eolien-par-commune.csv", sep = ';')
 # print(eolien.columns)
@@ -384,6 +387,34 @@ legend.click_policy="hide"
 legend.title = "Cliquez sur une légende pour la masquer"
 
 
+
+#####################################################################
+# Graphique consommation en fonction du secteur (bâtons)
+
+conso_secteur = consommation.groupby('Libellé Grand Secteur') #Compter 
+count_by_secteur = conso_secteur.size()
+df_nb_secteur = count_by_secteur.reset_index(name='nombre_elements') # transformation en data.frame
+df_nb_secteur.columns = ["Secteur","Nb"] #Renommage des colonnes
+donnees_nb_secteur = ColumnDataSource(df_nb_secteur)
+print(df_nb_secteur)
+
+# data = pd.Series(df_nb_secteur).reset_index(name='Nb')
+df_nb_secteur['angle'] = df_nb_secteur['Nb']/df_nb_secteur['Nb'].sum() * 2*pi
+df_nb_secteur['color'] = Category20c[len(df_nb_secteur)]
+
+pie = figure(height=350, title="Pie Chart de la répartition des différents secteurs", toolbar_location=None,
+           tools="hover", tooltips="@Secteur: @Nb", x_range=(-0.5, 1.0))
+
+pie.wedge(x=0, y=1, radius=0.4,
+        start_angle=cumsum('angle', include_zero=True), end_angle=cumsum('angle'),
+        line_color="white", fill_color='color', legend_field='Secteur', source=df_nb_secteur)
+
+pie.axis.axis_label = None
+pie.axis.visible = False
+pie.grid.grid_line_color = None
+
+# show(pie)
+
 ######################################################################################################################################
 ##################################################### Mise en page ###################################################################
 ######################################################################################################################################
@@ -399,7 +430,7 @@ img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" widt
 
 
 layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0))),p))
-layout2 = Column(titre2, Row(p2,p3), Row(carte,conso_gaz_elec),Row(p4, data_table_nb_conso))
+layout2 = Column(titre2, Row(p2,p3), Row(carte,conso_gaz_elec),Row((Column(p4)), (Column(data_table_nb_conso,pie))))
 
 
 #Préparation des onglets

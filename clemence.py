@@ -3,7 +3,7 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show, ColumnDataSource
 from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row, Paragraph, DataTable, TableColumn, Column
-from bokeh.palettes import Set3
+from bokeh.palettes import Set3, Category20c
 import numpy as np
 
 eolien = pd.read_csv("data/installations-de-production-de-la-filiere-eolien-par-commune.csv", sep = ';')
@@ -215,6 +215,33 @@ p3.legend.click_policy="mute"
 # picker1 = ColorPicker(title="Couleur de ligne",color=points.glyph.line_color)
 # picker1.js_link('color', points.glyph, 'line_color')
 
+#####################################################################
+# Graphique consommation en fonction du secteur (bâtons)
+
+conso_secteur = consommation.groupby('Libellé Grand Secteur') #Compter 
+count_by_secteur = conso_secteur.size()
+df_nb_secteur = count_by_secteur.reset_index(name='nombre_elements') # transformation en data.frame
+df_nb_secteur.columns = ["Secteur","Nb"] #Renommage des colonnes
+donnees_nb_secteur = ColumnDataSource(df_nb_secteur)
+print(df_nb_secteur)
+
+# data = pd.Series(df_nb_secteur).reset_index(name='Nb')
+df_nb_secteur['angle'] = df_nb_secteur['Nb']/df_nb_secteur['Nb'].sum() * 2*pi
+df_nb_secteur['color'] = Category20c[len(df_nb_secteur)]
+
+pie = figure(height=350, title="Pie Chart de la répartition des différents secteurs", toolbar_location=None,
+           tools="hover", tooltips="@Secteur: @Nb", x_range=(-0.5, 1.0))
+
+pie.wedge(x=0, y=1, radius=0.4,
+        start_angle=cumsum('angle', include_zero=True), end_angle=cumsum('angle'),
+        line_color="white", fill_color='color', legend_field='Secteur', source=df_nb_secteur)
+
+pie.axis.axis_label = None
+pie.axis.visible = False
+pie.grid.grid_line_color = None
+
+show(pie)
+
 
 ############################### Mise en page ###################################################################
 titre = Div(text="""<h1>La Bretagne </h1>
@@ -225,7 +252,7 @@ img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brie
 img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>
 """)
 layout = Column(titre,Row((Column(comment,img,img2)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0))),p))
-layout2 = Column(Row(p2,p3))
+layout2 = Column(Row(p2,p3,pie))
 
 
 #Préparation des onglets
