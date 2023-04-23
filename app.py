@@ -63,7 +63,7 @@ pastel_theme = {
             "label_text_color": "#797979",
             "title_text_color": "#797979"
         },
-        "Text": {
+        "text": {
             "text_color": "#797979"
         },
         "Fill": {
@@ -93,13 +93,13 @@ curdoc().theme = theme
 titre = Div(text="""<h2>Les différentes installations de production d'énergie </h2>""",styles={"margin-left": "2em"})
 comment = Div(text="""La Bretagne dispose d'un potentiel important en matière de production d'énergies renouvelables, notamment éolienne, hydraulique et solaire. Ces installations sont en constante expansion.
 En ce qui concerne l'énergie éolienne, la Bretagne dispose d'un littoral favorable avec des vents puissants et constants. La région abrite actuellement plusieurs parcs éoliens tel que le parc éolien de la baie de Saint-Brieuc.
-La Bretagne est également dotée de sources d'énergie hydraulique, grâce à ses nombreux cours d'eau et à la présence de barrages.
+La Bretagne est également dotée de sources d'énergie hydraulique, grâce à ses nombreux cours d'eau et à la présence de barrages dont l'usine marémotrice, unique en Europe, du barrage de la Rance.
 En ce qui concerne l'énergie solaire, certes la Bretagne ne dispose pas du même potentiel que d'autres régions plus ensoleillées de France, mais il y a encore des projets en cours pour développer l'énergie solaire dans la région. Les panneaux solaires sont principalement installés sur les toits des bâtiments, pour capter au mieux les rayons du soleil.
-Nous pouvons tout de même observer que les installations solaires sont majoritaires dans la région.
-Dans l'ensemble, la Bretagne est une région qui possède de nombreuses énergies renouvelables pour réduire sa dépendance aux énergies fossiles et atteindre ses objectifs de réduction des émissions de gaz à effet de serre. Ces installations contribuent à protéger l'environnement.
-""",styles={'background-color': '#C3F9DF',"margin-left": "2em"},width=600)
-img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brieuc.jpg" width="600"/>""",styles={"margin-left": "2em"})
-img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>""",styles={"margin-left": "2em"})
+Nous pouvons tout de même observer sur la carte ci-contre que les installations solaires sont majoritaires dans la région.
+Dans l'ensemble, celle-ci possède de nombreuses énergies renouvelables pour réduire sa dépendance aux énergies fossiles et atteindre ses objectifs de réduction des émissions de gaz à effet de serre. Ces installations contribuent à protéger l'environnement.
+""",styles={'background-color': '#C3F9DF',"margin-left": "2em", "text_align": "justify"},width=600)
+img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brieuc.jpg" width="600"/>""", styles = {"margin-left":"2em"})
+img2 = Div(text="""<img src="data/barrage_de_Guerledan.jpg" width="600"/>""", styles = {"margin-left":"2em"})
 
 # -- Converts decimal longitude/latitude to Web Mercator format
 def coor_wgs84_to_web_mercator(lon, lat):
@@ -344,12 +344,12 @@ carte.title.align = 'center'
 
 # -- Commentaire carte :
 
-comment_carte_parc_et_reserve = Div(text="""La Bretagne est célèbre pour ses côtes, ses plages de sable fin, ses îles, ses forêts et ses landes sauvages. Elle compte plusieurs parcs naturels régionaux et réserves naturelles qui offrent la richesse de sa faune et de sa flore.
+comment_carte_parc_et_reserve = Div(text="""La Bretagne est célèbre pour ses côtes découpées, ses plages de sable fin, ses îles, ses forêts et ses landes sauvages. Elle compte plusieurs parcs naturels régionaux qui offrent la richesse de sa faune et de sa flore.
 La Bretagne abrite aussi plusieurs réserves naturelles qui sont des espaces protégés en raison de leur intérêt écologique et paysager.<br/> 
-Le Parc naturel régional d'Armorique (voir photo),situé dans le finistère est un parc naturel de 170 000 hectares. Ce parc est un mélange de montagnes, de forêts, de landes, de rivières et de côtes sauvages.<br/>
+Le Parc naturel régional d'Armorique (voir photo),situé dans le Finistère est un parc naturel de 170 000 hectares. Ce parc est un mélange de montagnes, de forêts, de landes, de rivières et de côtes sauvages.<br/>
 La Réserve naturelle nationale du Sillon de Talbert est une réserve naturelle située sur une langue de sable de 3,2 km de long. C'est un site géologique constitué d’un mélange de sable, de gravier et de galets. Sa taille fait de lui l'un des plus grand cordons de galets littoraux d'Europe.<br/>
-Cependant, en observant la carte, nous pouvons voir que le nombre de parcs naturels et de réserves naturelles restent très faibles en bretagne, notamment les réserves naturelles (en bleu sur la carte) qui sont très peu visible.""",
-styles={'background-color': '#d4f7ed'}, width = 600)
+Cependant, en observant la carte, nous pouvons voir que le nombre de parcs naturels et de réserves naturelles restent très faibles en bretagne, notamment les réserves naturelles (en bleu sur la carte) qui sont très peu visibles.""",
+styles={'background-color': '#d4f7ed',"text_align": "justify"}, width = 600)
 
 
 
@@ -361,7 +361,7 @@ styles={'background-color': '#d4f7ed'}, width = 600)
 titre3 = Div(text = """ <h2> L'évolution de la consommation d'électricité et de gaz en Bretagne""",styles={"margin-left": "2em"})
 
 ################################################# 1er Graphique #####################################################
-# -------------------- Evolution de la consommation d'électricité par département entre 2011 et 2021
+# -------------------- Évolution de la consommation d'électricité par département entre 2011 et 2021
 
 # -- Calcul de la conso moyenne par année pour chaque département
 moyennes = consommation.groupby(['Année','Filière',"Libellé Département"])['Consommation (MWh)'].mean()
@@ -383,13 +383,15 @@ data_i = ColumnDataSource(df_ille_et_vilaine)
 # -- Création du graphique 
 
 p2 = figure()
-p2.title.text = "Evolution de la consommation d'électricité par département entre 2011 et 2021"
+p2.title.text = "Évolution de la consommation d'électricité par département entre 2011 et 2021"
 ligne_ca = p2.line("Annee","consommation",source=data_ca, line_width = 4, line_color = "#cddef9", alpha = 0.8,legend_label = "Côtes-d'Armor")
 ligne_m = p2.line("Annee","consommation",source=data_m, line_width = 4,line_color = "#dafadb", alpha = 0.8,legend_label = "Morbihan")
 ligne_f = p2.line("Annee","consommation",source=data_f, line_width = 4, line_color = "#fcedfd", alpha = 0.8,legend_label = "Finistère")
 ligne_i = p2.line("Annee","consommation",source=data_i, line_width = 4, line_color = "#f8e1c4", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 p2.legend.click_policy="mute"
 p2.title.align = 'center'
+p2.xaxis.axis_label = "Années"
+p2.yaxis.axis_label = "Consommation (MWh)"
 
 # -- Création des widgets
 picker_ca = ColorPicker(title="Couleur de ligne Côtes-d'Armor",color=ligne_ca.glyph.line_color)
@@ -409,7 +411,7 @@ hover_tool = HoverTool(tooltips=[('Consommation (MWh)','@consommation'),('Année
 p2.add_tools(hover_tool)
 
 ################################################# 2 eme Graphique #####################################################
-# -------------------- Evolution de la consommation de gaz par département entre 2011 et 2021
+# -------------------- Évolution de la consommation de gaz par département entre 2011 et 2021
 
 df_cote_armor_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Côtes-d'Armor")&(moyennes_df["Filière"]=="Gaz")]
 data_ca_gaz = ColumnDataSource(df_cote_armor_gaz)
@@ -422,8 +424,8 @@ data_i_gaz = ColumnDataSource(df_ille_et_vilaine_gaz)
 
 # -- Création de la figure
 p3= figure()
-p3.title.text = "Evolution de la consommation de gaz par département entre 2011 et 2021"
-p3.xaxis.axis_label = "Annee"
+p3.title.text = "Évolution de la consommation de gaz par département entre 2011 et 2021"
+p3.xaxis.axis_label = "Années"
 p3.yaxis.axis_label = "Consommation (MWh)"
 ligne_ca2 = p3.line("Annee","consommation",source=data_ca_gaz, line_width = 4, color = "#cddef9", alpha = 0.8,legend_label = "Côtes-d'Armor")
 ligne_m2 = p3.line("Annee","consommation",source=data_m_gaz, line_width = 4, color = "#dafadb", alpha = 0.8,legend_label = "Morbihan")
@@ -447,13 +449,10 @@ p3.add_tools(hover_tool)
 # -- Commentaire
 
 comment_evol_conso = Div(text = """La Bretagne est une région qui consomme une quantité importante d'énergie pour répondre aux besoins de ses habitants et de ses industries. 
-
-<br/>En termes de production d'électricité, la Bretagne dépend principalement de l'importation d'électricité provenant des autres régions de la France, ainsi que de l'énergie éolienne et de l'énergie hydraulique. Sur le graphique "Evolution de la consommation d'électricité par département entre 2011 et 2021", nous constatons que le département des Côtes d'Armor est celui qui consomme le moins en terme d'électricité. Les trois autres départements de la région, quant à eux, ont une consommation assez similaire. Aussi, à partir de 2017, nous observons une diminution très importante de la consommation d'électricité pour les quatre départements. 
-
-<br/>En ce qui concerne la consommation de gaz, la Bretagne dispose d'un réseau de distribution de gaz naturel qui dessert les zones urbaines et industrielles. La région est plutôt tournée vers les énergies renouvelables, comme l'éolien, qui a un grand potentiel en raison de la forte exposition de la région aux vents. Sur le graphique "Evolution de la consommation de gaz par département entre 2011 et 2021", nous observons un schéma assez similaire que pour l'électricité mais dans des proportions différentes. En effet, les quatre départements de la région Bretagne ont une consommation de gaz beaucoup plus importante : entre 12 000 MWh pour les Côtes d'Armor et 19 000 MWh pour le Finistère.
-
-<br/> En somme, les trois graphiques nous permettent de constater que la région Bretagne utilise majoritairement le gaz pour l'énergie (voir graphique "Consommation de gaz et d'électricité en fonction des années"). La Bretagne est donc une région qui consomme une quantité importante d'énergie, mais qui est également engagée dans la transition énergétique en utilisant des sources d'énergie renouvelables pour répondre à ses besoins énergétiques.""",
-styles={'background-color': '#d4f7ed'}, width = 600)
+<br/>En termes de production d'électricité, la Bretagne dépend principalement de l'importation provenant des autres régions de la France, ainsi que de l'énergie éolienne et de l'énergie hydraulique. Sur le graphique "Évolution de la consommation d'électricité par département entre 2011 et 2021", nous constatons que le département des Côtes d'Armor est celui qui consomme le moins en terme d'électricité. Les trois autres départements de la région, quant à eux, ont une consommation assez similaire. Aussi, à partir de 2017, nous observons une diminution très importante de la consommation d'électricité pour les quatre départements. 
+<br/>Concernant la consommation de gaz naturel, la Bretagne dispose d'un réseau de distribution qui dessert les zones urbaines et industrielles. La région est plutôt tournée vers les énergies renouvelables, comme l'éolien, qui a un grand potentiel en raison de la forte exposition de la région aux vents. Sur le graphique "Évolution de la consommation de gaz par département entre 2011 et 2021", nous observons un schéma assez similaire que pour l'électricité mais dans des proportions différentes. En effet, les quatre départements de la région Bretagne ont une consommation de gaz beaucoup plus importante : entre 12 000 MWh pour les Côtes d'Armor et 19 000 MWh pour le Finistère.
+<br/> En somme, les trois graphiques nous permettent de constater que la région Bretagne utilise majoritairement le gaz pour énergie (voir graphique "Consommation de gaz et d'électricité en fonction des années"). La Bretagne est donc une région qui consomme une quantité importante d'énergie, mais qui est également engagée dans la transition énergétique en utilisant des sources d'énergies renouvelables pour répondre à ses besoins énergétiques.""",
+styles={'background-color': '#d4f7ed',"text_align": "justify"}, width = 600)
 
 
 
@@ -515,6 +514,8 @@ p4.y_range.start = 0
 p4.x_range.range_padding = 0.1
 p4.xaxis.major_label_orientation = 1
 p4.xgrid.grid_line_color = None
+p4.xaxis.axis_label = "Années"
+p4.yaxis.axis_label = "Consommation (MWh)"
 
 # -- Ajouter de widgets
 picker_p4_fill = ColorPicker(title="Couleur de barres",color=barplot.glyph.fill_color)
@@ -571,13 +572,14 @@ pie.title.align = 'center'
 
 # -- Commentaires des graphiques 
 
-comment_pie_chart = Div(text = """Ce graphique représente la répartition de la consommation d'énergie entre les différents secteurs entre 2011 et 2021. Les secteurs sont les suivants : l'agriculture, l'industrie, le secteur résidentiel, le secteur tertiaire.L'appellation 'secteur inconnu' siginifie que le secteur n'a pas été précisé dans la base de données.
-<br/>Sur ce graphique, nous pouvons observer qu'une grande partie de la consommation de gaz et d'électricité provient du secteur tertiaire. Ce dernier recouvre un large champ d'activité, comprenant le commerce, l'administration, les transports, les activités finançières ou immobilières ou encore les services aux entreprises et services aux particuliers.
-De plus, l'industrie et l'agriculture sont des secteurs ayant une consommation d'électricité et de gaz aussi importante.""",styles={'background-color': '#d4f7ed'}, width = 600)
+comment_pie_chart = Div(text = """Ce graphique représente la répartition de la consommation d'énergie entre les différents secteurs sur la période 2011-2021. Les secteurs sont les suivants : l'agriculture, l'industrie, le secteur résidentiel, le secteur tertiaire. L'appellation 'secteur inconnu' siginifie que le secteur n'a pas été précisé dans la base de données.
+<br/>Sur ce graphique, nous observons qu'une grande partie de la consommation de gaz et d'électricité provient du secteur tertiaire. Ce dernier recouvre un large champ d'activité, comprenant le commerce, l'administration, les transports, les activités finançières ou immobilières ou encore les services aux entreprises et services aux particuliers.
+De plus, l'industrie et l'agriculture sont des secteurs ayant une consommation d'électricité et de gaz aussi importante. Il est donc primordial que ces secteurs utilisent des sources d'énergies renouvelables, moins nocives pour la planète, afin de préserver l'environnement Breton.
+""",styles={'background-color': '#d4f7ed',"text_align": "justify"}, width = 600)
  
 
 comment_data_table_operateur = Div(text = """Ce tableau répertorie le nombre de fois que l'opérateur a été utilisé entre 2011 et 2021. Nous dénombrons 8 opérateurs. Cependant, les deux majoritaires et les plus connus sont Enedis et GRDF. C'est pourquoi nous avons décidé de réaliser le graphique ci-contre représentant uniquement les opérateurs Enedis et GRDF""",
-                                   styles={'background-color': '#f0f2f5'},width=600)
+                                   styles={'background-color': '#f0f2f5',"text_align": "justify"},width=600)
 
 
 
@@ -589,7 +591,7 @@ comment_data_table_operateur = Div(text = """Ce tableau répertorie le nombre de
 titre_principal = Div(text="<h1><center>Préserver l'environnement en Bretagne : Consommation d'énergie, <br/> sources renouvelables et aires protégées</center></h1>", styles = {'margin-left' : 'auto', 'margin-right':'auto'})
 presentation = Div(text = """Cette page web traite le thème de l'environnement en Bretagne.<br/>
 La Bretagne est une région qui dispose d'un environnement naturel riche et diversifié, avec une grande variété de paysages comme des montagnes et des plages mais aussi des forêts et des marais. Cependant, l'environnement breton est confronté à des menaces croissantes, telles que la pollution, la surconsommation d'énergie et la diminution de la biodiversité.
-Pour préserver cet environnement, il est essentiel de mettre en place des mesures visant à réduire la consommation d'énergie et à favoriser l'utilisation de sources d'énergies renouvelables, telles que l'énergie solaire, éolienne et hydraulique. Il est également important de protéger les espaces naturels en créant des aires protégées, telles que les parcs naturels régionaux et les réserves naturelles.
+Pour préserver cet environnement, il est essentiel de mettre en place des mesures visant à réduire la consommation d'énergie et à favoriser l'utilisation de sources d'énergies renouvelables, telles que l'énergie solaire, éolienne et hydraulique. Il est également important de préserver les espaces naturels en créant des aires protégées, telles que les parcs naturels régionaux et les réserves naturelles.
 Pour explorer ces différents aspects, nous les avons répartis dans les 4 onglets ci-dessous.""",styles={'background-color': '#f8fad6',"margin-left": "2em"},width = 700)
 auteurs = Div(text = """Auteurs : Margaux BAILLEUL & Clémence CHESNAIS""",styles={"margin-left": "2em"})
 image_entete = Div(text="""<img src="data/saint_malo.jpg" width="400"/>""")
@@ -602,7 +604,7 @@ layout3 = Column(titre3, Row(Column(p2,styles={"margin-left": "2em"}),Column(pic
 layout4 = Column(titre4,Row((Column(data_table_nb_conso,comment_data_table_operateur,spacing=10,styles={"margin-left": "2em"})),Column(p4),Column(picker_p4_fill,picker_p4_ligne),spacing =10),Row(Column(pie),Column(comment_pie_chart),spacing=10,styles={"margin-left": "2em"}),spacing=10)
 
 # -- Préparation des onglets
-tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
+tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergie")
 tab2 = TabPanel(child=layout2, title="Les réserves naturelles")
 tab3 = TabPanel(child = layout3, title = "Consommation de gaz et d'électricité")
 tab4 = TabPanel(child = layout4, title = "Les fournisseurs de gaz et électricité")
