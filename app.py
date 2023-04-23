@@ -1,3 +1,7 @@
+# Auteurs :
+# Margaux BAILLEUL 21906121
+# Clémence CHESNAIS 21901191
+
 
 #### Les imports
 import numpy as np
@@ -549,7 +553,6 @@ df_nb_secteur = count_by_secteur.reset_index(name='nombre_elements') # Transform
 df_nb_secteur.columns = ["Secteur","Nb"] # Renommage des colonnes
 donnees_nb_secteur = ColumnDataSource(df_nb_secteur)
 
-# data = pd.Series(df_nb_secteur).reset_index(name='Nb')
 df_nb_secteur['angle'] = df_nb_secteur['Nb']/df_nb_secteur['Nb'].sum() * 2*pi
 df_nb_secteur['color'] = ["#cddef9","#dafadb","#fcedfd","#f8e1c4","#e5e8eb"] # couleurs pastels
 
@@ -597,7 +600,6 @@ layout = Column(titre,Row((Column(comment,img,img2,spacing =10)),(Column(data_ta
 layout2 = Column(titre2,Row(Column(carte,styles={"margin-left": "2em"}), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert,spacing = 10)),Row(Column(comment_carte_parc_et_reserve),Column(image_golfe_morbihan),styles={"margin-left": "1.9em"}))
 layout3 = Column(titre3, Row(Column(p2,styles={"margin-left": "2em"}),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec,styles={"margin-left": "2em"}),Column(picker_conso_gaz, picker_conso_elec),Column(comment_evol_conso,styles={"margin-left": "4em"}),spacing=10),spacing=10)
 layout4 = Column(titre4,Row((Column(data_table_nb_conso,comment_data_table_operateur,spacing=10,styles={"margin-left": "2em"})),Column(p4),Column(picker_p4_fill,picker_p4_ligne),spacing =10),Row(Column(pie),Column(comment_pie_chart),spacing=10,styles={"margin-left": "2em"}),spacing=10)
-# layout4 = Column(titre4, Row((Column(p4,styles={"margin-left": "2em"})),Column(picker_p4_fill,picker_p4_ligne,data_table_nb_conso,comment_data_table_operateur)),Row(Column(pie),(Column(comment_pie_chart)),spacing=10,styles={"margin-left": "2em"}))
 
 # -- Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
