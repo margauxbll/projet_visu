@@ -358,7 +358,8 @@ titre3 = Div(text = """ <h1> L'évolution de la consommation d'électricité et 
 # -- Calcul de la conso moyenne par année pour chaque département
 moyennes = consommation.groupby(['Année','Filière',"Libellé Département"])['Consommation (MWh)'].mean()
 moyennes_df = moyennes.reset_index(name='consommation')
-# print(moyennes_df)
+moyennes_df.columns = ["Annee", "Filière","Libellé Département","consommation"]
+# print(moyennes_df.columns)
 
 # -- Création d'un dataframe pour chaque département
 df_cote_armor = moyennes_df[(moyennes_df["Libellé Département"]=="Côtes-d'Armor")&(moyennes_df["Filière"]=="Electricité")]
@@ -375,27 +376,29 @@ data_i = ColumnDataSource(df_ille_et_vilaine)
 
 p2 = figure()
 p2.title.text = "Evolution de la consommation d'électricité par département entre 2011 et 2021"
-ligne_ca = p2.line("Année","consommation",source=data_ca, line_width = 2, line_color = "#78A1DE", alpha = 0.8,legend_label = "Côtes-d'Armor")
-ligne_m = p2.line("Année","consommation",source=data_m, line_width = 2, line_color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
-ligne_f = p2.line("Année","consommation",source=data_f, line_width = 2, line_color = "grey", alpha = 0.8,legend_label = "Finistère")
-ligne_i = p2.line("Année","consommation",source=data_i, line_width = 2, line_color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
+ligne_ca = p2.line("Annee","consommation",source=data_ca, line_width = 2, line_color = "purple", alpha = 0.8,legend_label = "Côtes-d'Armor")
+ligne_m = p2.line("Annee","consommation",source=data_m, line_width = 2, line_color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
+ligne_f = p2.line("Annee","consommation",source=data_f, line_width = 2, line_color = "grey", alpha = 0.8,legend_label = "Finistère")
+ligne_i = p2.line("Annee","consommation",source=data_i, line_width = 2, line_color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 p2.legend.click_policy="mute"
 p2.title.align = 'center'
 
-#Création des widgets
+# -- Création des widgets
 picker_ca = ColorPicker(title="Couleur de ligne Côtes-d'Armor",color=ligne_ca.glyph.line_color)
 picker_ca.js_link('color', ligne_ca.glyph, 'line_color')
 
 picker_m = ColorPicker(title="Couleur de ligne Morbihan",color=ligne_m.glyph.line_color)
 picker_m.js_link('color', ligne_m.glyph, 'line_color')
 
-picker_f = ColorPicker(title="Couleur de ligne Finistère",color=ligne_m.glyph.line_color)
-picker_f.js_link('color', ligne_m.glyph, 'line_color')
+picker_f = ColorPicker(title="Couleur de ligne Finistère",color=ligne_f.glyph.line_color)
+picker_f.js_link('color', ligne_f.glyph, 'line_color')
 
 picker_i = ColorPicker(title="Couleur de ligne Ille-et-Vilaine",color=ligne_i.glyph.line_color)
 picker_i.js_link('color', ligne_i.glyph, 'line_color')
 
-
+# -- Ajout de l'outil de survol 
+hover_tool = HoverTool(tooltips=[('Consommation (MWh)','@consommation'),('Année','@Annee')])
+p2.add_tools(hover_tool)
 
 ################################################# 2 eme Graphique #####################################################
 # -------------------- Evolution de la consommation de gaz par département entre 2011 et 2021
@@ -413,10 +416,12 @@ data_i_gaz = ColumnDataSource(df_ille_et_vilaine_gaz)
 # - Création de la figure
 p3= figure()
 p3.title.text = "Evolution de la consommation de gaz par département entre 2011 et 2021"
-ligne_ca2 = p3.line("Année","consommation",source=data_ca_gaz, line_width = 2, color = "#78A1DE", alpha = 0.8,legend_label = "Côtes-d'Armor")
-ligne_m2 = p3.line("Année","consommation",source=data_m_gaz, line_width = 2, color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
-ligne_f2 = p3.line("Année","consommation",source=data_f_gaz, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
-ligne_i2 = p3.line("Année","consommation",source=data_i_gaz, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
+p3.xaxis.axis_label = "Annee"
+p3.yaxis.axis_label = "Consommation (MWh)"
+ligne_ca2 = p3.line("Annee","consommation",source=data_ca_gaz, line_width = 2, color = "purple", alpha = 0.8,legend_label = "Côtes-d'Armor")
+ligne_m2 = p3.line("Annee","consommation",source=data_m_gaz, line_width = 2, color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
+ligne_f2 = p3.line("Annee","consommation",source=data_f_gaz, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
+ligne_i2 = p3.line("Annee","consommation",source=data_i_gaz, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 
 # - Création de la légende
 p3.legend.click_policy="mute"
@@ -428,6 +433,22 @@ picker_m.js_link('color', ligne_m2.glyph, 'line_color')
 picker_f.js_link('color', ligne_f2.glyph, 'line_color')
 picker_i.js_link('color', ligne_i2.glyph, 'line_color')
 
+# -- Ajout de l'outil de survol 
+hover_tool = HoverTool(tooltips=[('Consommation (MWh)','@consommation'),('Année','@Annee')])
+p3.add_tools(hover_tool)
+
+# -- Commentaire
+
+comment_evol_conso = Div(text = """La Bretagne est une région qui consomme une quantité importante d'énergie pour répondre aux besoins de ses habitants et de ses industries. 
+
+En termes de production d'électricité, la Bretagne dépend principalement de l'importation d'électricité provenant des autres régions de la France, ainsi que de l'énergie éolienne et de l'énergie hydraulique. Sur le graphique de gauche, nous constatons que le département de Côtes d'Armor est celui qui consomme le moins en terme d'électricité. Les trois autres départements de la région, quant à eux, ont une consommation assez similaire. Aussi, à partir de 2017, nous observons une diminution très importante de la consommation d'électricité pour les quatre départements. 
+
+En ce qui concerne le gaz, la Bretagne dispose d'un réseau de distribution de gaz naturel qui dessert les zones urbaines et industrielles. La région est plutôt tournée vers les énergies renouvelables, comme l'éolien, qui a un grand potentiel en raison de la forte exposition de la région aux vents. Sur le graphique de droite, nous observons un schéma assez similaire que pour l'électricité mais dans des proportions différentes. En effet, les quatre départements de la région bretagne ont une consommation de gaz beaucoup plus important : entre 12 000 MWh pour les Côtes d'Armor et 19 000 MWh pour le Finistère.
+
+En résumé, la Bretagne est une région qui consomme une quantité importante d'énergie, mais qui est également engagée dans la transition énergétique en utilisant des sources d'énergie renouvelables pour répondre à ses besoins énergétiques.""",
+styles={'background-color': '#d4f7ed'}, width = 500)
+
+
 
 ################################################# 3 eme Graphique #####################################################
 # ------------------------------------- Consommation de gaz et d'électricité en fonction des années -------------------
@@ -438,7 +459,7 @@ source_electricite = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filiè
 source_gaz = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filière'] == 'Gaz'])
 
 # - Création de la figure
-conso_gaz_elec = figure(title="Consommation de gaz et d'électricité en fonction des années", y_axis_label= 'Consommation', x_axis_label='Années')
+conso_gaz_elec = figure(title="Consommation de gaz et d'électricité en fonction des années", y_axis_label= 'Consommation (Mwh)', x_axis_label='Années')
 ligne_gaz = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_gaz, legend_label="Gaz",line_color='grey')
 ligne_elec = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_electricite, legend_label="Électricité",line_color='#78A1DE')
 
@@ -448,7 +469,7 @@ conso_gaz_elec.legend.click_policy="mute"
 conso_gaz_elec.title.align = 'center'
 
 # - Création des widgets
-picker_conso_gaz = ColorPicker(title="Couleur de ligne gaz",color=ligne_ca.glyph.line_color)
+picker_conso_gaz = ColorPicker(title="Couleur de ligne gaz",color=ligne_gaz.glyph.line_color)
 picker_conso_gaz.js_link('color', ligne_gaz.glyph, 'line_color')
 
 picker_conso_elec = ColorPicker(title="Couleur de ligne elec",color=ligne_elec.glyph.line_color)
@@ -471,16 +492,15 @@ count_by_conso = conso_op.size()
 df_nb_conso = count_by_conso.reset_index(name='nombre_elements') # transformation en data.frame
 df_nb_conso.columns = ["Opérateur","Nb"] #Renommage des colonnes
 donnees_nb_conso = ColumnDataSource(df_nb_conso)
-print(df_nb_conso)
 p4 = figure(x_range = df_nb_conso['Opérateur'].unique(), title="Nombre d'opérateurs")
 
 # -- Ajouter les barres
 p4.vbar(x='Opérateur', top='Nb', width=0.9, source=donnees_nb_conso)
 
 # -- Ajouter des étiquettes pour les axes
-p4.xaxis.axis_label = "Opérateur"
+p4.xaxis.axis_label = "Opérateurs"
 p4.yaxis.axis_label = "Nombre de lignes"
-p4.title.text_align = "center"
+p4.title.align = "center"
 
 # Afficher le graphique dans le notebook
 # show(p4)
@@ -542,8 +562,8 @@ header = Column(titre_principal,Row((Column(presentation,auteurs)),(Column(image
 
 # - Les différentes pages
 layout = Column(titre,Row((Column(comment,img,img2,spacing =10)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0),spacing = 10)),p, spacing =10))
-layout2 = Column(titre2,Row(Column(carte), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert, spacing=10),comment_carte_parc_et_reserve,spacing = 10))
-layout3 = Column(titre3, Row(Column(p2),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3),Row(Column(conso_gaz_elec),Column(picker_conso_gaz, picker_conso_elec,spacing=10)),spacing = 10)
+layout2 = Column(titre2,Row(Column(carte), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert),comment_carte_parc_et_reserve))
+layout3 = Column(titre3, Row(Column(p2),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec),Column(picker_conso_gaz, picker_conso_elec,comment_evol_conso,spacing=10),spacing=10),spacing = 10)
 layout4 = Column(titre4, Row((Column(p4)), (Column(pie,comment_pie_chart,spacing =10)),Column(data_table_nb_conso,comment_data_table_operateur,spacing=10), spacing=10))
 
 # - Préparation des onglets
