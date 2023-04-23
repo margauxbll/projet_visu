@@ -86,16 +86,16 @@ curdoc().theme = theme
 ################################### Onglet 1: Les différentes installations d'énergies renouvelables par commune######################
 ######################################################################################################################################
 
-titre = Div(text="""<h1>Les différentes installations de production d'énergie </h1>""")
+titre = Div(text="""<h1>Les différentes installations de production d'énergie </h1>""",styles={"margin-left": "2em"})
 comment = Div(text="""La Bretagne dispose d'un potentiel important en matière de production d'énergie renouvelable, notamment éolienne, hydraulique et solaire. Ces installations de production d'énergie renouvelable sont en constante expansion.
 En ce qui concerne l'énergie éolienne, la Bretagne dispose d'un littoral favorable avec des vents puissants et constants. La région abrite actuellement plusieurs parcs éoliens tels que le parc éolien de la baie de Saint-Brieuc.
 La Bretagne est également doté de sources d'énergie hydraulique, grâce à ses nombreux cours d'eau et à la présence de barrages.  A COMPLETER
 En ce qui concerne l'énergie solaire, certes la Bretagne ne dispose pas du même potentiel que d'autres régions plus ensoleillées de France, mais il y a encore des projets en cours pour développer l'énergie solaire dans la région. Les panneaux solaires sont principalement installés sur les toits des bâtiments, pour capter au mieux les rayons du soleil.
 Nous pouvons tout de même observer que les installations solaires sont majoritaires dans la région.
 Dans l'ensemble, la Bretagne est une région qui possède de nombreuses énergies renouvelables pour réduire sa dépendance aux énergies fossiles et atteindre ses objectifs de réduction des émissions de gaz à effet de serre. Ces installations contribuent à protéger l'environnement.
-""",styles={'background-color': '#C3F9DF'},width=600)
-img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brieuc.jpg" width="600"/>""")
-img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>""")
+""",styles={'background-color': '#C3F9DF',"margin-left": "2em"},width=600)
+img = Div(text="""<img src="data/Grand-projet-Eolien-offshore-Baie-de-Saint-Brieuc.jpg" width="600"/>""",styles={"margin-left": "2em"})
+img2 = Div(text="""<img src="data/la-centrale-de-montauban-de-bretagne.jpg" width="600"/>""",styles={"margin-left": "2em"})
 
 # -- Converts decimal longitude/latitude to Web Mercator format
 def coor_wgs84_to_web_mercator(lon, lat):
@@ -221,9 +221,11 @@ data_table_solaire = DataTable(source=donnees_nb_solaire, columns=columns, width
 ################################################## Onglet 2: Les réserves naturelles ##################################################
 ######################################################################################################################################
 
-titre2 = Div(text="""<h1>Les réserves naturelles </h1>""")
+titre2 = Div(text="""<h1>Les réserves naturelles </h1>""",styles={"margin-left": "2em"})
 image_parc_armorique = Div(text="""<figure><img src="data/parc_armorique.jpg" alt = "Parc naturel d'Armorique" width="400"/> <figcaption>Parc naturel d'Armorique</figcaption></figure>""")
 image_reserve_Sillon_de_Talbert = Div(text="""<figure><img src="data/reserve_Sillon_de_Talbert.jpg" alt = "Sillon de Talbert" width="400"/> <figcaption>Réserve naturelle du Sillon de Talbert</figcaption></figure>""")
+image_golfe_morbihan = Div(text="""<figure><img src="data/golfe-morbihan.jpg" alt = "Golfe du Morbihan" width="400"/> <figcaption>Parc naturel région du Golfe du Morbihan</figcaption></figure>""")
+
 
 # -- Ouverture des données sur les réserves naturells
 fp_res = open("data/reserves-naturelles-regionales-de-bretagne-2.json","r",encoding='utf-8')
@@ -352,7 +354,7 @@ styles={'background-color': '#d4f7ed'}, width = 500, height = 300)
 ############################################## Onglet 3: Consommation de gaz et d'électricité ########################################
 ######################################################################################################################################
 
-titre3 = Div(text = """ <h1> L'évolution de la consommation d'électricité et de gaz en Bretagne""")
+titre3 = Div(text = """ <h1> L'évolution de la consommation d'électricité et de gaz en Bretagne""",styles={"margin-left": "2em"})
 
 ################################################# 1er Graphique #####################################################
 # -------------------- Evolution de la consommation d'électricité par département entre 2011 et 2021
@@ -378,10 +380,10 @@ data_i = ColumnDataSource(df_ille_et_vilaine)
 
 p2 = figure()
 p2.title.text = "Evolution de la consommation d'électricité par département entre 2011 et 2021"
-ligne_ca = p2.line("Annee","consommation",source=data_ca, line_width = 2, line_color = "purple", alpha = 0.8,legend_label = "Côtes-d'Armor")
-ligne_m = p2.line("Annee","consommation",source=data_m, line_width = 2, line_color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
-ligne_f = p2.line("Annee","consommation",source=data_f, line_width = 2, line_color = "grey", alpha = 0.8,legend_label = "Finistère")
-ligne_i = p2.line("Annee","consommation",source=data_i, line_width = 2, line_color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
+ligne_ca = p2.line("Annee","consommation",source=data_ca, line_width = 4, line_color = "#cddef9", alpha = 0.8,legend_label = "Côtes-d'Armor")
+ligne_m = p2.line("Annee","consommation",source=data_m, line_width = 4,line_color = "#dafadb", alpha = 0.8,legend_label = "Morbihan")
+ligne_f = p2.line("Annee","consommation",source=data_f, line_width = 4, line_color = "#fcedfd", alpha = 0.8,legend_label = "Finistère")
+ligne_i = p2.line("Annee","consommation",source=data_i, line_width = 4, line_color = "#f8e1c4", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 p2.legend.click_policy="mute"
 p2.title.align = 'center'
 
@@ -419,11 +421,11 @@ p3= figure()
 p3.title.text = "Evolution de la consommation de gaz par département entre 2011 et 2021"
 p3.xaxis.axis_label = "Annee"
 p3.yaxis.axis_label = "Consommation (MWh)"
-ligne_ca2 = p3.line("Annee","consommation",source=data_ca_gaz, line_width = 2, color = "purple", alpha = 0.8,legend_label = "Côtes-d'Armor")
-ligne_m2 = p3.line("Annee","consommation",source=data_m_gaz, line_width = 2, color = "#0C0E91", alpha = 0.8,legend_label = "Morbihan")
-ligne_f2 = p3.line("Annee","consommation",source=data_f_gaz, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
-ligne_i2 = p3.line("Annee","consommation",source=data_i_gaz, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
-
+ligne_ca2 = p3.line("Annee","consommation",source=data_ca_gaz, line_width = 4, color = "#cddef9", alpha = 0.8,legend_label = "Côtes-d'Armor")
+ligne_m2 = p3.line("Annee","consommation",source=data_m_gaz, line_width = 4, color = "#dafadb", alpha = 0.8,legend_label = "Morbihan")
+ligne_f2 = p3.line("Annee","consommation",source=data_f_gaz, line_width = 4, color = "#fcedfd", alpha = 0.8,legend_label = "Finistère")
+ligne_i2 = p3.line("Annee","consommation",source=data_i_gaz, line_width = 4, color = "#f8e1c4", alpha = 0.8,legend_label = "Ille-et-Vilaine")
+# ["#cddef9","#dafadb","#fcedfd","#f8e1c4","#e5e8eb"]
 # -- Création de la légende
 p3.legend.click_policy="mute"
 p3.title.align = 'center'
@@ -463,8 +465,8 @@ source_gaz = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filière'] == 
 
 # -- Création de la figure
 conso_gaz_elec = figure(title="Consommation de gaz et d'électricité en fonction des années", y_axis_label= 'Consommation (Mwh)', x_axis_label='Années')
-ligne_gaz = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_gaz, legend_label="Gaz",line_color='grey')
-ligne_elec = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_electricite, legend_label="Électricité",line_color='#78A1DE')
+ligne_gaz = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_gaz, legend_label="Gaz",line_color="#cddef9",line_width = 4)
+ligne_elec = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_electricite, legend_label="Électricité",line_color="#dafadb",line_width = 4)
 
 # -- Création de la légende
 conso_gaz_elec.legend.location = "top_left"
@@ -484,7 +486,7 @@ picker_conso_elec.js_link('color', ligne_elec.glyph, 'line_color')
 ##################################################### Onglet 4: Les fournisseurs d'énergies ##########################################
 ######################################################################################################################################
 
-titre4 =  Div(text = """ <h1> Les fournisseurs de gaz et électricité""")
+titre4 =  Div(text = """ <h1> Les fournisseurs de gaz et électricité""",styles={"margin-left": "2em"})
 
 #### Graphique consommation en fonction du secteur (bâtons)
 
@@ -498,7 +500,7 @@ donnees_nb_conso = ColumnDataSource(df_nb_conso)
 p4 = figure(x_range = df_nb_conso['Opérateur'].unique(), title="Nombre d'opérateurs")
 
 # -- Ajouter les barres
-barplot = p4.vbar(x='Opérateur', top='Nb', width=0.9,source=donnees_nb_conso,fill_color = "red")
+barplot = p4.vbar(x='Opérateur', top='Nb', width=0.9,source=donnees_nb_conso,fill_color = "#f0d6fb", line_color = "#f0d6fb")
 
 # -- Ajouter des étiquettes pour les axes
 p4.xaxis.axis_label = "Opérateurs"
@@ -571,16 +573,16 @@ titre_principal = Div(text="<h1><center>Préserver l'environnement en Bretagne :
 presentation = Div(text = """Cette page web traite le thème de l'environnement en Bretagne.<br/>
 La Bretagne est une région qui dispose d'un environnement naturel riche et diversifié, avec une grande variété de paysages comme des montagnes et des plages mais aussi des forêts et des marais. Cependant, l'environnement breton est confronté à des menaces croissantes, telles que la pollution, la surconsommation d'énergie et la diminution de la biodiversité.
 Pour préserver cet environnement, il est essentiel de mettre en place des mesures visant à réduire la consommation d'énergie et à favoriser l'utilisation de sources d'énergie renouvelables, telles que l'énergie solaire, éolienne et hydraulique. Il est également important de protéger les espaces naturels en créant des aires protégées, telles que les parcs naturels régionaux et les réserves naturelles.
-Pour explorer ces différents aspects, nous les avons répartis dans les 4 onglets ci-dessous.""",styles={'background-color': '#f8fad6'},width = 700)
-auteurs = Div(text = """Auteurs : Margaux BAILLEUL & Clémence CHESNAIS""")
+Pour explorer ces différents aspects, nous les avons répartis dans les 4 onglets ci-dessous.""",styles={'background-color': '#f8fad6',"margin-left": "2em"},width = 700)
+auteurs = Div(text = """Auteurs : Margaux BAILLEUL & Clémence CHESNAIS""",styles={"margin-left": "2em"})
 image_entete = Div(text="""<img src="data/saint_malo.jpg" width="400"/>""")
 header = Column(titre_principal,Row((Column(presentation,auteurs)),(Column(image_entete)),spacing =10))
 
 # -- Les différentes pages
 layout = Column(titre,Row((Column(comment,img,img2,spacing =10)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0),spacing = 10)),p, spacing =10))
-layout2 = Column(titre2,Row(Column(carte), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert),comment_carte_parc_et_reserve))
-layout3 = Column(titre3, Row(Column(p2),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec),Column(picker_conso_gaz, picker_conso_elec,comment_evol_conso,spacing=10),spacing=10),spacing = 10)
-layout4 = Column(titre4, Row((Column(p4)),Column(picker_p4_fill,picker_p4_ligne, data_table_nb_conso,comment_data_table_operateur,spacing=10),(Column(pie,comment_pie_chart,spacing =10)), spacing=10))
+layout2 = Column(titre2,Row(Column(carte,styles={"margin-left": "2em"}), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert,spacing = 20),Column(comment_carte_parc_et_reserve,image_golfe_morbihan,spacing=1)))
+layout3 = Column(titre3, Row(Column(p2,styles={"margin-left": "2em"}),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec,styles={"margin-left": "2em"}),Column(picker_conso_gaz, picker_conso_elec,comment_evol_conso,spacing=10),spacing=10),spacing = 10)
+layout4 = Column(titre4, Row((Column(p4,styles={"margin-left": "2em"})),Column(picker_p4_fill,picker_p4_ligne, data_table_nb_conso,comment_data_table_operateur,spacing=10),(Column(pie,comment_pie_chart,spacing =10)), spacing=10))
 
 # -- Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
