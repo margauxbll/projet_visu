@@ -168,7 +168,7 @@ p.title.align = 'center'
 ################################## Ajout d'un data table ################################
 
 # ----------- TABLE HYDRAULIQUE
-# Comptage du nombre d'installation hydraulique par année 
+# -- Comptage du nombre d'installation hydraulique par année 
 nb_hydrau = hydraulique.groupby('Date') #Compter 
 count_by_year = nb_hydrau.size()
 df_nb_hydrau = count_by_year.reset_index(name='nombre_elements') # transformation en data.frame
@@ -184,7 +184,7 @@ data_table_hydrau = DataTable(source=donnees_nb_hydrau, columns=columns, width=4
 
 
 # ----------- TABLE EOLIENNE
-# Comptage du nombre d'installation éolienne par année 
+# -- Comptage du nombre d'installation éolienne par année 
 nb_eolien = eolien.groupby('Date') #Compter 
 count_by_year = nb_eolien.size()
 df_nb_eolien= count_by_year.reset_index(name='nombre_elements') # transformation en data.frame
@@ -200,7 +200,7 @@ data_table_eolien = DataTable(source=donnees_nb_eolien, columns=columns, width=4
 
 
 # ----------- TABLE SOLAIRE
-# Comptage du nombre d'installation solaire par année 
+# -- Comptage du nombre d'installation solaire par année 
 nb_solaire= solaire.groupby('Date') #Compter 
 count_by_year = nb_solaire.size()
 df_nb_solaire= count_by_year.reset_index(name='nombre_elements') # transformation en data.frame
@@ -313,9 +313,9 @@ source_parcs = ColumnDataSource(parcs_norm)
 
 
 ################################################################################################
-# - Création de la carte : création d'une carte de patches des communes
+# -- Création de la carte : création d'une carte de patches des communes
 
-# Initialisation de la carte
+# -- Initialisation de la carte
 carte = figure(x_axis_type="mercator", y_axis_type="mercator", 
     active_scroll="wheel_zoom", title="Zones de Bretagne")
 
@@ -323,11 +323,11 @@ carte.add_tile("CartoDB Positron")
 patch_res = carte.patches('zonex', 'zoney', color='blue', alpha=0.5, source=source_res)
 patch_parcs = carte.patches('zonex', 'zoney', color='green', alpha=0.5, source=source_parcs)
 
-# Outil de survol pour afficher le nom de la commune
+# -- Outil de survol pour afficher le nom de la commune
 hover_tool = HoverTool(tooltips=[( 'Nom ',   '@nom')])
 carte.add_tools(hover_tool)
 
-# La légende
+# -- La légende
 legend = Legend(items=[("Parcs naturels régionaux", [patch_parcs]),
     ("Réserves naturelles", [patch_res])], location = 'top')
 carte.add_layout(legend,'below')
@@ -337,7 +337,7 @@ legend.title = "Cliquez sur une légende pour la masquer"
 
 carte.title.align = 'center'
 
-# Commentaire carte :
+# -- Commentaire carte :
 
 comment_carte_parc_et_reserve = Div(text="""La Bretagne est célèbre pour ses côtes, ses plages de sable fin, ses îles, ses forêts et ses landes sauvages. Elle compte plusieurs parcs naturels régionaux et réserves naturelles qui offrent la richesse de sa faune et de sa flore.
 La Bretagne abrite aussi plusieurs réserves naturelles qui sont des espaces protégés en raison de leur intérêt écologique et paysager.<br/> 
@@ -405,7 +405,6 @@ p2.add_tools(hover_tool)
 
 df_cote_armor_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Côtes-d'Armor")&(moyennes_df["Filière"]=="Gaz")]
 data_ca_gaz = ColumnDataSource(df_cote_armor_gaz)
-# print(df_cote_armor_gaz)
 df_morbihan_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Morbihan")&(moyennes_df["Filière"]=="Gaz")]
 data_m_gaz = ColumnDataSource(df_morbihan_gaz)
 df_Finistere_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Finistère")&(moyennes_df["Filière"]=="Gaz")]
@@ -413,7 +412,7 @@ data_f_gaz = ColumnDataSource(df_Finistere_gaz)
 df_ille_et_vilaine_gaz = moyennes_df[(moyennes_df["Libellé Département"]=="Ille-et-Vilaine")&(moyennes_df["Filière"]=="Gaz")]
 data_i_gaz = ColumnDataSource(df_ille_et_vilaine_gaz)
 
-# - Création de la figure
+# -- Création de la figure
 p3= figure()
 p3.title.text = "Evolution de la consommation de gaz par département entre 2011 et 2021"
 p3.xaxis.axis_label = "Annee"
@@ -423,11 +422,11 @@ ligne_m2 = p3.line("Annee","consommation",source=data_m_gaz, line_width = 2, col
 ligne_f2 = p3.line("Annee","consommation",source=data_f_gaz, line_width = 2, color = "grey", alpha = 0.8,legend_label = "Finistère")
 ligne_i2 = p3.line("Annee","consommation",source=data_i_gaz, line_width = 2, color = "black", alpha = 0.8,legend_label = "Ille-et-Vilaine")
 
-# - Création de la légende
+# -- Création de la légende
 p3.legend.click_policy="mute"
 p3.title.align = 'center'
 
-# Création de widget
+# -- Création de widget
 picker_ca.js_link('color', ligne_ca2.glyph, 'line_color')
 picker_m.js_link('color', ligne_m2.glyph, 'line_color')
 picker_f.js_link('color', ligne_f2.glyph, 'line_color')
@@ -453,22 +452,22 @@ styles={'background-color': '#d4f7ed'}, width = 500)
 ################################################# 3 eme Graphique #####################################################
 # ------------------------------------- Consommation de gaz et d'électricité en fonction des années -------------------
 
-# - Création du jeu de données avec grouby 
+# -- Création du jeu de données avec grouby 
 group_gaz_elec = consommation.groupby(by=['Année','Filière'])['Consommation (MWh)'].mean().reset_index()
 source_electricite = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filière'] == 'Electricité'])
 source_gaz = ColumnDataSource(data=group_gaz_elec[group_gaz_elec['Filière'] == 'Gaz'])
 
-# - Création de la figure
+# -- Création de la figure
 conso_gaz_elec = figure(title="Consommation de gaz et d'électricité en fonction des années", y_axis_label= 'Consommation (Mwh)', x_axis_label='Années')
 ligne_gaz = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_gaz, legend_label="Gaz",line_color='grey')
 ligne_elec = conso_gaz_elec.line(x='Année',y='Consommation (MWh)',source=source_electricite, legend_label="Électricité",line_color='#78A1DE')
 
-# - Création de la légende
+# -- Création de la légende
 conso_gaz_elec.legend.location = "top_left"
 conso_gaz_elec.legend.click_policy="mute"
 conso_gaz_elec.title.align = 'center'
 
-# - Création des widgets
+# -- Création des widgets
 picker_conso_gaz = ColorPicker(title="Couleur de ligne gaz",color=ligne_gaz.glyph.line_color)
 picker_conso_gaz.js_link('color', ligne_gaz.glyph, 'line_color')
 
@@ -550,7 +549,7 @@ comment_data_table_operateur = Div(text = """Ce tableau répertorie le nombre de
 ##################################################### Mise en page ###################################################################
 ######################################################################################################################################
 
-# - Création de l'entête de la page
+# -- Création de l'entête de la page
 titre_principal = Div(text="<h1>Préserver l'environnement en Bretagne : Consommation d'énergie, sources renouvelables <br/> et aires protégées</h1>")
 presentation = Div(text = """Cette page web traite le thème de l'environnement en Bretagne.<br/>
 La Bretagne est une région qui dispose d'un environnement naturel riche et diversifié, avec une grande variété de paysages comme des montagnes et des plages mais aussi des forêts et des marais. Cependant, l'environnement breton est confronté à des menaces croissantes, telles que la pollution, la surconsommation d'énergie et la diminution de la biodiversité.
@@ -560,13 +559,13 @@ auteurs = Div(text = """Auteurs : Margaux BAILLEUL & Clémence CHESNAIS""")
 image_entete = Div(text="""<img src="data/saint_malo.jpg" width="400"/>""")
 header = Column(titre_principal,Row((Column(presentation,auteurs)),(Column(image_entete)),spacing =10))
 
-# - Les différentes pages
+# -- Les différentes pages
 layout = Column(titre,Row((Column(comment,img,img2,spacing =10)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0),spacing = 10)),p, spacing =10))
 layout2 = Column(titre2,Row(Column(carte), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert),comment_carte_parc_et_reserve))
 layout3 = Column(titre3, Row(Column(p2),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec),Column(picker_conso_gaz, picker_conso_elec,comment_evol_conso,spacing=10),spacing=10),spacing = 10)
 layout4 = Column(titre4, Row((Column(p4)), (Column(pie,comment_pie_chart,spacing =10)),Column(data_table_nb_conso,comment_data_table_operateur,spacing=10), spacing=10))
 
-# - Préparation des onglets
+# -- Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
 tab2 = TabPanel(child=layout2, title="Les réserves naturelles")
 tab3 = TabPanel(child = layout3, title = "Consommation de gaz et d'électricité")
@@ -575,6 +574,6 @@ tabs = Tabs(tabs = [tab1,tab2, tab3,tab4])
 # show(tabs)
 
 
-# - Page finale
+# -- Page finale
 page = Column(header, tabs)
 show(page)
