@@ -5,7 +5,7 @@ import json
 from math import pi
 import pandas as pd
 from bokeh.plotting import figure,show, ColumnDataSource, curdoc
-from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row,DataTable, TableColumn, Column, Legend,ColorPicker
+from bokeh.models import HoverTool,Tabs, TabPanel, Div,Row,DataTable, TableColumn, Column, Legend,ColorPicker,FactorRange
 from bokeh.transform import cumsum
 from bokeh.themes import Theme
 
@@ -86,10 +86,10 @@ curdoc().theme = theme
 ################################### Onglet 1: Les différentes installations d'énergies renouvelables par commune######################
 ######################################################################################################################################
 
-titre = Div(text="""<h1>Les différentes installations de production d'énergie </h1>""",styles={"margin-left": "2em"})
-comment = Div(text="""La Bretagne dispose d'un potentiel important en matière de production d'énergie renouvelable, notamment éolienne, hydraulique et solaire. Ces installations de production d'énergie renouvelable sont en constante expansion.
-En ce qui concerne l'énergie éolienne, la Bretagne dispose d'un littoral favorable avec des vents puissants et constants. La région abrite actuellement plusieurs parcs éoliens tels que le parc éolien de la baie de Saint-Brieuc.
-La Bretagne est également doté de sources d'énergie hydraulique, grâce à ses nombreux cours d'eau et à la présence de barrages.  A COMPLETER
+titre = Div(text="""<h2>Les différentes installations de production d'énergie </h2>""",styles={"margin-left": "2em"})
+comment = Div(text="""La Bretagne dispose d'un potentiel important en matière de production d'énergies renouvelables, notamment éolienne, hydraulique et solaire. Ces installations sont en constante expansion.
+En ce qui concerne l'énergie éolienne, la Bretagne dispose d'un littoral favorable avec des vents puissants et constants. La région abrite actuellement plusieurs parcs éoliens tel que le parc éolien de la baie de Saint-Brieuc.
+La Bretagne est également dotée de sources d'énergie hydraulique, grâce à ses nombreux cours d'eau et à la présence de barrages.
 En ce qui concerne l'énergie solaire, certes la Bretagne ne dispose pas du même potentiel que d'autres régions plus ensoleillées de France, mais il y a encore des projets en cours pour développer l'énergie solaire dans la région. Les panneaux solaires sont principalement installés sur les toits des bâtiments, pour capter au mieux les rayons du soleil.
 Nous pouvons tout de même observer que les installations solaires sont majoritaires dans la région.
 Dans l'ensemble, la Bretagne est une région qui possède de nombreuses énergies renouvelables pour réduire sa dépendance aux énergies fossiles et atteindre ses objectifs de réduction des émissions de gaz à effet de serre. Ces installations contribuent à protéger l'environnement.
@@ -221,10 +221,10 @@ data_table_solaire = DataTable(source=donnees_nb_solaire, columns=columns, width
 ################################################## Onglet 2: Les réserves naturelles ##################################################
 ######################################################################################################################################
 
-titre2 = Div(text="""<h1>Les réserves naturelles </h1>""",styles={"margin-left": "2em"})
+titre2 = Div(text="""<h2>Les réserves naturelles </h2>""",styles={"margin-left": "2em"})
 image_parc_armorique = Div(text="""<figure><img src="data/parc_armorique.jpg" alt = "Parc naturel d'Armorique" width="400"/> <figcaption>Parc naturel d'Armorique</figcaption></figure>""")
 image_reserve_Sillon_de_Talbert = Div(text="""<figure><img src="data/reserve_Sillon_de_Talbert.jpg" alt = "Sillon de Talbert" width="400"/> <figcaption>Réserve naturelle du Sillon de Talbert</figcaption></figure>""")
-image_golfe_morbihan = Div(text="""<figure><img src="data/golfe-morbihan.jpg" alt = "Golfe du Morbihan" width="400"/> <figcaption>Parc naturel région du Golfe du Morbihan</figcaption></figure>""")
+image_golfe_morbihan = Div(text="""<figure><img src="data/golfe-morbihan.jpg" alt = "Golfe du Morbihan" width="400"/> <figcaption>Parc naturel régional du Golfe du Morbihan</figcaption></figure>""")
 
 
 # -- Ouverture des données sur les réserves naturells
@@ -344,8 +344,8 @@ comment_carte_parc_et_reserve = Div(text="""La Bretagne est célèbre pour ses c
 La Bretagne abrite aussi plusieurs réserves naturelles qui sont des espaces protégés en raison de leur intérêt écologique et paysager.<br/> 
 Le Parc naturel régional d'Armorique (voir photo),situé dans le finistère est un parc naturel de 170 000 hectares. Ce parc est un mélange de montagnes, de forêts, de landes, de rivières et de côtes sauvages.<br/>
 La Réserve naturelle nationale du Sillon de Talbert est une réserve naturelle située sur une langue de sable de 3,2 km de long. C'est un site géologique constitué d’un mélange de sable, de gravier et de galets. Sa taille fait de lui l'un des plus grand cordons de galets littoraux d'Europe.<br/>
-Cependant, en observant la carte, nous pouvons voir que le nombre de parcs naturels et de réserves naturelles restent très faibles en bretagne, notamment les réserves naturelles (en bleu) qui sont très peu visible.""",
-styles={'background-color': '#d4f7ed'}, width = 500, height = 300)
+Cependant, en observant la carte, nous pouvons voir que le nombre de parcs naturels et de réserves naturelles restent très faibles en bretagne, notamment les réserves naturelles (en bleu sur la carte) qui sont très peu visible.""",
+styles={'background-color': '#d4f7ed'}, width = 600)
 
 
 
@@ -354,7 +354,7 @@ styles={'background-color': '#d4f7ed'}, width = 500, height = 300)
 ############################################## Onglet 3: Consommation de gaz et d'électricité ########################################
 ######################################################################################################################################
 
-titre3 = Div(text = """ <h1> L'évolution de la consommation d'électricité et de gaz en Bretagne""",styles={"margin-left": "2em"})
+titre3 = Div(text = """ <h2> L'évolution de la consommation d'électricité et de gaz en Bretagne""",styles={"margin-left": "2em"})
 
 ################################################# 1er Graphique #####################################################
 # -------------------- Evolution de la consommation d'électricité par département entre 2011 et 2021
@@ -444,14 +444,12 @@ p3.add_tools(hover_tool)
 
 comment_evol_conso = Div(text = """La Bretagne est une région qui consomme une quantité importante d'énergie pour répondre aux besoins de ses habitants et de ses industries. 
 
-<br/>En termes de production d'électricité, la Bretagne dépend principalement de l'importation d'électricité provenant des autres régions de la France, ainsi que de l'énergie éolienne et de l'énergie hydraulique. Sur le graphique de gauche, nous constatons que le département de Côtes d'Armor est celui qui consomme le moins en terme d'électricité. Les trois autres départements de la région, quant à eux, ont une consommation assez similaire. Aussi, à partir de 2017, nous observons une diminution très importante de la consommation d'électricité pour les quatre départements. 
+<br/>En termes de production d'électricité, la Bretagne dépend principalement de l'importation d'électricité provenant des autres régions de la France, ainsi que de l'énergie éolienne et de l'énergie hydraulique. Sur le graphique "Evolution de la consommation d'électricité par département entre 2011 et 2021", nous constatons que le département des Côtes d'Armor est celui qui consomme le moins en terme d'électricité. Les trois autres départements de la région, quant à eux, ont une consommation assez similaire. Aussi, à partir de 2017, nous observons une diminution très importante de la consommation d'électricité pour les quatre départements. 
 
-<br/>En ce qui concerne la consommation de gaz, la Bretagne dispose d'un réseau de distribution de gaz naturel qui dessert les zones urbaines et industrielles. La région est plutôt tournée vers les énergies renouvelables, comme l'éolien, qui a un grand potentiel en raison de la forte exposition de la région aux vents. Sur le graphique de droite, nous observons un schéma assez similaire que pour l'électricité mais dans des proportions différentes. En effet, les quatre départements de la région bretagne ont une consommation de gaz beaucoup plus importante : entre 12 000 MWh pour les Côtes d'Armor et 19 000 MWh pour le Finistère.
+<br/>En ce qui concerne la consommation de gaz, la Bretagne dispose d'un réseau de distribution de gaz naturel qui dessert les zones urbaines et industrielles. La région est plutôt tournée vers les énergies renouvelables, comme l'éolien, qui a un grand potentiel en raison de la forte exposition de la région aux vents. Sur le graphique "Evolution de la consommation de gaz par département entre 2011 et 2021", nous observons un schéma assez similaire que pour l'électricité mais dans des proportions différentes. En effet, les quatre départements de la région Bretagne ont une consommation de gaz beaucoup plus importante : entre 12 000 MWh pour les Côtes d'Armor et 19 000 MWh pour le Finistère.
 
-<br/> En Somme, les trois graphiques nous permettent de constater que la région Bretagnne utilise majoritairement le gaz pour l'énergie (voir graphique "Consommation de gaz et d'électricité en fonction des années")
-
-<br/>En résumé, la Bretagne est une région qui consomme une quantité importante d'énergie, mais qui est également engagée dans la transition énergétique en utilisant des sources d'énergie renouvelables pour répondre à ses besoins énergétiques.""",
-styles={'background-color': '#d4f7ed'}, width = 500)
+<br/> En somme, les trois graphiques nous permettent de constater que la région Bretagne utilise majoritairement le gaz pour l'énergie (voir graphique "Consommation de gaz et d'électricité en fonction des années"). La Bretagne est donc une région qui consomme une quantité importante d'énergie, mais qui est également engagée dans la transition énergétique en utilisant des sources d'énergie renouvelables pour répondre à ses besoins énergétiques.""",
+styles={'background-color': '#d4f7ed'}, width = 600)
 
 
 
@@ -486,46 +484,60 @@ picker_conso_elec.js_link('color', ligne_elec.glyph, 'line_color')
 ##################################################### Onglet 4: Les fournisseurs d'énergies ##########################################
 ######################################################################################################################################
 
-titre4 =  Div(text = """ <h1> Les fournisseurs de gaz et électricité""",styles={"margin-left": "2em"})
+titre4 =  Div(text = """ <h2> Les fournisseurs de gaz et électricité</h2>""",styles={"margin-left": "2em"})
 
 #### Graphique consommation en fonction du secteur (bâtons)
 
-# -- Somme des opérateurs (Enedis le plus utilisé)
+conso_op_annee = consommation.groupby(['Opérateur', 'Année']) #Compter 
+count_by_conso_annee = conso_op_annee.size()
+df_nb_conso_annee = count_by_conso_annee.reset_index(name='nombre_elements') # transformation en data.frame
+df_nb_conso_annee.columns = ["Opérateur", "Annee","Nb"] #Renommage des colonnes
+df_nb_conso_annee = df_nb_conso_annee[(df_nb_conso_annee['Opérateur'] == 'Enedis') | (df_nb_conso_annee['Opérateur'] == 'GRDF') ]
+df_nb_conso_annee['Annee'] = df_nb_conso_annee["Annee"].astype(str)
 
-conso_op = consommation.groupby('Opérateur') #Compter 
-count_by_conso = conso_op.size()
-df_nb_conso = count_by_conso.reset_index(name='nombre_elements') # transformation en data.frame
-df_nb_conso.columns = ["Opérateur","Nb"] #Renommage des colonnes
-donnees_nb_conso = ColumnDataSource(df_nb_conso)
-p4 = figure(x_range = df_nb_conso['Opérateur'].unique(), title="Nombre d'opérateurs")
+x = [ (annee, op) for op in df_nb_conso_annee['Opérateur'].unique() for annee in df_nb_conso_annee['Annee'].unique() ]
+# crée [("2011","Enedis"),("2012","Enedis"),...]
+counts = tuple(df_nb_conso_annee["Nb"])
+source = ColumnDataSource(data=dict(x=x, counts=counts))
 
-# -- Ajouter les barres
-barplot = p4.vbar(x='Opérateur', top='Nb', width=0.9,source=donnees_nb_conso,fill_color = "#f0d6fb", line_color = "#f0d6fb")
+# -- Création de la figure
+p4 = figure(x_range=FactorRange(*x), height=350, title="Nombre d'utilisation d'Enedis et de GRDF entre 2011 et 2021",
+           toolbar_location=None, tools="")
 
-# -- Ajouter des étiquettes pour les axes
-p4.xaxis.axis_label = "Opérateurs"
-p4.yaxis.axis_label = "Nombre de lignes"
-p4.title.align = "center"
+barplot = p4.vbar(x='x', top='counts', width=0.9, source=source,fill_color = "#cddef9", line_color = "#cddef9")
 
-# Ajouter widget
+# -- Modification du graphique
+p4.y_range.start = 0
+p4.x_range.range_padding = 0.1
+p4.xaxis.major_label_orientation = 1
+p4.xgrid.grid_line_color = None
+
+# -- Ajouter de widgets
 picker_p4_fill = ColorPicker(title="Couleur de barres",color=barplot.glyph.fill_color)
 picker_p4_fill.js_link('color', barplot.glyph, 'fill_color')
 
 picker_p4_ligne = ColorPicker(title="Couleur de ligne",color=barplot.glyph.line_color)
 picker_p4_ligne.js_link('color', barplot.glyph, 'line_color')
 
-# Afficher le graphique dans le notebook
-# show(p4)
-
+# -- On ajoute l'outil de survol qui va afficher le nom de pays et la capitale
+hover_tool = HoverTool(tooltips=[('Annnée','@x'),("Nombre","@counts")])
+p4.add_tools(hover_tool)
+p4.title.align = 'center'
 
 ############################################################################################
 # ----------------------- Création d'un datatable ------------------------------------------
+# -- Somme des opérateurs 
+conso_op = consommation.groupby('Opérateur') #Compter 
+count_by_conso = conso_op.size()
+df_nb_conso = count_by_conso.reset_index(name='nombre_elements') # transformation en data.frame
+df_nb_conso.columns = ["Opérateur","Nb"] #Renommage des colonnes
+donnees_nb_conso = ColumnDataSource(df_nb_conso)
 
 columns = [
         TableColumn(field="Opérateur", title="Opérateur"),
         TableColumn(field="Nb", title="Nombre")  
     ]
-data_table_nb_conso = DataTable(source=donnees_nb_conso, columns=columns, width=400, height=200)
+data_table_nb_conso = DataTable(source=donnees_nb_conso, columns=columns, width=600, height=250)
 
 
 ###################################################################################################################
@@ -556,11 +568,13 @@ pie.title.align = 'center'
 
 # -- Commentaires des graphiques 
 
-comment_pie_chart = Div(text = """Ce graphique représente la répartition de la consommation d'énergie entre les différents secteurs entre 2011 et 2021. <br/> Les secteurs sont les suivants : l'agriculture, l'industrie, le secteur résidentiel, le secteur tertiaire.<br/>L'appelation 'secteur inconnu' siginifie que le secteur n'a pas été précisé dans la base de données.
+comment_pie_chart = Div(text = """Ce graphique représente la répartition de la consommation d'énergie entre les différents secteurs entre 2011 et 2021. Les secteurs sont les suivants : l'agriculture, l'industrie, le secteur résidentiel, le secteur tertiaire.L'appellation 'secteur inconnu' siginifie que le secteur n'a pas été précisé dans la base de données.
 <br/>Sur ce graphique, nous pouvons observer qu'une grande partie de la consommation de gaz et d'électricité provient du secteur tertiaire. Ce dernier recouvre un large champ d'activité, comprenant le commerce, l'administration, les transports, les activités finançières ou immobilières ou encore les services aux entreprises et services aux particuliers.
-De plus, l'industrie et l'agriculture sont des secteurs ayant une consommation d'électricité et de gaz aussi importante.""",styles={'background-color': '#d4f7ed'}, width = 500, height = 250)
-# comment_vbar = 
-comment_data_table_operateur = Div(text = """Ce tableau répertorie le nombre de fois que l'opérateur a été utilisé entre 2011 et 2021. <br/>On dénombre 8 opérateurs.<br/> Les deux majoritaires et les plus connus sont Enedis et GRDF. <br/>Cependant, le premier opérateur est Enedis. """, styles={'background-color': '#f0f2f5'})
+De plus, l'industrie et l'agriculture sont des secteurs ayant une consommation d'électricité et de gaz aussi importante.""",styles={'background-color': '#d4f7ed'}, width = 600)
+ 
+
+comment_data_table_operateur = Div(text = """Ce tableau répertorie le nombre de fois que l'opérateur a été utilisé entre 2011 et 2021. Nous dénombrons 8 opérateurs. Cependant, les deux majoritaires et les plus connus sont Enedis et GRDF. C'est pourquoi nous avons décidé de réaliser le graphique ci-contre représentant uniquement les opérateurs Enedis et GRDF""",
+                                   styles={'background-color': '#f0f2f5'},width=600)
 
 
 
@@ -572,7 +586,7 @@ comment_data_table_operateur = Div(text = """Ce tableau répertorie le nombre de
 titre_principal = Div(text="<h1><center>Préserver l'environnement en Bretagne : Consommation d'énergie, <br/> sources renouvelables et aires protégées</center></h1>", styles = {'margin-left' : 'auto', 'margin-right':'auto'})
 presentation = Div(text = """Cette page web traite le thème de l'environnement en Bretagne.<br/>
 La Bretagne est une région qui dispose d'un environnement naturel riche et diversifié, avec une grande variété de paysages comme des montagnes et des plages mais aussi des forêts et des marais. Cependant, l'environnement breton est confronté à des menaces croissantes, telles que la pollution, la surconsommation d'énergie et la diminution de la biodiversité.
-Pour préserver cet environnement, il est essentiel de mettre en place des mesures visant à réduire la consommation d'énergie et à favoriser l'utilisation de sources d'énergie renouvelables, telles que l'énergie solaire, éolienne et hydraulique. Il est également important de protéger les espaces naturels en créant des aires protégées, telles que les parcs naturels régionaux et les réserves naturelles.
+Pour préserver cet environnement, il est essentiel de mettre en place des mesures visant à réduire la consommation d'énergie et à favoriser l'utilisation de sources d'énergies renouvelables, telles que l'énergie solaire, éolienne et hydraulique. Il est également important de protéger les espaces naturels en créant des aires protégées, telles que les parcs naturels régionaux et les réserves naturelles.
 Pour explorer ces différents aspects, nous les avons répartis dans les 4 onglets ci-dessous.""",styles={'background-color': '#f8fad6',"margin-left": "2em"},width = 700)
 auteurs = Div(text = """Auteurs : Margaux BAILLEUL & Clémence CHESNAIS""",styles={"margin-left": "2em"})
 image_entete = Div(text="""<img src="data/saint_malo.jpg" width="400"/>""")
@@ -580,9 +594,10 @@ header = Column(titre_principal,Row((Column(presentation,auteurs)),(Column(image
 
 # -- Les différentes pages
 layout = Column(titre,Row((Column(comment,img,img2,spacing =10)),(Column(data_table_hydrau,data_table_eolien, data_table_solaire,sizing_mode='stretch_both',margin=(0,0,0,0),spacing = 10)),p, spacing =10))
-layout2 = Column(titre2,Row(Column(carte,styles={"margin-left": "2em"}), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert,spacing = 20),Column(comment_carte_parc_et_reserve,image_golfe_morbihan,spacing=1)))
-layout3 = Column(titre3, Row(Column(p2,styles={"margin-left": "2em"}),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec,styles={"margin-left": "2em"}),Column(picker_conso_gaz, picker_conso_elec,comment_evol_conso,spacing=10),spacing=10),spacing = 10)
-layout4 = Column(titre4, Row((Column(p4,styles={"margin-left": "2em"})),Column(picker_p4_fill,picker_p4_ligne, data_table_nb_conso,comment_data_table_operateur,spacing=10),(Column(pie,comment_pie_chart,spacing =10)), spacing=10))
+layout2 = Column(titre2,Row(Column(carte,styles={"margin-left": "2em"}), Column(image_parc_armorique,image_reserve_Sillon_de_Talbert,spacing = 10)),Row(Column(comment_carte_parc_et_reserve),Column(image_golfe_morbihan),styles={"margin-left": "1.9em"}))
+layout3 = Column(titre3, Row(Column(p2,styles={"margin-left": "2em"}),Column(picker_ca,picker_m,picker_f,picker_i,spacing =10),p3,spacing=10),Row(Column(conso_gaz_elec,styles={"margin-left": "2em"}),Column(picker_conso_gaz, picker_conso_elec),Column(comment_evol_conso,styles={"margin-left": "4em"}),spacing=10),spacing=10)
+layout4 = Column(titre4,Row((Column(data_table_nb_conso,comment_data_table_operateur,spacing=10,styles={"margin-left": "2em"})),Column(p4),Column(picker_p4_fill,picker_p4_ligne),spacing =10),Row(Column(pie),Column(comment_pie_chart),spacing=10,styles={"margin-left": "2em"}),spacing=10)
+# layout4 = Column(titre4, Row((Column(p4,styles={"margin-left": "2em"})),Column(picker_p4_fill,picker_p4_ligne,data_table_nb_conso,comment_data_table_operateur)),Row(Column(pie),(Column(comment_pie_chart)),spacing=10,styles={"margin-left": "2em"}))
 
 # -- Préparation des onglets
 tab1 = TabPanel(child=layout, title="Les différentes installations de production d'énergies")
